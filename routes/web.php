@@ -24,3 +24,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Felhasználók route
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 
+Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
+
+    
+
+
