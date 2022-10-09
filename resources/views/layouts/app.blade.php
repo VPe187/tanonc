@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: #e3f2fd;"
             role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/progos_logo.png') }}"
+                <a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/tanonc_logo.png') }}"
                         alt="Logo" width="95px" height="23px"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
                     area-controls="mainNavbar" area-expanded="false" area-label="Togglenavigation">
