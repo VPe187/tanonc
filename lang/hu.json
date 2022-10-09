@@ -1,4 +1,8 @@
 {
     "Login": "Belépés",
-	"Register": "Regisztráció"
+	"Register": "Regisztráció",
+    "Email Address": "Email cím",
+    "Password": "Jelszó",
+    "Remember Me": "Jegyezz meg",
+    "Forgot Your Password?": "Elfelejtette a jelszavát?"
 }
