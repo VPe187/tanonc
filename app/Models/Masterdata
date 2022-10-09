@@ -1,0 +1,78 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Masterdata extends Model
+{
+    protected $table = 'userdata';
+    use HasFactory;
+
+    protected $fillable = [
+        'Oktazon',
+        'ViseltNevElotag',
+        'ViseltNevVezeteknev1',
+        'ViseltNevKeresztnev2',
+        'ViseltNevNevsorrend',
+        'SzuletesiNevElotag',
+        'SzuletesiNevVezeteknev',
+        'SzuletesiNevKeresztnev',
+        'SzuletesiNevNevsorrend',
+        'AnyjaNeveElotag',
+        'AnyjaNeveVezeteknev',
+        'AnyjaNeveKeresztnev',
+        'AnyjaNeveNevsorrend',
+        'SzuletesiDatum',
+        'Szuletesihely',
+        'Szuletesiorszag',
+        '1allampolgarsag',
+        '2allampolgarsag',
+        'Nem',
+        'TajSzam',
+        'TajEllenorzes',
+        'AllandoLakcimIranyitoszam',
+        'AllandoLakcimTelepules',
+        'AllandoLakcimKozteruletNev',
+        'AllandoLakcimKozteruletJelleg',
+        'AllandoLakcimHazszam',
+        'AllandoLakcimPontositas',
+        'TartozkodasiCimIranyitoszam',
+        'TartozkodasiCimTelepules',
+        'TartozkodasiCimKozteruletNev',
+        'TartozkodasiCimKozteruletJelleg',
+        'TartozkodasiCimHazszam',
+        'TartozkodasiCimPontositas',
+        'AdatkezeloIntezmenyOmAzonositoja',
+        'AdatkezeloIntezmenyNeve',
+        'AdatkezeloIntezmenyCime',
+        'TankotelezettsegVege',
+        'TankotelezettsegetTeljesito',
+        'SajatosNevelesiIgenyu',
+        'BeilleszkedesselTanulasiMagatartasiNehezseggelKuzd',
+        'ErvenyesDiakigazolvanySzama',
+        'KozoktatasiIntezmenyNeve',
+        'KozoktatasiIntezmenySzekhelye',
+        'OmAzonosito',
+        'UgyviteliHely',
+        'JogviszonyStatusza',
+        'JogviszonyKezdete',
+        'Jogviszony(Varhato)Befejezese',
+        'JogviszonyJellege',
+        'Vendegtanulo',
+        'EgyeniMunkarend',
+        'IdeiglenesOvodai/IdeiglenesVendegtanuloiJogviszony',
+        'Osztaly',
+        'NyitottSzolgaltatasok',
+        'LezartSzolgaltatasok',
+        'ABelugyminiszteriumSzemelyiadat-EsLakcimnyilvantartasabanBeazonositott',
+        'UtolsoSzemelyiadatEsLakcimnyilvantartasFrissitesIdopontja',
+
+    ];
+
+    public function masterdata()
+    {
+        return $this->hasOne('App\Models\AuxiliaryData1', 'oktazon', 'oktazon');  //mihez kapcsolodik a model, idegentabla, sajat tabla azonositoja
+    }
+}
