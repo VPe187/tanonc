@@ -9,7 +9,7 @@
               <!-- <div class="card-header">{{ __('Rólunk') }}</div> !-->
                 <div class="card-header">{{ __('Rólunk') }}</div>
                     <div class="card-body">
-                        Ez lesz a rólunk rovat...
+                        Tanonc projekt!
                 
                     </div>    
 
