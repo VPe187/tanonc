@@ -26,6 +26,8 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
 
+Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
+
     
 
 

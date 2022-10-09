@@ -16,22 +16,22 @@ return new class extends Migration
         Schema::create('userdata', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->index()->references('id')->on('users');
-            $table->string('vezeteknev', 50);
+            $table->string('vezeteknev', 50)->index();
             $table->string('keresztnev1', 50);
-            $table->string('keresztnev2', 50);
-            $table->string('becenev', 50);
-            $table->string('anyja_neve', 100);
-            $table->string('orszag', 50);
-            $table->string('iranyitoszam', 4);
-            $table->string('telepules', 100);
-            $table->string('kozterulet_neve', 50);
-            $table->integer('kozterulet_tipus_id');
-            $table->string('hazszam', 10);
-            $table->string('emelet', 10);
-            $table->string('ajto', 10);
-            $table->dateTime('szuletesi_ido');
-            $table->string('szuletesi_hely', 50);
-            $table->string('telefonszam', 20);
+            $table->string('keresztnev2', 50)->nullable();
+            $table->string('becenev', 50)->nullable();
+            $table->string('anyja_neve', 100)->nullable();
+            $table->string('orszag', 50)->nullable();
+            $table->string('iranyitoszam', 4)->nullable();
+            $table->string('telepules', 100)->nullable();
+            $table->string('kozterulet_neve', 50)->nullable();
+            $table->integer('kozterulet_tipus_id')->nullable();
+            $table->string('hazszam', 10)->nullable();
+            $table->string('emelet', 10)->nullable();
+            $table->string('ajto', 10)->nullable();
+            $table->dateTime('szuletesi_ido')->nullable();
+            $table->string('szuletesi_hely', 50)->nullable();
+            $table->string('telefonszam', 20)->nullable();
             $table->timestamps();
         });
     }

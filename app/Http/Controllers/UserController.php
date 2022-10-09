@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Userdata;
+use Auth;
 
 class UserController extends Controller
 {
@@ -26,13 +28,24 @@ class UserController extends Controller
     {
         $felhasznalok = User::all();
 
-        /*
-        foreach ($felhasznalok as $felhasznalo) {
-            echo $felhasznalo;
-            echo "<br />";
-        }
-        */
-
         return view('users')->with('fhk', $felhasznalok);
+    }
+
+    public function testuserdata(){
+        print('userdatatest');          // képernyő ellenőrzése
+        
+        $nev = explode(' ', Auth::user()->name, 2);
+
+        $actualuser = Auth::user()->id;
+        $userdata = Userdata::firstOrNew(['user_id' => $actualuser]);
+        $userdata->vezeteknev = $nev[0];
+        $userdata->keresztnev1 = $nev[1];
+        $userdata->keresztnev2 = '';
+        
+        $userdata->save();
+
+        return redirect('/users');
+        
+
     }
 }
