@@ -1,5 +1,6 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+// @import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 // Variables
 @import 'variables';
@@ -14,14 +15,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/solid';
 
-* {
-    font-size: 102%;
-}
-
 .fa-btn {
-    margin-right: 8px;
-}
-
-.fa {
     margin-right: 8px;
 }

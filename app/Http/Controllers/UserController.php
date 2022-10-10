@@ -31,6 +31,11 @@ class UserController extends Controller
         return view('users')->with('fhk', $felhasznalok);
     }
 
+    public function userprofile() {
+        $user_id = Auth::user()->id;
+        return view('userprofile');
+    }
+
     public function testuserdata(){
         print('userdatatest');          // képernyő ellenőrzése
         

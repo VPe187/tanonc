@@ -23,8 +23,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Felhasználók route
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
+Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
 
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
+
+
 
 Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
 
