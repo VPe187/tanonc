@@ -15,9 +15,9 @@ class Familydata extends Model
         // táblák összekapcsolása, először idegentábla, utána saját tábla
         return $this->hasOne('App\Models\Masterdata','oktazon','oktazon'); 
     }
-    //Foreign Key
+    /*Foreign Key
     public function Guardian(){
         // táblák összekapcsolása, először idegentábla, utána saját tábla
         return $this->hasOne('App\Models\Guardian','gondviseloazon','gondviseloazon'); 
-    }
+    } */
 }
