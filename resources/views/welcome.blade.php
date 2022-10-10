@@ -37,7 +37,7 @@
                     Amennyiben Ön rendelkezik hozzáféréssel, kérem kattintson az alábbi gombra, s jelentkezzen be a rendszerbe.
                     Ha még nincs hozzáférése, kérem vegye fel a kapcsolatot a rendszer üzemeltetőjével!</p>
                     <br />
-                    <p class="text-center lead"><a href="{{ url('/home') }}" class="btn btn-lg btn-primary"><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc rendszer</a></p>
+                    <p class="text-center lead"><a href="{{ url('/home') }}" class="btn btn-lg btn-primary shadow"><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc rendszer</a></p>
                 </div>
             </div>
         </div>

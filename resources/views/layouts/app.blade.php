@@ -59,7 +59,7 @@ body {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-sliders"></i>{{ __('Beállítások') }}</a>
                             <ul class="dropdown-menu" aria-labelledby="adminDropdown">
-                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-users"></i>{{ __('Felhasználók') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ url('users') }}"><i class="fa-btn fa-solid fa-users"></i>{{ __('Felhasználók') }}</a></li>
                             </ul>
                         </li>                        
                         @endguest

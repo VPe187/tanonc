@@ -54,7 +54,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary shadow">
                                 <i class="fa-solid fa-btn fa-right-to-bracket"></i>{{ __('Login') }}
                                 </button>
                                 @if (Route::has('password.request'))
