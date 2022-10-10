@@ -23,10 +23,11 @@
                             <tbody>
                                 @foreach($fhk as $fh)
                                     <tr>
-                                        <td>{{$fh->name}}</td>
-                                        <td>{{$fh->email}}</td>
-                                        <td><button class="btn btn-floating btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
-                                        <td><button class="btn btn-danger"><i class="fa-btn fa-solid fa-trash"></i></button>
+                                        <td style="vertical-align: middle">{{$fh->name}}</td>
+                                        <td style="vertical-align: middle">{{$fh->email}}</td>
+                                        <td style="vertical-align: middle"><button class="btn btn-sm btn-primary"><i class="fa-fw fa-solid fa-pen-to-square"></i></button>
+                                        <td style="vertical-align: middle"><button class="btn btn-sm btn-danger"><i class="fa-fw fa-solid fa-trash-can"></i></button>
+                                            
                                     <tr>
                                 @endforeach
                             </tbody>
