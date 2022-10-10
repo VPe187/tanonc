@@ -27,7 +27,7 @@
         <div class="container">
             <div class="card border-1 shadow my-5">
                 <div class="card-body p-5">
-                    <p class="text-end"><img src="img/tanonc_logo.png" /></p>
+                    <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                     <hr />
                     <h1><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc nyilvántartó</h1>
                     <hr />

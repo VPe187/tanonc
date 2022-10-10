@@ -11,7 +11,8 @@
             <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
             <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
         </svg>
-        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        TANONC v0.1&nbsp;<small class="d-block mb-3 text-muted">&copy; 2022-2023 NYE PTF</small>
+        </li>
     </div>
     <div class="col-6 col-md">
         <h5>Features</h5>

@@ -19,22 +19,50 @@
     @yield('script_head')
 </head>
 
+<style>
+body {
+    font-family: 'Nunito', sans-serif;
+    background: url({{ URL::asset('img/page_bg.jpg') }}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;                
+}
+</style>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: #e3f2fd;"
-            role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/tanonc_logo.png') }}"
-                        alt="Logo" width="95px" height="23px"></a>&nbsp;
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
-                    area-controls="mainNavbar" area-expanded="false" area-label="Togglenavigation">
+                <a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/tanonc_logo.png') }}" alt="Logo" height="50px"></a>&nbsp;
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" area-expanded="false" area-label="Togglenavigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="mainNavbar">
 
                     <!-- Baloldali menü -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- MENÜ HELYE -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ url('home') }}"><i class="fa-btn fa-solid fa-house"></i>Nyitólap</a>
+                        </li>
+                        @guest
+                        @else
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="importDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-database"></i>{{ __('Adat import') }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="importDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('KIR master') }}</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-sliders"></i>{{ __('Beállítások') }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-users"></i>{{ __('Felhasználók') }}</a></li>
+                            </ul>
+                        </li>                        
+                        @endguest
                     </ul>
 
                     <ul class="navbar-nav ms-auto">
@@ -42,44 +70,41 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}"><i class="fa-btn fa-solid fa-right-to-bracket"></i>{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}"><i class="fa-btn fa-solid fa-address-card"></i>{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                <a id="userDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <i class="fa-btn fa-solid fa-user"></i>{{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-key"></i>Jelszó változtatás</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="fa-btn fa-solid fa-right-from-bracket"></i>{{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
                             </li>
                         @endguest
-                        <li>
-                            <div class="navbar-text">|&nbsp;&nbsp;TANONC v0.1&nbsp;<i
-                                    class="fa-regular fa-copyright"></i>&nbsp;2022-2023 NYE PTF</div>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
-        <main class="py-4">
+        <main class="py-4 mt-4">
             <div class="content">
                 @yield('content')
             </div>

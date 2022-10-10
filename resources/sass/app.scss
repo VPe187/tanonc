@@ -14,10 +14,14 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/solid';
 
+* {
+    font-size: 102%;
+}
+
 .fa-btn {
-    margin-right: 4px;
+    margin-right: 8px;
 }
 
 .fa {
-    margin-right: 4px;
+    margin-right: 8px;
 }

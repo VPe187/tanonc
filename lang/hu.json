@@ -4,5 +4,8 @@
     "Email Address": "Email cím",
     "Password": "Jelszó",
     "Remember Me": "Jegyezz meg",
-    "Forgot Your Password?": "Elfelejtette a jelszavát?"
+    "Forgot Your Password?": "Elfelejtette a jelszavát?",
+    "Logout": "Kijelentkezés",
+    "Reset Password": "Jelszó helyreállítás",
+    "Send Password Reset Link": "Jelszó helyreállítási link küldése"
 }

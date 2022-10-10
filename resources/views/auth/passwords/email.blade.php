@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8 col-xl-8 col-xxl-7">
+            <div class="card shadow">
+                <div class="card-header"><i class="fa-btn fa-solid fa-key"></i>{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))

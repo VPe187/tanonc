@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8">
-            <div class="card">
+        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8 col-xl-8 col-xxl-7">
+            <div class="card shadow">
                 <div class="card-header"><i class="fa-solid fa-btn fa-right-to-bracket"></i>{{ __('Login') }}</div>
 
                 <div class="card-body">
