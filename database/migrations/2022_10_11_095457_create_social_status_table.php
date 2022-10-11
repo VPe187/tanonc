@@ -14,7 +14,18 @@ return new class extends Migration
     public function up()
     {
         Schema::create('social_status', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('szocazon');
+            $table->integer('oktazon')->index()->references('oktazon')->on('Masterdata');
+            $table->boolean('gyermekvedelmikedvezmeny');
+            $table->date('gyermekvedelmikedvezmeny_kezdete');
+            $table->date('gyermekvedelmikedvezmeny_vege');
+            $table->boolean('hatranyoshelyzetu');
+            $table->date('hhkezdete');
+            $table->date('hhvege');
+            $table->boolean('halmozottanhatranyoshelyzetu');
+            $table->date('hhh_kezdete');
+            $table->date('hhh_vege');
             $table->timestamps();
         });
     }
