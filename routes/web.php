@@ -23,11 +23,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Felhasználók route
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
+
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
 
+//tesztelés volt
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
 
-
+//kirkieg 1 import
+Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
 
 Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
 
