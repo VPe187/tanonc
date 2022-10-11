@@ -51,7 +51,7 @@ body {
                             <ul class="dropdown-menu" aria-labelledby="importDropdown">
                                 <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('KIR master') }}</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
+                                <li><a href="{{ url('/familydataimport') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
                             </ul>
