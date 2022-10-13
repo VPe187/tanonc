@@ -36,6 +36,8 @@ Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testus
 
 Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
+Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
+
     
 
 
