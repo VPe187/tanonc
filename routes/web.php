@@ -34,6 +34,8 @@ Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::clas
 
 Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
 
+Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
+
     
 
 
