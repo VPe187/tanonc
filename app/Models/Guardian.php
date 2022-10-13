@@ -7,5 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Guardian extends Model
 {
+    protected $table ='guardian';
     use HasFactory;
+
+
+public function Masterdata(){
+    // táblák összekapcsolása, először idegentábla, utána saját tábla
+    return $this->hasOne('App\Models\Masterdata','oktazon','oktazon'); 
+}
+
+public function Familydata(){
+    // táblák összekapcsolása, először idegentábla, utána saját tábla
+    return $this->hasOne('App\Models\Familydata','gondviseloazon','gondviseloazon'); 
+}
 }
