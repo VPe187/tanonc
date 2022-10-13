@@ -32,12 +32,14 @@ Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index'])
 //kirkieg 1 import
 Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
 
-Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
-
+//kir törzsadat  import
 Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
+//szociális import
 Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
 
-    
+//gondviselő import
+Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::class, 'guardiandata']);
 
-
+//minta
+//Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
