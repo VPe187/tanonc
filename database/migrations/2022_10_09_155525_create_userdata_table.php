@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()                                        // fizikai művelet, a userdata tábla létrehozása a szerveren
     {
         Schema::create('userdata', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->index();
             $table->integer('user_id')->index()->references('id')->on('users');
             $table->string('vezeteknev', 50)->index();
             $table->string('keresztnev1', 50);
