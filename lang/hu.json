@@ -1,4 +1,17 @@
 {
     "Login": "Belépés",
-	"Register": "Regisztráció"
+    "Register": "Regisztráció",
+    "Email Address": "Email cím",
+    "Password": "Jelszó",
+    "Remember Me": "Jegyezz meg",
+    "Forgot Your Password?": "Elfelejtette a jelszavát?",
+    "Logout": "Kijelentkezés",
+    "Reset Password": "Jelszó helyreállítás",
+    "Send Password Reset Link": "Jelszó helyreállítási link küldése",
+    "Name": "Név",
+    "Family data (1)": "Családi adatok (1)",
+    "Social status (2)": "Szociális státusz (2)",
+    "Guardian (3)": "Szülő-Gondviselő (3)",
+    "Confirm Password": "Jelszó megerősítése"
+    
 }

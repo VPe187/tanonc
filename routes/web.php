@@ -20,10 +20,3 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-//felhasználók route
-Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
-
-function () {
-    
-};

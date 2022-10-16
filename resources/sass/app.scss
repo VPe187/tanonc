@@ -1,5 +1,6 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+// @import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 // Variables
 @import 'variables';
@@ -15,9 +16,9 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/solid';
 
 .fa-btn {
-    margin-right: 4px;
+    margin-right: 8px;
+}
+.card-body {
+    text-align: center;
 }
 
-.fa {
-    margin-right: 4px;
-}

@@ -41,4 +41,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function Userdata(){
+        return $this->hasOne('App\Models\Userdata','user_id','id');     // mihez kapcsolódik a model, idegen tábla, saját tábla azonosítója
+
+    }
 }
