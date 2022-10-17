@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow">
-                <div class="card-header"><i class="fa-btn fa-solid fa-table-columns"></i>Családi adatok importálása</div>
+                <div class="card-header"><i class="fa-btn fa-solid fa-table-columns"></i>Gondviselői adatok importálása</div>
                 <div class="card-body">
                      <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                      <br /> <br />
