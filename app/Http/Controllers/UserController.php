@@ -50,7 +50,9 @@ class UserController extends Controller
         $userdata->save();
 
         return redirect('/users');
-        
+    }
 
+    public function userprofileedit(Request $request){
+        echo $request->get('fieldUserName');
     }
 }
