@@ -27,7 +27,7 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
 Route::post('/userprofileedit', [App\Http\Controllers\UserController::class, 'userprofileedit'])->name('userprofileedit');
 
-//tesztelés volt
+////rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
 
 //kirkieg 1 import
@@ -45,8 +45,8 @@ Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::
 //adatvédelmi nyilatkozat
 Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
 
-//rólunk
-Route::get('/aboutus', [App\Http\Controllers\FooterController::class, 'aboutus']);
+
+
 
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
