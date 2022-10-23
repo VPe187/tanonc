@@ -42,5 +42,11 @@ Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::clas
 //gondviselő import
 Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::class, 'guardiandata']);
 
+//adatvédelmi nyilatkozat
+Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
+
+//rólunk
+Route::get('/aboutus', [App\Http\Controllers\FooterController::class, 'aboutus']);
+
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
