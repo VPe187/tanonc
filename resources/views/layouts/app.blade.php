@@ -110,10 +110,10 @@ body {
                 @yield('content')
             </div>
         </main>
-        <footer class="container py-5">
-            @include('footer')
-        </footer>
     </div>
+    <footer>
+        @include('footer')
+    </footer>    
 </body>
 
 </html>
