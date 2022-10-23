@@ -114,9 +114,7 @@ body {
             @include('footer')
         </footer>
     </div>
-    <footer>
-        @include('footer')
-    </footer>    
+       
 </body>
 
 </html>
