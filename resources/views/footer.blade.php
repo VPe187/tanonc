@@ -1,48 +1,42 @@
-<div class="row">
-    <div class="col-12 col-md">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" class="d-block mb-2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-            <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-            <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-            <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-            <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-        </svg>
-        TANONC v0.1&nbsp;<small class="d-block mb-3 text-muted">&copy; 2022-2023 NYE PTF</small>
-        </li>
+<div class="mt-5 p-4 bg-dark text-white text-center">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>Elérhetőségek</h4>
+			<p style="font-size:30;" colspan = "7"><i class = "fa fa-phone"> 06-10/123-123</i></p>
+			<p style="font-size:30;" colspan = "7"><i class = "fa fa-at"> business@probamail.com</i></p>
+		    <p style="font-size:30;" colspan = "7"><i class = "fa fa-envelope"> Szed Elek utca, 34.</i></p>
+        </div>
+        <div class="col-sm-4">
+            <h4>Hírlevél</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			   Pellentesque vitae lacus neque. 
+			   Nullam pretium mollis lectus, vel dictum ante congue in. 
+			   In at elementum ex
+			   <form action="" method = "POST">
+        
+				<input type="text" id="name" name="name" placeholder="Keresztnév" 
+					   style = "width:200px;opacity:0.5;border:solid black 1px;font-style:italic">
+		
+				<input type="text" id="email" name="email" placeholder="E-mail cím" 
+					   style = "width:200px;opacity:0.5;border:solid black 1px;font-style:italic">
+				</form>
+			<br/>
+			<button style = "padding:10px">Feliratkozom</button>
+			</p>
+        </div>
+		<div class="col-sm-4">
+            <h4>Információk</h4>
+			<p><a href = "privacy_policy.php" style = "color:white; text-decoration:none;">Adatvédelmi nyilatkozat</a></p>
+			<p><a href = "#" style = "color:white; text-decoration:none;">Partnerek</a></p>
+			<p><a href = "https://kiszervezettmarketing.hu/weboldal-keszites/impresszum-weboldal/" style = "color:white; text-decoration:none;">Impresszum</a></p>
+			<p></p>
+        </div>
     </div>
-    <div class="col-6 col-md">
-        <h5>Kapcsolat</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Elérhetőség</a></li>
-
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>Hírlevél</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Feliratkozás</a></li>
-
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>Adatvédelem</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href= "{{ url('/privacy') }}" >Adatvédelmi nyilatkozat</a></li>
-            <li><a class="text-muted" href="#">Felhasználási feltételek</a></li>
-
-
-
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>Rólunk</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="{{ url('/aboutus') }}">A csapat</a></li>
-
-        </ul>
-    </div>
+	
+	<a href = "https://www.instagram.com/" style = "color:white; text-decoration:none;">
+	<i class="fab fa-instagram" style = "font-size:30px;"></a></i>
+			
+	<a href = "https://www.facebook.com/" style = "color:white; text-decoration:none;">
+	<i class="fab fa-facebook-square" style = "font-size:30px;"></a></i>
+	
 </div>
