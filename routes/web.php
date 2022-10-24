@@ -20,3 +20,26 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Felhasználók route
+Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
+
+Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
+
+//tesztelés volt
+Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
+
+//kirkieg 1 import
+Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
+
+//kir törzsadat  import
+Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
+
+//szociális import
+Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
+
+//gondviselő import
+Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::class, 'guardiandata']);
+
+//minta
+//Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);

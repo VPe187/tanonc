@@ -10,7 +10,7 @@
                     <i class="fa-btn fa-solid fa-id-card"></i>{{ __('Felhasználó profil') }}
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/userprofile/edit') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('userprofileedit') }}">
                         @csrf
 
                         <!-- UserId  -->
@@ -112,6 +112,11 @@
                             </div>
                         </div>                           
 
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-btn fa-floppy-o"></i>Mentés
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
