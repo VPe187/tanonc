@@ -202,7 +202,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="fieldUserBirthPlace" value="" pattern="^.{0,30}$" required>
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
                                 </div>
                             </div>
                         </div>
