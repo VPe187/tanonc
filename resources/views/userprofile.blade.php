@@ -125,7 +125,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="fieldUserZipCode" value="" pattern="^.{4,4}$" required>
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-signs-post"></i></span>
                                 </div>
                             </div>
                         </div>
