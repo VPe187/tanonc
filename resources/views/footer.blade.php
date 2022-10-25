@@ -22,8 +22,8 @@
             <h4 class = "mb-3">Információk</h4>
 			<p><a class = "btn text-light p-0" href = "{{ url('/privacy') }}" >Adatvédelmi nyilatkozat</a></p>
 			<p><a class = "btn text-light p-0" href = "{{ url('/aboutus') }}">Készítők</a></p>
-			<p><a class = "btn text-light p-0" href = "https://laravel.com">Partnerek</a></p>
-			<p><a class = "btn text-light p-0" href = "https://kiszervezettmarketing.hu/weboldal-keszites/impresszum-weboldal/">Impresszum</a></p>
+			<p><a class = "btn text-light p-0" href = "https://laravel.com" target = "blank">Partnerek</a></p>
+			<p><a class = "btn text-light p-0" href = "#">Impresszum</a></p>
 			<p></p>
         </div>
     </div>
