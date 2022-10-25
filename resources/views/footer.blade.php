@@ -1,7 +1,7 @@
 
 <footer class="footer py-3 bg-dark text-light fixed-relative text-center">
     <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4">
             <h4 class = "mb-3">Elérhetőségek</h4>
 			<p><i class = "fa fa-btn fa-phone"></i>06-10/123-123</p>
 			<p><i class = "fa fa-btn fa-at"></i> business@probamail.com</p>
@@ -27,7 +27,4 @@
 			<p></p>
         </div>
     </div>
-	
-	
-	
 </footer>

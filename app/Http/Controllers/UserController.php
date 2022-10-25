@@ -33,7 +33,8 @@ class UserController extends Controller
 
     public function userprofile() {
         $user_id = Auth::user()->id;
-        return view('userprofile');
+        $user_res = Userdata::where('user_id', $user_id)->get()->first();
+        return view('userprofile')->with('userdata', $user_res);
     }
 
     public function testuserdata(){
@@ -52,33 +53,49 @@ class UserController extends Controller
         return redirect('/users');
     }
 
-    public function userprofileedit(Request $request){
-        //echo $request->get('fieldUserName')."<br>";
-        //echo $request->get('fieldUserSureName')."<br>";
-        //echo $request->get('fieldUserFirstName')."<br>";
+    public function userprofilestore(Request $request){
 
-        $newuserdata_record = Userdata::firstOrNew(['user_id' => Auth::user()->id]);
-        $newuserdata_record->user_id = Auth::user()->id;     
+        $request->validate(
+            [
+                'fieldUserSureName' => 'required | string | min:2 | max:30',
+                'fieldUserFirstName' => 'required | string | min:3 | max:30',
+                'fieldUserFirstName2' => 'nullable | min:3 | max:30'       
+            ],
+            [
+                'fieldUserSureName.required' => 'Vezetéknév megadása kötelező!',
+                'fieldUserSureName.min' => 'A Vezetéknév legalább 2 karaktert tartalmazzon!',
+                'fieldUserSureName.max' => 'A vezetéknév nem lehet hosszabb 30 karakternél!',
+                'fieldUserFirstName.required' => 'Keresztnév megadása kötelező!',
+                'fieldUserFirstName.min' => 'A keresztnév legalább 3 karaktert tartalmazzon!',
+                'fieldUserFirstName.max' => 'A keresztnév nem lehet hosszabb 30 karakternél!',
+                'fieldUserFirstName2.min' => 'A 2. keresztnév (ha ki van töltve) legalább 3 karaktert tartalmazzon!',
+                'fieldUserFirstName2.max' => 'A 2. keresztnév nem lehet hosszabb 30 karakternél!'
+            ]
+        );
 
-        $newuserdata_record->vezeteknev = (null !== $request->get('fieldUserSureName') ? $request->get('fieldUserSureName') : NULL);
-        $newuserdata_record->keresztnev1 = $request->get('fieldUserFirstName');
-        $newuserdata_record->keresztnev2 = $request->get('fieldUserFirstName2');
-        $newuserdata_record->becenev = $request->get('fieldUserNickName');
-        $newuserdata_record->anyja_neve = $request->get('fieldUserMotherName');
-        $newuserdata_record->orszag = $request->get('fieldUserCountry');
-        $newuserdata_record->iranyitoszam = $request->get('fieldUserZipCode');
-        $newuserdata_record->telepules = $request->get('fieldUserCity');
-        $newuserdata_record->kozterulet_neve = $request->get('fieldUserStreet');
-        $newuserdata_record->kozterulet_tipus_id = 0;
-        $newuserdata_record->hazszam = $request->get('fieldUserHouseNumber');
-        $newuserdata_record->emelet = $request->get('fieldUserFloorNumber');
-        $newuserdata_record->ajto = $request->get('fieldUserDoorNumber');
-        $newuserdata_record->szuletesi_ido = $request->get('fieldUserBirthdate');
-        $newuserdata_record->szuletesi_hely = $request->get('fieldUserBirthPlace');
-        $newuserdata_record->telefonszam = $request->get('fieldUserPhoneNumber');
+        $user_res = Userdata::firstOrNew(['user_id' => Auth::user()->id]);
 
-        $newuserdata_record->save();
-        return redirect ('/userprofile')->with('message','Rögzítés sikeresen megtörtént');
+        $user_res->user_id = Auth::user()->id;     
+        //$user_res->vezeteknev = (null !== $request->get('fieldUserSureName') ? $request->get('fieldUserSureName') : NULL);
+        $user_res->vezeteknev = $request->get('fieldUserSureName');
+        $user_res->keresztnev1 = $request->get('fieldUserFirstName');
+        $user_res->keresztnev2 = (null !== $request->get('fieldUserFirstName2') ? $request->get('fieldUserFirstName2') : "");
+        $user_res->becenev = $request->get('fieldUserNickName');
+        $user_res->anyja_neve = $request->get('fieldUserMotherName');
+        $user_res->orszag = $request->get('fieldUserCountry');
+        $user_res->iranyitoszam = $request->get('fieldUserZipCode');
+        $user_res->telepules = $request->get('fieldUserCity');
+        $user_res->kozterulet_neve = $request->get('fieldUserStreet');
+        $user_res->kozterulet_tipus_id = 0;
+        $user_res->hazszam = $request->get('fieldUserHouseNumber');
+        $user_res->emelet = $request->get('fieldUserFloorNumber');
+        $user_res->ajto = $request->get('fieldUserDoorNumber');
+        $user_res->szuletesi_ido = $request->get('fieldUserBirthdate');
+        $user_res->szuletesi_hely = $request->get('fieldUserBirthPlace');
+        $user_res->telefonszam = $request->get('fieldUserPhoneNumber');
 
+        $user_res->save();
+
+        return redirect ('/userprofile')->with('success_message','Rögzítés sikeresen megtörtént');
     }
 }
