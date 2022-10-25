@@ -53,6 +53,31 @@ class UserController extends Controller
     }
 
     public function userprofileedit(Request $request){
-        echo $request->get('fieldUserName');
+        //echo $request->get('fieldUserName')."<br>";
+        //echo $request->get('fieldUserSureName')."<br>";
+        //echo $request->get('fieldUserFirstName')."<br>";
+
+        $newuserdata_record = Userdata::firstOrNew(['user_id' => Auth::user()->id]);
+        $newuserdata_record->user_id = Auth::user()->id;
+        $newuserdata_record->vezeteknev = $request->get('fieldUserSureName');
+        $newuserdata_record->keresztnev1 = $request->get('fieldUserFirstName');
+        $newuserdata_record->keresztnev2 = $request->get('fieldUserFirstName2');
+        $newuserdata_record->becenev = $request->get('fieldUserNickName');
+        $newuserdata_record->anyja_neve = $request->get('fieldUserMotherName');
+        $newuserdata_record->orszag = $request->get('fieldUserCountry');
+        $newuserdata_record->iranyitoszam = $request->get('fieldUserZipCode');
+        $newuserdata_record->telepules = $request->get('fieldUserCity');
+        $newuserdata_record->kozterulet_neve = $request->get('fieldUserStreet');
+        $newuserdata_record->kozterulet_tipus_id = 0;
+        $newuserdata_record->hazszam = $request->get('fieldUserHouseNumber');
+        $newuserdata_record->emelet = $request->get('fieldUserFloorNumber');
+        $newuserdata_record->ajto = $request->get('fieldUserDoorNumber');
+        $newuserdata_record->szuletesi_ido = $request->get('fieldUserBirthdate');
+        $newuserdata_record->szuletesi_hely = $request->get('fieldUserBirthPlace');
+        $newuserdata_record->telefonszam = $request->get('fieldUserPhoneNumber');
+
+        $newuserdata_record->save();
+        return redirect ('/userprofile')->with('message','Rögzítés sikeresen megtörtént');
+
     }
 }
