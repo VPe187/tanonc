@@ -58,8 +58,9 @@ class UserController extends Controller
         //echo $request->get('fieldUserFirstName')."<br>";
 
         $newuserdata_record = Userdata::firstOrNew(['user_id' => Auth::user()->id]);
-        $newuserdata_record->user_id = Auth::user()->id;
-        $newuserdata_record->vezeteknev = $request->get('fieldUserSureName');
+        $newuserdata_record->user_id = Auth::user()->id;     
+
+        $newuserdata_record->vezeteknev = (null !== $request->get('fieldUserSureName') ? $request->get('fieldUserSureName') : NULL);
         $newuserdata_record->keresztnev1 = $request->get('fieldUserFirstName');
         $newuserdata_record->keresztnev2 = $request->get('fieldUserFirstName2');
         $newuserdata_record->becenev = $request->get('fieldUserNickName');
