@@ -41,6 +41,8 @@
                 </div>
             </div>
         </div>
-        @include('footer')
+        <div class = "fixed-bottom">
+            @include('footer')
+        </div>
     </body>
 </html>

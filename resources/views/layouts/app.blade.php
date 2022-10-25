@@ -106,13 +106,13 @@ body {
             </div>
         </nav>
         <main class="py-4 mt-4">
-            <div class="content">
+            <div class="content" style = "min-height: 600px">
                 @yield('content')
             </div>
         </main>
     </div>
-    <div>
-    @include('footer')
-    </div>
+    
+        @include('footer')
+    
     </body>
 </html>

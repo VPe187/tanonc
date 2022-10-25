@@ -1,44 +1,33 @@
-<br><br><br><br><br><br><br><br><br><br><br>
-<footer class="footer mt-auto py-3 p-4 bg-dark text-white text-center">
+
+<footer class="footer py-3 bg-dark text-light fixed-relative text-center">
     <div class="row">
-        <div class="col-sm-4">
-            <h4>Elérhetőségek</h4>
-			<p style="font-size:30;" colspan = "7"><i class = "fa fa-phone"> 06-10/123-123</i></p>
-			<p style="font-size:30;" colspan = "7"><i class = "fa fa-at"> business@probamail.com</i></p>
-		    <p style="font-size:30;" colspan = "7"><i class = "fa fa-envelope"> Szed Elek utca, 34.</i></p>
+        <div class="col-4">
+            <h4 class = "mb-3">Elérhetőségek</h4>
+			<p><i class = "fa fa-btn fa-phone"></i>06-10/123-123</p>
+			<p><i class = "fa fa-btn fa-at"></i> business@probamail.com</p>
+		    <p><i class = "fa fa-btn fa-envelope"></i> Szed Elek utca, 34.</p>
         </div>
         <div class="col-sm-4">
-            <h4>Hírlevél</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			   Pellentesque vitae lacus neque. 
-			   Nullam pretium mollis lectus, vel dictum ante congue in. 
-			   In at elementum ex
-			   <form action="" method = "POST">
-        
-				<input type="text" id="name" name="name" placeholder="Keresztnév" 
-					   style = "width:200px;opacity:0.5;border:solid black 1px;font-style:italic">
-		
-				<input type="text" id="email" name="email" placeholder="E-mail cím" 
-					   style = "width:200px;opacity:0.5;border:solid black 1px;font-style:italic">
-				</form>
-			<br/>
-			<button style = "padding:10px">Feliratkozom</button>
+            <h4 class = "mb-3">Készítők</h4>
+			<p>Nyíregyházi Egyetem</p>
+			<p>Programtervező informatikus (fejlesztő) FOSZK 2021 -2023</p>
+			   <a href = "https://www.instagram.com/" style = "color:white; text-decoration:none;">
+					<i class="fab fa-instagram fa-2x px-1" style = "font-size:30px;"></a></i>
+			
+				<a href = "https://www.facebook.com/" style = "color:white; text-decoration:none;">
+					<i class="fab fa-facebook-square fa-2x px-1" style = "font-size:30px;"></a></i>
 			</p>
         </div>
 		<div class="col-sm-4">
-            <h4>Információk</h4>
-			<p><a href = "{{ url('/privacy') }}" style = "color:white; text-decoration:none;">Adatvédelmi nyilatkozat</a></p>
-			<p><a href = "{{ url('/aboutus') }}" style = "color:white; text-decoration:none;">Készítők</a></p>
-			<p><a href = "https://laravel.com" style = "color:white; text-decoration:none;">Partnerek</a></p>
-			<p><a href = "https://kiszervezettmarketing.hu/weboldal-keszites/impresszum-weboldal/" style = "color:white; text-decoration:none;">Impresszum</a></p>
+            <h4 class = "mb-3">Információk</h4>
+			<p><a class = "btn text-light p-0" href = "{{ url('/privacy') }}" >Adatvédelmi nyilatkozat</a></p>
+			<p><a class = "btn text-light p-0" href = "{{ url('/aboutus') }}">Készítők</a></p>
+			<p><a class = "btn text-light p-0" href = "https://laravel.com">Partnerek</a></p>
+			<p><a class = "btn text-light p-0" href = "https://kiszervezettmarketing.hu/weboldal-keszites/impresszum-weboldal/">Impresszum</a></p>
 			<p></p>
         </div>
     </div>
 	
-	<a href = "https://www.instagram.com/" style = "color:white; text-decoration:none;">
-	<i class="fab fa-instagram" style = "font-size:30px;"></a></i>
-			
-	<a href = "https://www.facebook.com/" style = "color:white; text-decoration:none;">
-	<i class="fab fa-facebook-square" style = "font-size:30px;"></a></i>
+	
 	
 </footer>
