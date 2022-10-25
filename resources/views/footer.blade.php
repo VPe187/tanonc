@@ -28,7 +28,8 @@
 		<div class="col-sm-4">
             <h4>Információk</h4>
 			<p><a href = "{{ url('/privacy') }}" style = "color:white; text-decoration:none;">Adatvédelmi nyilatkozat</a></p>
-			<p><a href = "{{ url('/aboutus') }}" style = "color:white; text-decoration:none;">Partnerek</a></p>
+			<p><a href = "{{ url('/aboutus') }}" style = "color:white; text-decoration:none;">Készítők</a></p>
+			<p><a href = "https://laravel.com" style = "color:white; text-decoration:none;">Partnerek</a></p>
 			<p><a href = "https://kiszervezettmarketing.hu/weboldal-keszites/impresszum-weboldal/" style = "color:white; text-decoration:none;">Impresszum</a></p>
 			<p></p>
         </div>

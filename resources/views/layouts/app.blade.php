@@ -111,7 +111,8 @@ body {
             </div>
         </main>
     </div>
-
+    <div>
     @include('footer')
+    </div>
     </body>
 </html>
