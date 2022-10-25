@@ -58,7 +58,7 @@
                             <label for="fieldUserSureName" class="col-4 col-form-label text-md-end">Vezetéknév</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserSureName" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserSureName" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                             <label for="fieldUserFirstName" class="col-4 col-form-label text-md-end">Keresztnév</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserFirstName" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserFirstName" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                 </div>
                             </div>
@@ -77,10 +77,10 @@
                         
                         <!-- UserFirstName2 -->
                         <div class="form-group row mb-3">
-                            <label for="fieldUserFirstName2" class="col-4 col-form-label text-md-end">Keresztnév 2.</label>
+                            <label for="fieldUserFirstName2" class="col-4 col-form-label text-md-end">Második keresztnév</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserFirstName2" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserFirstName2" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             <label for="fieldUserNickName" class="col-4 col-form-label text-md-end">Becenév</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserNickName" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserNickName" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-brands fa-odnoklassniki"></i></span>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                             <label for="fieldUserMotherName" class="col-4 col-form-label text-md-end">Anyja neve</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserMotherName" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserMotherName" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-person-breastfeeding"></i></span>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                             <label for="fieldUserCountry" class="col-4 col-form-label text-md-end">Ország</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserCountry" value="" pattern="^.{0,30}$">
+                                    <input type="text" class="form-control" name="fieldUserCountry" value="" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                             <label for="fieldUserZipCode" class="col-4 col-form-label text-md-end">Irányítószám</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserZipCode" value="">
+                                    <input type="text" class="form-control" name="fieldUserZipCode" value="" pattern="^.{4,4}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
                                 </div>
                             </div>
@@ -135,8 +135,8 @@
                             <label for="fieldUserCity" class="col-4 col-form-label text-md-end">Település</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserCity" value="" pattern="^.{0,30}$">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserCity" value="" pattern="^.{0,30}$" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +146,8 @@
                             <label for="fieldUserStreet" class="col-4 col-form-label text-md-end">Közterület neve</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserStreet" value="" pattern="^.{0,30}$">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserStreet" value="" pattern="^.{0,30}$" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-building"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -157,8 +157,8 @@
                             <label for="fieldUserHouseNumber" class="col-4 col-form-label text-md-end">Házszám</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserHouseNumber" value="">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserHouseNumber" value="" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-house"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +168,8 @@
                             <label for="fieldUserFloorNumber" class="col-4 col-form-label text-md-end">Emelet</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserFloorNumber" value="">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserFloorNumber" value="" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-list-ol"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +179,8 @@
                             <label for="fieldUserDoorNumber" class="col-4 col-form-label text-md-end">Ajtó</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserDoorNumber" value="">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserDoorNumber" value="" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-door-open"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -190,8 +190,8 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label text-md-end">Születési idő</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="fieldUserBirthdate" value="">
-                                    <span class="input-group-text"><i class="fa-fw fa-regular fa-calendar-days"></i></i></span>
+                                    <input type="date" class="form-control" name="fieldUserBirthdate" value="" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-cake-candles"></i></i></span>
                                 </div>
                             </div>
                         </div>
@@ -201,8 +201,8 @@
                             <label for="fieldUserBirthPlace" class="col-4 col-form-label text-md-end">Születési hely</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserBirthPlace" value="" pattern="^.{0,30}$">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserBirthPlace" value="" pattern="^.{0,30}$" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -212,8 +212,8 @@
                             <label for="fieldUserPhoneNumber" class="col-4 col-form-label text-md-end">Telefonszám</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserPhoneNumber" value="" pattern="^.{0,14}$">
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    <input type="text" class="form-control" name="fieldUserPhoneNumber" value="" pattern="^.{0,14}$" required>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-phone"></i></span>
                                 </div>
                             </div>
                         </div>
