@@ -146,7 +146,12 @@
                             <label for="fieldUserCity" class="col-4 col-form-label">Település</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserCity" value="{{ $userdata->telepules }}" pattern="^.{0,30}$" required>
+                                    <!--<input type="text" class="form-control" name="fieldUserCity" value="{{ $userdata->telepules }}" pattern="^.{0,30}$" required>-->
+                                    <select class="form-select" name="fieldUserCity">
+                                        @foreach($settlements as $key => $settlement)
+                                            <option value="{{$settlement->telepules}}" {{ $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option>
+                                        @endforeach
+                                    </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
                                 </div>
                             </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Userdata;
+use App\Models\Settlement;
 use Auth;
 
 class UserController extends Controller
@@ -33,8 +34,11 @@ class UserController extends Controller
 
     public function userprofile() {
         $user_id = Auth::user()->id;
+
+        $settl_res = Settlement::select("telepules")->orderBy("telepules")->get();
+
         $user_res = Userdata::where('user_id', $user_id)->get()->first();
-        return view('userprofile')->with('userdata', $user_res);
+        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res);
     }
 
     public function testuserdata(){
