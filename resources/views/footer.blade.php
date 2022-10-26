@@ -1,55 +1,30 @@
-<div class="row">
-    <div class="col-12 col-md">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" class="d-block mb-2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-            <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-            <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-            <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-            <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-        </svg>
-        TANONC v0.1&nbsp;<small class="d-block mb-3 text-muted">&copy; 2022-2023 NYE PTF</small>
-        </li>
+
+<footer class="footer py-3 bg-dark text-light fixed-relative text-center">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4 class = "mb-3">Elérhetőségek</h4>
+			<p><i class = "fa fa-btn fa-phone"></i>06-10/123-123</p>
+			<p><i class = "fa fa-btn fa-at"></i> business@probamail.com</p>
+		    <p><i class = "fa fa-btn fa-envelope"></i> Szed Elek utca, 34.</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 class = "mb-3">Készítők</h4>
+			<p>Nyíregyházi Egyetem</p>
+			<p>Programtervező informatikus (fejlesztő) FOSZK 2021 -2023</p>
+			   <a href = "https://www.instagram.com/" style = "color:white; text-decoration:none;">
+					<i class="fab fa-instagram fa-2x px-1" style = "font-size:30px;"></a></i>
+			
+				<a href = "https://www.facebook.com/" style = "color:white; text-decoration:none;">
+					<i class="fab fa-facebook-square fa-2x px-1" style = "font-size:30px;"></a></i>
+			</p>
+        </div>
+		<div class="col-sm-4">
+            <h4 class = "mb-3">Információk</h4>
+			<p><a class = "btn text-light p-0" href = "{{ url('/privacy') }}" >Adatvédelmi nyilatkozat</a></p>
+			<p><a class = "btn text-light p-0" href = "{{ url('/aboutus') }}">Készítők</a></p>
+			<p><a class = "btn text-light p-0" href = "https://laravel.com" target = "blank">Partnerek</a></p>
+			<p><a class = "btn text-light p-0" href = "#">Impresszum</a></p>
+			<p></p>
+        </div>
     </div>
-    <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
-        </ul>
-    </div>
-    <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-    </div>
-</div>
+</footer>

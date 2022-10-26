@@ -18,6 +18,6 @@ public function Masterdata(){
 
 public function Familydata(){
     // táblák összekapcsolása, először idegentábla, utána saját tábla
-    return $this->hasOne('App\Models\Familydata','gondviseloazon','gondviseloazon'); 
+    return $this->hasMany('App\Models\Familydata','gondviseloazon','gondviseloazon'); 
 }
 }
