@@ -17,6 +17,10 @@ class Userdata extends Model
         'keresztnev2',
     ];
 
+    protected $dates = [
+        'szuletesi_ido'
+    ];
+
     public function user(){
         return $this->hasOne('App\Models\User','id','user_id');         // mihez kapcsolódik a model, idegen tábla, saját tábla azonosítója
     }
