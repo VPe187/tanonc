@@ -60,7 +60,7 @@
                             <label for="fieldUserSureName" class="col-4 col-form-label">Vezetéknév</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserSureName') is-invalid @enderror" name="fieldUserSureName" value="{{ $userdata->vezeteknev }}" pattern="^.{0,30}$" placeholder="vezetéknév">
+                                    <input type="text" class="form-control @error('fieldUserSureName') is-invalid @enderror" name="fieldUserSureName" value="{{ isset($userdata->vezeteknev) ? $userdata->vezeteknev : '' }}" pattern="^.{0,30}$" placeholder="vezetéknév">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                     @error('fieldUserSureName')
                                         <div class="invalid-feedback">{{$message}}</div>
@@ -74,7 +74,7 @@
                             <label for="fieldUserFirstName" class="col-4 col-form-label">Keresztnév</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserFirstName') is-invalid @enderror" name="fieldUserFirstName" value="{{ $userdata->keresztnev1 }}" pattern="^.{0,30}$" placeholder="keresztnév">
+                                    <input type="text" class="form-control @error('fieldUserFirstName') is-invalid @enderror" name="fieldUserFirstName" value="{{ isset($userdata->keresztnev1) ? $userdata->keresztnev1 : '' }}" pattern="^.{0,30}$" placeholder="keresztnév">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                     @error('fieldUserFirstName')
                                         <div class="invalid-feedback">{{$message}}</div>
@@ -88,7 +88,7 @@
                             <label for="fieldUserFirstName2" class="col-4 col-form-label">Második keresztnév</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserFirstName2') is-invalid @enderror" name="fieldUserFirstName2" value="{{ $userdata->keresztnev2 }}" pattern="^.{0,30}$" placeholder="második keresztnév">
+                                    <input type="text" class="form-control @error('fieldUserFirstName2') is-invalid @enderror" name="fieldUserFirstName2" value="{{ isset($userdata->keresztnev2) ? $userdata->keresztnev2 : '' }}" pattern="^.{0,30}$" placeholder="második keresztnév">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                     @error('fieldUserFirstName2')
                                         <div class="invalid-feedback">{{$message}}</div>
@@ -102,7 +102,7 @@
                             <label for="fieldUserNickName" class="col-4 col-form-label">Becenév</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserNickName" value="{{ $userdata->becenev }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control" name="fieldUserNickName" value="{{ isset($userdata->becenev) ? $userdata->becenev : '' }}" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-brands fa-odnoklassniki"></i></span>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                             <label for="fieldUserMotherName" class="col-4 col-form-label">Anyja neve</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserMotherName" value="{{ $userdata->anyja_neve }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control" name="fieldUserMotherName" value="{{ isset($userdata->anyja_neve) ? $userdata->anyja_neve : '' }}" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-person-breastfeeding"></i></span>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                             <label for="fieldUserCountry" class="col-4 col-form-label">Ország</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserCountry" value="{{ $userdata->orszag }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control" name="fieldUserCountry" value="{{ isset($userdata->orszag) ? $userdata->orszag : '' }}" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@
                             <label for="fieldUserZipCode" class="col-4 col-form-label">Irányítószám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserZipCode" value="{{ $userdata->iranyitoszam }}" pattern="^.{4,4}$" required>
+                                    <input type="text" class="form-control" name="fieldUserZipCode" value="{{ isset($userdata->iranyitoszam) ? $userdata->iranyitoszam : '' }}" pattern="^.{4,4}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-signs-post"></i></span>
                                 </div>
                             </div>
@@ -146,10 +146,10 @@
                             <label for="fieldUserCity" class="col-4 col-form-label">Település</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <!--<input type="text" class="form-control" name="fieldUserCity" value="{{ $userdata->telepules }}" pattern="^.{0,30}$" required>-->
+                                    <!--<input type="text" class="form-control" name="fieldUserCity" value="{{ isset($userdata->telepules) ? $userdata->telepules : '' }}" pattern="^.{0,30}$" required>-->
                                     <select class="form-select" name="fieldUserCity">
                                         @foreach($settlements as $key => $settlement)
-                                            <option value="{{$settlement->telepules}}" {{ $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option>
+                                            <option value="{{isset($settlement->telepules) ? $settlement->telepules : ''}}" {{ isset($userdata->telepules) && $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option>
                                         @endforeach
                                     </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
@@ -162,7 +162,7 @@
                             <label for="fieldUserStreet" class="col-4 col-form-label">Közterület neve</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserStreet" value="{{ $userdata->kozterulet_neve }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control" name="fieldUserStreet" value="{{ isset($userdata->kozterulet_neve) ? $userdata->kozterulet_neve : '' }}" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-building"></i></span>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                             <label for="fieldUserHouseNumber" class="col-4 col-form-label">Házszám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserHouseNumber" value="{{ $userdata->hazszam }}" required>
+                                    <input type="text" class="form-control" name="fieldUserHouseNumber" value="{{ isset($userdata->hazszam) ? $userdata->hazszam : '' }}" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-house"></i></span>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
                             <label for="fieldUserFloorNumber" class="col-4 col-form-label">Emelet</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserFloorNumber" value="{{ $userdata->emelet }}" required>
+                                    <input type="text" class="form-control" name="fieldUserFloorNumber" value="{{ isset($userdata->emelet) ? $userdata->emelet : '' }}" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-list-ol"></i></span>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                             <label for="fieldUserDoorNumber" class="col-4 col-form-label">Ajtó</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserDoorNumber" value="{{ $userdata->ajto }}" required>
+                                    <input type="text" class="form-control" name="fieldUserDoorNumber" value="{{ isset($userdata->ajto) ? $userdata->ajto : '' }}" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-door-open"></i></span>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">Születési idő</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="fieldUserBirthdate" value="{{$userdata->szuletesi_ido->format('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="fieldUserBirthdate" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-cake-candles"></i></i></span>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                             <label for="fieldUserBirthPlace" class="col-4 col-form-label">Születési hely</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserBirthPlace" value="{{ $userdata->szuletesi_hely }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@
                             <label for="fieldUserPhoneNumber" class="col-4 col-form-label">Telefonszám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserPhoneNumber" value="{{ $userdata->telefonszam }}" pattern="^.{0,14}$" required>
+                                    <input type="text" class="form-control" name="fieldUserPhoneNumber" value="{{ isset($userdata->telefonszam) ? $userdata->telefonszam : '' }}" pattern="^.{0,14}$" required>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-phone"></i></span>
                                 </div>
                             </div>
@@ -239,9 +239,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa-btn fa-solid fa-floppy-disk"></i>Mentés
                                 </button>
-                                <button type="button" class="btn btn-secondary">
+                                <a href="{{url('/home')}}" class="btn btn-secondary">
                                     <i class="fa-btn fa-solid fa-xmark"></i>Mégsem
-                                </button>                                
+                                </a>                                
                             </div>
                         </div>
                     </form>
