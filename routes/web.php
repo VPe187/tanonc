@@ -41,11 +41,15 @@ Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::clas
 
 
 Route::post('/masterdataimport', function() {
+    if(null == request()->file)
+    {
+        return redirect()->back();
+    }    
     $fileName = time().'_'.request()->file->getClientOriginalName();
     request()->file('file')->storeAs($fileName, 'public');
 
     Excel::import(new MasterdataImport(), request()->file('file'));
-    return redirect()->back()->with('success','Az adatok feltöltése sikeresen megtörtént');
+    return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
     });
 
 

@@ -9,6 +9,7 @@ use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
 
 class MasterdataImport implements ToModel, WithStartRow, WithCustomCsvSettings
 {
+    //headert kihagyja
     public function startRow(): int
     {
         return 2;
