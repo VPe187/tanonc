@@ -4,7 +4,7 @@
         <div class="col-sm-4">
             <h4 class = "mb-3">Elérhetőségek</h4>
 			<p><i class = "fa fa-btn fa-phone"></i>06-10/123-123</p>
-			<p><i class = "fa fa-btn fa-at"></i> business@probamail.com</p>
+			<p><i class = "fa fa-btn fa-at"></i>NYI-ProgInfo-2021@googlegroups.com</p>
 		    <p><i class = "fa fa-btn fa-envelope"></i> Szed Elek utca, 34.</p>
         </div>
         <div class="col-sm-4">

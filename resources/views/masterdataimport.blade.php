@@ -28,9 +28,10 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="file" name="file" class="form-control">
-                        
+                        <button class="btn btn-danger" type="reset"><i class="fa-btn fa-solid fa-up fa-cloud-arrow-up"></i>Törlés</button>
                     </div>
                     <button class="btn btn-primary mt-4" type="submit"><i class="fa-btn fa-solid fa-up fa-cloud-arrow-up"></i>Feltöltés</button>
+                    
                 </form>
 
 
