@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\MasterdataImport;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,14 +30,26 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
 Route::post('/userprofileedit', [App\Http\Controllers\UserController::class, 'userprofileedit'])->name('userprofileedit');
 
-////rólunk
+// Rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
 
-//kirkieg 1 import
+// kirkieg 1 import
 Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
 
 //kir törzsadat  import
-Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
+Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);   
+
+
+Route::post('/masterdataimport', function() {
+    $fileName = time().'_'.request()->file->getClientOriginalName();
+    request()->file('file')->storeAs($fileName, 'public');
+
+    Excel::import(new MasterdataImport(), request()->file('file'));
+    return redirect()->back()->with('success','Az adatok feltöltése sikeresen megtörtént');
+    });
+
+
+//[App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
 //szociális import
 Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
@@ -44,6 +59,8 @@ Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::
 
 //adatvédelmi nyilatkozat
 Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
+
+
 
 
 
