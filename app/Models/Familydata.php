@@ -11,7 +11,6 @@ class Familydata extends Model
     use HasFactory;
 
     protected $fillable = [
-
         'oktazon',
         'gondviseloazon',
         'gondviseloneve',
@@ -21,8 +20,8 @@ class Familydata extends Model
         'haziorvosneve',
         'haziorvostelefon',
         'covidoltas'
-          
         
+  
     ];
 
     //Primery Key

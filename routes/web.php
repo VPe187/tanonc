@@ -5,7 +5,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\MasterdataImport;
 use App\Imports\FamilydataImport;
 use App\Imports\SocialdataImport;
-
+use App\Imports\GuardiandataImport;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,12 +41,30 @@ Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::clas
 //kir törzsadat  import
 Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);   
 
-/*import logika megadása
-*
-*
-Masterdata importálás
-*
+
+
+//[App\Http\Controllers\MasterdataController::class, 'masterdata']);
+
+//szociális import
+Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
+
+//gondviselő import
+Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::class, 'guardiandata']);
+
+//adatvédelmi nyilatkozat
+Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Import Routes
+|--------------------------------------------------------------------------
+| 
+| Masterdata importálás
 */
+
+
 Route::post('/masterdataimport', function() {
     if(null == request()->file)
     {
@@ -89,19 +107,20 @@ Route::post('/familydataimport', function() {
         });
 
 
-//[App\Http\Controllers\MasterdataController::class, 'masterdata']);
-
-//szociális import
-Route::get('/socialdataimport', [App\Http\Controllers\SocialdataController::class, 'socialdata']);
-
-//gondviselő import
-Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::class, 'guardiandata']);
-
-//adatvédelmi nyilatkozat
-Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
-
-
-
+        /*
+*Guardiandata importálás
+*/
+    Route::post('/guardiandataimport', function() {
+        if(null == request()->file)
+        {
+            return redirect()->back();
+        }    
+        $fileName = time().'_'.request()->file->getClientOriginalName();
+        request()->file('file')->storeAs($fileName, 'public');
+    
+        Excel::import(new GuardiandataImport(), request()->file('file'));
+        return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+        });
 
 
 
