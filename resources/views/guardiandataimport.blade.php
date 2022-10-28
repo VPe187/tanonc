@@ -9,6 +9,14 @@
             <div class="card shadow">
                 <div class="card-header"><i class="fa-btn fa-solid fa-table-columns"></i>Gondviselői adatok importálása</div>
                 <div class="card-body">
+
+                        @if (Session::has('message'))
+                            <div class="alert alert-success alert-dismissible fade show">
+                                <strong>{{ Session::get('message') }}</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
+                        
                      <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                      <br /> <br />
                      <h4><p>Kérem válassza ki a CSV fájlt, majd kattintson a feltöltés gombra!</p></h4>
