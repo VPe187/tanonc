@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\MasterdataImport;
 use App\Imports\FamilydataImport;
+use App\Imports\SocialdataImport;
 
 
 /*
@@ -43,7 +44,7 @@ Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::clas
 /*import logika megadása
 *
 *
-Masterdata import
+Masterdata importálás
 *
 */
 Route::post('/masterdataimport', function() {
@@ -59,7 +60,7 @@ Route::post('/masterdataimport', function() {
     });
 
 /*
-*Familydata import
+*Familydata importálás
 */
 Route::post('/familydataimport', function() {
     if(null == request()->file)
@@ -72,8 +73,20 @@ Route::post('/familydataimport', function() {
     Excel::import(new FamilydataImport(), request()->file('file'));
     return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
     });
-
-
+/*
+*Socialdata importálás
+*/
+    Route::post('/socialdataimport', function() {
+        if(null == request()->file)
+        {
+            return redirect()->back();
+        }    
+        $fileName = time().'_'.request()->file->getClientOriginalName();
+        request()->file('file')->storeAs($fileName, 'public');
+    
+        Excel::import(new SocialdataImport(), request()->file('file'));
+        return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+        });
 
 
 //[App\Http\Controllers\MasterdataController::class, 'masterdata']);
