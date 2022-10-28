@@ -55,6 +55,8 @@ Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::
 Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
 
 
+Route::resource('test', App\Http\Controllers\TestController::class);
+
 
 /*
 |--------------------------------------------------------------------------
