@@ -50,8 +50,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
        Validator::extend('not_allowed_domain', function($attribute, $value, $parameters, $validator) {
-            $reject_domains = array('nye.hu');
-            return in_array(explode('@', $value)[1], $reject_domains);
+            $allow_domains = array('nye.hu');
+            return in_array(explode('@', $value)[1], $allow_domains);
         }, 'A megadott email címmel nem lehet regisztrálni.');
 
         return Validator::make($data, [
