@@ -49,11 +49,22 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+       Validator::extend('not_allowed_domain', function($attribute, $value, $parameters, $validator) {
+            $reject_domains = array('nye.hu');
+            return in_array(explode('@', $value)[1], $reject_domains);
+        }, 'A megadott email címmel nem lehet regisztrálni.');
+
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users','not_allowed_domain'],
+                'password' => ['required', 'string', 'min:8', 'confirmed'],
+            ],
+            [
+                'password.min' => 'A jelszónak legalább 8 karakter hosszúnak kell lennie.',
+                'password.confirmed' => 'A jelszavak nem egyeznek.',
+            ]
+        );
+    
     }
 
     /**
