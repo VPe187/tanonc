@@ -102,8 +102,11 @@
                             <label for="fieldUserNickName" class="col-4 col-form-label">Becenév</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserNickName" value="{{ isset($userdata->becenev) ? $userdata->becenev : '' }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control @error('fieldUserNickName') is-invalid @enderror" name="fieldUserNickName" value="{{ isset($userdata->becenev) ? $userdata->becenev : '' }}" pattern="^.{0,30}$" placeholder="becenév">
                                     <span class="input-group-text"><i class="fa-fw fa-brands fa-odnoklassniki"></i></span>
+                                    @error('fieldUserNickName')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>    
@@ -113,8 +116,11 @@
                             <label for="fieldUserMotherName" class="col-4 col-form-label">Anyja neve</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserMotherName" value="{{ isset($userdata->anyja_neve) ? $userdata->anyja_neve : '' }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control @error('fieldUserMotherName') is-invalid @enderror" name="fieldUserMotherName" value="{{ isset($userdata->anyja_neve) ? $userdata->anyja_neve : '' }}" pattern="^.{0,30}$" placeholder="anyja neve">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-person-breastfeeding"></i></span>
+                                    @error('fieldUserMotherName')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>       
@@ -124,8 +130,11 @@
                             <label for="fieldUserCountry" class="col-4 col-form-label">Ország</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserCountry" value="{{ isset($userdata->orszag) ? $userdata->orszag : '' }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control @error('fieldUserCountry') is-invalid @enderror" name="fieldUserCountry" value="{{ isset($userdata->orszag) ? $userdata->orszag : '' }}" pattern="^.{0,30}$" placeholder="ország">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
+                                    @error('fieldUserCountry')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>                           
@@ -135,8 +144,11 @@
                             <label for="fieldUserZipCode" class="col-4 col-form-label">Irányítószám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserZipCode" value="{{ isset($userdata->iranyitoszam) ? $userdata->iranyitoszam : '' }}" pattern="^.{4,4}$" required>
+                                    <input type="text" class="form-control @error('fieldUserZipCode') is-invalid @enderror" name="fieldUserZipCode" value="{{ isset($userdata->iranyitoszam) ? $userdata->iranyitoszam : '' }}" pattern="^.{4,4}$" placeholder="irányítószám">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-signs-post"></i></span>
+                                    @error('fieldUserZipCode')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -162,8 +174,11 @@
                             <label for="fieldUserStreet" class="col-4 col-form-label">Közterület neve</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserStreet" value="{{ isset($userdata->kozterulet_neve) ? $userdata->kozterulet_neve : '' }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control @error('fieldUserStreet') is-invalid @enderror" name="fieldUserStreet" value="{{ isset($userdata->kozterulet_neve) ? $userdata->kozterulet_neve : '' }}" pattern="^.{0,30}$" placeholder="közterület neve">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-building"></i></span>
+                                    @error('fieldUserStreet')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -173,8 +188,11 @@
                             <label for="fieldUserHouseNumber" class="col-4 col-form-label">Házszám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserHouseNumber" value="{{ isset($userdata->hazszam) ? $userdata->hazszam : '' }}" required>
+                                    <input type="text" class="form-control @error('fieldUserHouseNumber') is-invalid @enderror" name="fieldUserHouseNumber" value="{{ isset($userdata->hazszam) ? $userdata->hazszam : '' }}" placeholder="házszám">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-house"></i></span>
+                                    @error('fieldUserHouseNumber')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -184,8 +202,11 @@
                             <label for="fieldUserFloorNumber" class="col-4 col-form-label">Emelet</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserFloorNumber" value="{{ isset($userdata->emelet) ? $userdata->emelet : '' }}" required>
+                                    <input type="text" class="form-control @error('fieldUserFloorNumber') is-invalid @enderror" name="fieldUserFloorNumber" value="{{ isset($userdata->emelet) ? $userdata->emelet : '' }}" placeholder="emelet">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-list-ol"></i></span>
+                                    @error('fieldUserFloorNumber')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -195,8 +216,11 @@
                             <label for="fieldUserDoorNumber" class="col-4 col-form-label">Ajtó</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserDoorNumber" value="{{ isset($userdata->ajto) ? $userdata->ajto : '' }}" required>
+                                    <input type="text" class="form-control @error('fieldUserDoorNumber') is-invalid @enderror" name="fieldUserDoorNumber" value="{{ isset($userdata->ajto) ? $userdata->ajto : '' }}" placeholder="ajtó">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-door-open"></i></span>
+                                    @error('fieldUserDoorNumber')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -217,8 +241,11 @@
                             <label for="fieldUserBirthPlace" class="col-4 col-form-label">Születési hely</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" required>
+                                    <input type="text" class="form-control @error('fieldUserBirthPlace') is-invalid @enderror" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" placeholder="születési hely">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
+                                    @error('fieldUserBirthPlace')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
@@ -228,8 +255,11 @@
                             <label for="fieldUserPhoneNumber" class="col-4 col-form-label">Telefonszám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserPhoneNumber" value="{{ isset($userdata->telefonszam) ? $userdata->telefonszam : '' }}" pattern="^.{0,14}$" required>
+                                    <input type="text" class="form-control @error('fieldUserPhoneNumber') is-invalid @enderror" name="fieldUserPhoneNumber" value="{{ isset($userdata->telefonszam) ? $userdata->telefonszam : '' }}" pattern="^.{0,14}$" placeholder="telefonszám">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-phone"></i></span>
+                                    @error('fieldUserPhoneNumber')
+                                        <div class="invalid-feedback">{{$message}}</div>
+                                    @enderror 
                                 </div>
                             </div>
                         </div>
