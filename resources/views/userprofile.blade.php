@@ -266,10 +266,10 @@
 
                         <div class="row text-center">
                             <div class="col">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary mb-5 mt-4 me-4">
                                     <i class="fa-btn fa-solid fa-floppy-disk"></i>Mentés
                                 </button>
-                                <a href="{{url('/home')}}" class="btn btn-secondary">
+                                <a href="{{url('/home')}}" class="btn btn-secondary mb-5 mt-4 ms-4">
                                     <i class="fa-btn fa-solid fa-xmark"></i>Mégsem
                                 </a>                                
                             </div>
