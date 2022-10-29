@@ -54,8 +54,11 @@ Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::
 //adatvédelmi nyilatkozat
 Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
 
+//family data manuális
+Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController::class, 'index']);
 
-
+//gondviselő data manuális
+Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
 
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);

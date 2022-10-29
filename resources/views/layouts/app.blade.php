@@ -59,9 +59,9 @@ body {
                                 <li><hr class="dropdown-divider"></li>
                                 <li>&nbsp;&nbsp;<i class="fa-solid fa-database">&nbsp;&nbsp;</i>Rögzítés kézzel</li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a href="{{ url('/familymanualdata') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
-                                <li><a href="{{ url('/socialmanualdata') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
-                                <li><a href="{{ url('/guardianmanualdata') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
+                                <li><a href="{{ url('/familydatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
+                                <li><a href="{{ url('/socialdatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
+                                <li><a href="{{ url('/guardiandatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
                                 </ul>
                         </li>
                         <li class="nav-item dropdown">
