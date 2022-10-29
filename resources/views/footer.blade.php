@@ -12,10 +12,10 @@
 			<p>Nyíregyházi Egyetem</p>
 			<p>Programtervező informatikus (fejlesztő) FOSZK 2021 -2023</p>
 			   <a href = "https://www.instagram.com/" style = "color:white; text-decoration:none;">
-					<i class="fab fa-instagram fa-2x px-1" style = "font-size:30px;"></a></i>
+					<i class="fab fa-instagram fa-2x px-1 fa-flip" style = "font-size:30px; --fa-animation-duration: 5s"></a></i>
 			
 				<a href = "https://www.facebook.com/" style = "color:white; text-decoration:none;">
-					<i class="fab fa-facebook-square fa-2x px-1" style = "font-size:30px;"></a></i>
+					<i class="fab fa-facebook-square fa-2x px-1 fa-flip" style = "font-size:30px; --fa-animation-duration: 5s;"></a></i>
 			</p>
         </div>
 		<div class="col-sm-4">
