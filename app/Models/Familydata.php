@@ -7,17 +7,27 @@ use Illuminate\Database\Eloquent\Model;
 
 class Familydata extends Model
 {
-    protected $table ='family_data';
+    protected $table ='familydata';
     use HasFactory;
+
+    protected $fillable = [
+        'oktazon',
+        'gondviseloazon',
+        'gondviseloneve',
+        'gondviselotelefonszama',
+        'gondviseloemail',
+        'torvenyeskepviselo',
+        'haziorvosneve',
+        'haziorvostelefon',
+        'covidoltas'
+        
+  
+    ];
 
     //Primery Key
     public function Masterdata(){
         // táblák összekapcsolása, először idegentábla, utána saját tábla
         return $this->hasOne('App\Models\Masterdata','oktazon','oktazon'); 
     }
-    /*Foreign Key
-    public function Guardian(){
-        // táblák összekapcsolása, először idegentábla, utána saját tábla
-        return $this->hasOne('App\Models\Guardian','gondviseloazon','gondviseloazon'); 
-    } */
+   
 }

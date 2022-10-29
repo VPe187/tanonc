@@ -20,12 +20,15 @@
                 background-size: cover;
                 -o-background-size: cover;                
             }
+            .container{
+                height:100vh;
+            }
         </style>
     </head>
     <body class="antialiased">
         <!-- Page Content -->
-        <div class="container">
-            <div class="card border-1 shadow my-5">
+        <div class="container py-5" >
+            <div class="card border-1 shadow ">
                 <div class="card-body p-5">
                     <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                     <hr />
@@ -41,5 +44,6 @@
                 </div>
             </div>
         </div>
+        @include('footer')
     </body>
 </html>

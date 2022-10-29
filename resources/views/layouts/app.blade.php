@@ -33,7 +33,7 @@ body {
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
             <div class="container-fluid">
-<a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/tanonc_logo_atlatszo.png') }}" alt="Logo" height="50px"></a>&nbsp;
+                <a class="navbar-brand" href="{{ url('home') }}"><img src="{{ URL::asset('img/tanonc_logo_atlatszo.png') }}" alt="Logo" height="50px"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" area-expanded="false" area-label="Togglenavigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -106,12 +106,13 @@ body {
             </div>
         </nav>
         <main class="py-4 mt-4">
-            <div class="content">
+            <div class="content" style = "min-height: 600px">
                 @yield('content')
             </div>
         </main>
     </div>
-
-    @include('footer')
+    
+        @include('footer')
+    
     </body>
 </html>

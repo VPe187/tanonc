@@ -10,6 +10,14 @@ class Guardian extends Model
     protected $table ='guardian';
     use HasFactory;
 
+    protected $fillable = [
+        'gondviseloazon',
+        'oktazon',
+        'telefonszam',
+        'email',
+        'torvenyes_kepviselo'
+
+    ];
 
 public function Masterdata(){
     // táblák összekapcsolása, először idegentábla, utána saját tábla
