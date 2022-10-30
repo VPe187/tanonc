@@ -7,6 +7,7 @@ use App\Imports\FamilydataImport;
 use App\Imports\SocialdataImport;
 use App\Imports\GuardiandataImport;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Masterdata;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,8 +43,6 @@ Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::clas
 //kir törzsadat  import
 Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);   
 
-
-
 //[App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
 //szociális import
@@ -62,10 +61,11 @@ Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController
 Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
 
 // tanuló egyedi lekérdezés
-Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);
+Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
+
+//Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']); // ->name('uniquedata');
 
 // tanuló csoportos lekérdezés
 Route::get('/bulkdataquery', [App\Http\Controllers\MasterdataController::class, 'bulkdata']);
-
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Masterdata;
 
 class MasterdataController extends Controller
 {
@@ -41,8 +42,18 @@ class MasterdataController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function student()
+    {
+        $tanulok = Masterdata::all();
+ 
+        return view('uniquedataquery')->with('diak', $tanulok);
+    }
+
     public function bulkdata()
     {
-        return view('bulkdataquery');
+        $tanulok = Masterdata::all();
+ 
+        return view('bulkdataquery')->with('diak', $tanulok);
+
     }
 }
