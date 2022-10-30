@@ -246,7 +246,12 @@
                             <label for="fieldUserBirthPlace" class="col-4 col-form-label">Születési hely</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserBirthPlace') is-invalid @enderror" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" placeholder="születési hely">
+                                   <!-- <input type="text" class="form-control @error('fieldUserBirthPlace') is-invalid @enderror" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" placeholder="születési hely"> -->
+                                    <select class="form-select" name="fieldUserBirthPlace">
+                                    @foreach($countryplaces as $key => $countryplace)
+                                            <option value="{{isset($countryplace->orszag) ? $countryplace->orszag : ''}}" {{ isset($userdata->orszag) && $userdata->orszag == $countryplace->orszag ? 'selected' : '' }}> {{$countryplace->orszag}}</option>
+                                        @endforeach
+                                    </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
                                     @error('fieldUserBirthPlace')
                                         <div class="invalid-feedback">{{$message}}</div>

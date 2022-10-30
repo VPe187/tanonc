@@ -39,8 +39,10 @@ class UserController extends Controller
         $settl_res = Settlement::select("telepules")->orderBy("telepules")->get();
         $user_res = Userdata::where('user_id', $user_id)->get()->first();
         $country_res = Country::select('orszag')->orderBy("orszag")->get();
+        $countryplace_res = Country::select('orszag')->orderBy("orszag")->get();
+
         
-        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res)->with('countries', $country_res);
+        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res)->with('countries', $country_res)->with('countryplaces', $countryplace_res);
     }
  
     public function testuserdata(){
