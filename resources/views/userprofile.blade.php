@@ -279,7 +279,7 @@
                                 <button type="submit" class="btn btn-primary mb-5 mt-4 me-4">
                                     <i class="fa-btn fa-solid fa-floppy-disk"></i>Mentés
                                 </button>
-                                <a href="{{url('/home')}}" class="btn btn-secondary mb-5 mt-4 ms-4">
+                                <a href="{{url('/home')}}" class="btn btn-danger mb-5 mt-4 ms-4">
                                     <i class="fa-btn fa-solid fa-xmark"></i>Mégsem
                                 </a>                                
                             </div>
