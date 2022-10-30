@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Userdata;
 use App\Models\Settlement;
+use App\Models\Country;
 use Auth;
  
 class UserController extends Controller
@@ -36,9 +37,10 @@ class UserController extends Controller
         $user_id = Auth::user()->id;
  
         $settl_res = Settlement::select("telepules")->orderBy("telepules")->get();
- 
         $user_res = Userdata::where('user_id', $user_id)->get()->first();
-        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res);
+        $country_res = Country::select('orszag')->orderBy("orszag")->get();
+        
+        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res)->with('countries', $country_res);
     }
  
     public function testuserdata(){

@@ -130,7 +130,12 @@
                             <label for="fieldUserCountry" class="col-4 col-form-label">Ország</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserCountry') is-invalid @enderror" name="fieldUserCountry" value="{{ isset($userdata->orszag) ? $userdata->orszag : '' }}" pattern="^.{0,30}$" placeholder="ország">
+                                    <!-- <input type="text" class="form-control @error('fieldUserCountry') is-invalid @enderror" name="fieldUserCountry" value="{{ isset($userdata->orszag) ? $userdata->orszag : '' }}" pattern="^.{0,30}$" placeholder="ország"> -->
+                                    <select class="form-select" name="fieldUserCountry">
+                                        @foreach($countries as $key => $country)
+                                            <option value="{{isset($country->orszag) ? $country->orszag : ''}}" {{ isset($userdata->orszag) && $userdata->orszag == $country->orszag ? 'selected' : '' }}> {{$country->orszag}}</option>
+                                        @endforeach
+                                    </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
                                     @error('fieldUserCountry')
                                         <div class="invalid-feedback">{{$message}}</div>

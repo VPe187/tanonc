@@ -30,7 +30,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
-Route::post('/userprofileedit', [App\Http\Controllers\UserController::class, 'userprofileedit'])->name('userprofileedit');
+Route::post('/userprofile', [App\Http\Controllers\UserController::class, 'userprofilestore'])->name('userprofilestore');
 
 ////rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
@@ -59,6 +59,12 @@ Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController
 
 //gondviselő data manuális
 Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
+
+// tanuló egyedi lekérdezés
+Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);
+
+// tanuló csoportos lekérdezés
+Route::get('/bulkdataquery', [App\Http\Controllers\MasterdataController::class, 'bulkdata']);
 
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);

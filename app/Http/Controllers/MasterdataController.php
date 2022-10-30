@@ -25,4 +25,24 @@ class MasterdataController extends Controller
     {
         return view('masterdataimport');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function uniquedata()
+    {
+        return view('uniquedataquery');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function bulkdata()
+    {
+        return view('bulkdataquery');
+    }
 }
