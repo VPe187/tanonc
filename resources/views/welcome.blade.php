@@ -33,17 +33,55 @@
                     <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                     <hr />
                     <h1><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc nyilvántartó</h1>
-                    <hr />
-                    <br />
+                    <hr/>
                     <h2 class="fw-light">Üdvözli Önt a Tanonc adatnyilvántartó rendszer!</h2><br />
                     <p class="lead">A Tanonc rendszer bizalmas adatok nyilvántartását végzi, ezért használata csak engedélyezett felhasználók számára lehetséges.
                     Amennyiben Ön rendelkezik hozzáféréssel, kérem kattintson az alábbi gombra, s jelentkezzen be a rendszerbe.
                     Ha még nincs hozzáférése, kérem vegye fel a kapcsolatot a rendszer üzemeltetőjével!</p>
-                    <br />
-                    <p class="text-center lead"><a href="{{ url('/home') }}" class="btn btn-lg btn-primary shadow"><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc rendszer</a></p>
-                </div>
+                    <p class="text-center lead"><a href="{{ url('/home') }}" class="btn btn-lg btn-primary shadow"><i class="fa-btn fa-solid fa-graduation-cap"></i>Tanonc rendszer</a></p>        
+    <div class="row justify-content-center">
+        <div class="col-md-5 py-4">
+            <div class="card shadow">                
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide "></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/library-g6e80404d9_640.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/graduation-gc2de05f2a_640.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/graduation-ge41f96c99_640.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/back-to-school-gc6ffc8ad7_640.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/classroom-gf73ab202a_640.jpg" class="d-block w-100">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
             </div>
         </div>
-        @include('footer')
+    </div>
+                </div>
+            </div>
+        </div> 
     </body>
+    @include('footer')
 </html>
