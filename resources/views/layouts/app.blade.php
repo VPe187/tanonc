@@ -47,22 +47,70 @@ body {
                         @guest
                         @else
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="importDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-database"></i>Adatok felvitele<!-- {{ __('Adat import') }}--></a>
+                            <a class="nav-link dropdown-toggle" href="#" id="importDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-btn fa-solid fa-database"></i>Adatok felvitele<!-- {{ __('Adat import') }}-->
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="importDropdown">
-                                <li><a href="{{ url('/masterdataimport') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('KIR master') }}</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>&nbsp;&nbsp;<i class="fa-solid fa-database">&nbsp;&nbsp;</i>Importálás csv fájlból</li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="{{ url('/familydataimport') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
-                                <li><a href="{{ url('/socialdataimport') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
-                                <li><a href="{{ url('/guardiandataimport') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>&nbsp;&nbsp;<i class="fa-solid fa-database">&nbsp;&nbsp;</i>Rögzítés kézzel</li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="{{ url('/familydatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a></li>
-                                <li><a href="{{ url('/socialdatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a></li>
-                                <li><a href="{{ url('/guardiandatamanual') }}" class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a></li>
-                                </ul>
+                                <li>
+                                    <a href="{{ url('/masterdataimport') }}" class="dropdown-item" href="#">
+                                        <i class="fa-btn fa-solid fa-file-import"></i>{{ __('KIR master') }}</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header" href="#">
+                                        &nbsp;<i class="fa-solid fa-database">&nbsp;&nbsp;</i>Importálás csv fájlból
+                                    </h6>
+                                    <li>
+                                        <a href="{{ url('/familydataimport') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/socialdataimport') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/guardiandataimport') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header" href="#">
+                                        &nbsp;&nbsp;<i class="fa-solid fa-database">&nbsp;</i>Rögzítés kézzel
+                                    </h6>
+                                    <li>
+                                        <a href="{{ url('/familydatamanual') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/socialdatamanual') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Social status (2)') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/guardiandatamanual') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a>
+                                    </li>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="exportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-cloud-arrow-down"></i>{{ __('Lekérdezések') }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-user"></i>{{ __('Tanuló lekérdezése') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-users"></i>{{ __('Csoportos lekérdezés') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-sliders"></i>{{ __('Beállítások') }}</a>
