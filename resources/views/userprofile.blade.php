@@ -247,9 +247,9 @@
                             <div class="col-md-8">
                                 <div class="input-group">
                                    <!-- <input type="text" class="form-control @error('fieldUserBirthPlace') is-invalid @enderror" name="fieldUserBirthPlace" value="{{ isset($userdata->szuletesi_hely) ? $userdata->szuletesi_hely : '' }}" pattern="^.{0,30}$" placeholder="születési hely"> -->
-                                    <select class="form-select" name="fieldUserBirthPlace">
-                                    @foreach($countryplaces as $key => $countryplace)
-                                            <option value="{{isset($countryplace->orszag) ? $countryplace->orszag : ''}}" {{ isset($userdata->orszag) && $userdata->szuletesi_hely == $countryplace->orszag ? 'selected' : '' }}> {{$countryplace->orszag}}</option>
+                                   <select class="form-select" name="fieldUserBirthPlace">
+                                        @foreach($birthplaces as $key => $birthplace)
+                                            <option value="{{isset($birthplace->telepules) ? $birthplace->telepules : ''}}" {{ isset($userdata->szuletesi_hely) && $userdata->szuletesi_hely == $birthplace->telepules ? 'selected' : '' }}> {{$birthplace->telepules}}</option>
                                         @endforeach
                                     </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
