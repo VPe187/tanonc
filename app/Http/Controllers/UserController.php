@@ -7,7 +7,7 @@ use App\Models\User;
 use App\Models\Userdata;
 use App\Models\Settlement;
 use App\Models\Country;
-use Auth;
+use Illuminate\Support\Facades\Auth;
  
 class UserController extends Controller
 {
