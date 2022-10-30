@@ -160,9 +160,9 @@
                                 <div class="input-group">
                                     <!--<input type="text" class="form-control" name="fieldUserCity" value="{{ isset($userdata->telepules) ? $userdata->telepules : '' }}" pattern="^.{0,30}$" required>-->
                                     <select class="form-select" name="fieldUserCity">
-                                       // @foreach($settlements as $key => $settlement)
-                                            <!--option value="{{isset($settlement->telepules) ? $settlement->telepules : ''}}" {{ isset($userdata->telepules) && $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option-->
-                                       // @endforeach
+                                        @foreach($settlements as $key => $settlement)
+                                            <option value="{{isset($settlement->telepules) ? $settlement->telepules : ''}}" {{ isset($userdata->telepules) && $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option>
+                                        @endforeach
                                     </select>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
                                 </div>
