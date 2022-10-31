@@ -22,12 +22,12 @@
                             <form action="/studentquery" method="post">
                                 @csrf
                                 <div class="input-group">
-                                    <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktatási azonostó alapján">&nbsp;
+                                    <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktatási azonosító alapján">&nbsp;
                                     
                                     <span class="input-group-text"><button type="submit" class="btn btn-sm noborder"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass"></i></button></span>
                                     
                                 </div>
-                                <span style="text-align: right"><a href="{{ url('/uniquedataquery') }}"><button type="button" class="btn btn-primary">Mindent mutat</button></a></span>
+                                <!-- <span style="text-align: right"><a href="{{ url('/uniquedataquery') }}"><button type="button" class="btn btn-primary">Mindent mutat</button></a></span> -->
                             </form>
                             
                         </div>
