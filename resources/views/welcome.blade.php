@@ -52,19 +52,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/library-g6e80404d9_640.jpg" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="img/graduation-gc2de05f2a_640.jpg" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="img/graduation-ge41f96c99_640.jpg" class="d-block w-100">
+      <img src="img/5409030_2830467.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
       <img src="img/back-to-school-gc6ffc8ad7_640.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="img/classroom-gf73ab202a_640.jpg" class="d-block w-100">
+      <img src="img/brooke-cagle--uHVRvDr7pg-unsplash.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/kenny-eliason-1-aA2Fadydc-unsplash.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" class="d-block w-100">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
