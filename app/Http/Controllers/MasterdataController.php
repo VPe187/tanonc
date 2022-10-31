@@ -32,9 +32,10 @@ class MasterdataController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function uniquedata()
+    public function uniquedata(Request $request)    
     {
-        return view('uniquedataquery');
+        $tanulok_res = Masterdata::select("oktazon", "viselt_nev_vezeteknev1", "viselt_nev_keresztnev2")->where('oktazon', $request->oktazon)->get();
+        return view('uniquedataquery')->with('diakok', $tanulok_res);
     }
 
     /**
@@ -44,16 +45,15 @@ class MasterdataController extends Controller
      */
     public function student()
     {
-        $tanulok = Masterdata::all();
+        $tanulok_res = Masterdata::all();
  
-        return view('uniquedataquery')->with('diak', $tanulok);
+        return view('uniquedataquery')->with('diakok', $tanulok_res);
     }
 
-    public function bulkdata()
+    public function studentedit($oktazon)
     {
-        $tanulok = Masterdata::all();
- 
-        return view('bulkdataquery')->with('diak', $tanulok);
+        $tanulok_res = Masterdata::select("*")->where('oktazon', $oktazon)->get();
+        return view('studentedit')->with('diakok', $tanulok_res);
 
     }
 }

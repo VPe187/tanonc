@@ -12,9 +12,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <p class="text-center"><img src="img/tanonc_logo.png" /></p>
+                    <p class="text-center"><img src="/img/tanonc_logo.png" /></p>
                     <p><hr /></p>
-                    <h4>Szűrési lehetőségek</h4><br />
+                    <h4>Tanuló karbantartása</h4><br />
                     <div class="form-group row mb-3">
                         <div class="col-md-4">
                             <div class="input-group">
@@ -41,7 +41,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($diak as $tanulo)
+                                @foreach($diakok as $tanulo)
                                     <tr>
                                         <td style="vertical-align: left">{{$tanulo->oktazon}}</td>
                                         <td style="vertical-align: left">{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}</td>

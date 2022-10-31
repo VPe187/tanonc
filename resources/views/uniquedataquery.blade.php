@@ -16,44 +16,53 @@
                     <p><hr /></p>
                     <h4>Keresés</h4><br />
                     <div class="form-group row mb-3">
+                        <!-- Keresés oktatási azonosító alapján -->
                         <div class="col-md-4">
-                            <div class="input-group">
-                                <input class="form-control" type="search" value="{{ isset($query) ? $query : '' }}" name="fieldStudentName" placeholder="Keresés név alapján" type="text">
-                                <span class="input-group-text"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass" type="button" value= {{request('fieldStudentName')}}></i></span>
-                            </div>
+                            
+                            <form action="/studentquery" method="post">
+                                @csrf
+                                <div class="input-group">
+                                    <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktazon alapján">
+                                    <span class="input-group-text"><button type="submit" class="btn btn-sm noborder"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass"></i></button></span>
+                                </div>
+                            </form>
                         </div>
-                        
+
+                        <!-- Keresés név alapján -->
                         <div class="col-md-4">
                             <div class="input-group">
-                                <input class="form-control" type="search" value="{{ isset($query) ? $query : '' }}" name="fieldStudentId" placeholder="Keresés oktatási azonosító alapján" type="text">
+                                <input class="form-control" type="search" name="fieldStudentId" placeholder="Keresés név alapján" type="text">
                                 <span class="input-group-text"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass" type="button" ></i></span>
                             </div>
                         </div>
                     </div>
+                    
+                    <p><hr /></p>
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th>Oktatási azonosító</th>
                                     <th>Tanuló neve</th>
-                                    <th></th>
-                                    <th></th>
+                                    <th>Karbantartás</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($diak as $tanulo)
+                                @foreach($diakok as $tanulo)
                                     <tr>
                                         <td style="vertical-align: left">{{$tanulo->oktazon}}</td>
                                         <td style="vertical-align: left">{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}</td>
-                                        <td style="vertical-align: middle"><button class="btn btn-sm btn-primary"><i class="fa-fw fa-solid fa-pen-to-square"></i></button>
-                                        <td style="vertical-align: middle"><button class="btn btn-sm btn-danger"><i class="fa-fw fa-solid fa-trash-can"></i></button>
-                                            
+                                        <td style="vertical-align: middle"><a href= "{{  url('studentedit/'.$tanulo->oktazon)}}"><button class="btn btn-sm btn-primary"><i class="fa-fw fa-solid fa-pen-to-square"></i></button></a>
+                                        
+                                           
                                     <tr>
                                 @endforeach
                             </tbody>
                             
                         </table>
                     </div>
+                    
                 </div>
             </div>
         </div>
