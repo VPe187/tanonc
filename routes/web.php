@@ -64,10 +64,12 @@ Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualContro
 Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
 
 
-// tanuló csoportos lekérdezés
+// egyetlen tanuló adatainak lekérése az oktazon alapján
 Route::get('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'studentedit']);
+// egyetlen tanuló adatainak lekérése a vezetéknév alapján
+Route::get('/studentedit/{tanulonev}', [App\Http\Controllers\MasterdataController::class, 'studenteditname']);
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
 
-// egyetlen tanuló adatainak lekérése az oktazon alapján
+
 Route::post('/studentquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);

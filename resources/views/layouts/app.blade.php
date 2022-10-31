@@ -105,7 +105,6 @@ body {
                             <a class="nav-link dropdown-toggle" href="#" id="exportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-cloud-arrow-down"></i>{{ __('Lekérdezések') }}</a>
                             <ul class="dropdown-menu" aria-labelledby="exportDropdown">
                                 <li><a class="dropdown-item" href="{{ url('/uniquedataquery') }}"><i class="fa-btn fa-solid fa-user"></i>{{ __('Tanuló lekérdezése') }}</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/bulkdataquery') }}"><i class="fa-btn fa-solid fa-users"></i>{{ __('Csoportos lekérdezés') }}</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

@@ -50,9 +50,27 @@ class MasterdataController extends Controller
         return view('uniquedataquery')->with('diakok', $tanulok_res);
     }
 
-    public function studentedit($oktazon)
+
+    // Keresés eredménye
+    public function studentedit(Request $request)
     {
-        $tanulok_res = Masterdata::select("*")->where('oktazon', $oktazon)->get();
+        /*echo $request->oktazon;
+        echo $request->tanulonev;
+        die();*/
+        
+        $tanulok_res = Masterdata::select("*")->where('oktazon', $request->oktazon)->get();
+        return view('studentedit')->with('diakok', $tanulok_res);
+
+    }
+
+    public function studenteditname(Request $request)
+    {
+        
+        echo $request->oktazon;
+        echo $request->tanulonev;
+        die();
+        
+        $tanulok_res = Masterdata::select("*")->where('viselt_nev_vezeteknev1', $request->tanulonev)->get();
         return view('studentedit')->with('diakok', $tanulok_res);
 
     }

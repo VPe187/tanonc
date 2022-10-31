@@ -17,24 +17,32 @@
                     <h4>Keresés</h4><br />
                     <div class="form-group row mb-3">
                         <!-- Keresés oktatási azonosító alapján -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             
                             <form action="/studentquery" method="post">
                                 @csrf
                                 <div class="input-group">
-                                    <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktazon alapján">
+                                    <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktatási azonostó alapján">&nbsp;
+                                    
                                     <span class="input-group-text"><button type="submit" class="btn btn-sm noborder"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass"></i></button></span>
+                                    
                                 </div>
+                                <span style="text-align: right"><a href="{{ url('/uniquedataquery') }}"><button type="button" class="btn btn-primary">Mindent mutat</button></a></span>
                             </form>
+                            
                         </div>
 
-                        <!-- Keresés név alapján -->
+                        <!--Keresés név alapján
                         <div class="col-md-4">
+                            <form action="/studentquery" method="post">
+                            @csrf
                             <div class="input-group">
-                                <input class="form-control" type="search" name="fieldStudentId" placeholder="Keresés név alapján" type="text">
-                                <span class="input-group-text"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass" type="button" ></i></span>
+                                <input class="form-control" type="search" name="tanulonev" placeholder="Keresés név alapján">&nbsp;
+                                <span class="input-group-text"><button type="submit" class="btn btn-sm noborder"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass"></i></button></span>
                             </div>
+                        </form>
                         </div>
+                         -->
                     </div>
                     
                     <p><hr /></p>
@@ -44,8 +52,8 @@
                                 <tr>
                                     <th>Oktatási azonosító</th>
                                     <th>Tanuló neve</th>
+                                    <th>Osztály</th>
                                     <th>Karbantartás</th>
-                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,6 +61,7 @@
                                     <tr>
                                         <td style="vertical-align: left">{{$tanulo->oktazon}}</td>
                                         <td style="vertical-align: left">{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}</td>
+                                        <td style="vertical-align: left">{{$tanulo->osztaly}}</td>
                                         <td style="vertical-align: middle"><a href= "{{  url('studentedit/'.$tanulo->oktazon)}}"><button class="btn btn-sm btn-primary"><i class="fa-fw fa-solid fa-pen-to-square"></i></button></a>
                                         
                                            
