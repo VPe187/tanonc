@@ -14,8 +14,8 @@
                     @endif
                     <p class="text-center"><img src="img/tanonc_logo.png" /></p>
                     <p><hr /></p>
-                    <h4>Tisztelt {{ Auth::user()->name }}!</h4><br />
-                    <p>Ön sikeresen bejelentkezett a Tanonc rendszerbe! További lehetőségekért kérem használja a felső menüsort!</p>
+                    <h4 class="display-5">Tisztelt {{ Auth::user()->name }}!</h4><br />
+                    <p class="lead">Ön sikeresen bejelentkezett a Tanonc rendszerbe! További lehetőségekért kérem használja a felső menüsort!</p>
                 </div>
                 <div class="container">
     <div class="row justify-content-center">
