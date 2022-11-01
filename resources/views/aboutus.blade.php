@@ -680,6 +680,8 @@
             <div class="content" style = "min-height: 700px">
                 @yield('content')
             </div>
+</hr>
+<p class="text-center"><img src="img/TeamPic.png" class="img-fluid" /></p>
         </main>          
   @include('footer')
   </body>

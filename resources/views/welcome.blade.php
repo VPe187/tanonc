@@ -52,10 +52,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/5409030_2830467.jpg" class="d-block w-100">
+      <img src="img/ResizedTeamPic.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="img/back-to-school-gc6ffc8ad7_640.jpg" class="d-block w-100">
+      <img src="img/5409030_2830467.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
       <img src="img/brooke-cagle--uHVRvDr7pg-unsplash.jpg" class="d-block w-100">
@@ -80,8 +80,9 @@
         </div>
     </div>
                 </div>
+                <p class="text-center lead"><a href="{{ url('/privacy') }}" class="btn btn-lg btn-primary shadow"><i class="fa-btn fa-solid fa-user-secret"></i>Adatvédelmi nyilatkozat</a></p>
             </div>
         </div> 
     </body>
-    @include('footer')
+   
 </html>
