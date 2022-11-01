@@ -1,5 +1,5 @@
 
-<footer class="footer py-3 bg-dark text-light fixed-relative text-center">
+<footer class="footer py-4 bg-dark text-light fixed-relative text-center">
     <div class="row">
         <div class="col-sm-4">
             <h4 class = "mb-3">Elérhetőségek</h4>
