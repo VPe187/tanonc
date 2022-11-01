@@ -73,3 +73,69 @@ Route::get('/studentedit/{tanulonev}', [App\Http\Controllers\MasterdataControlle
 
 
 Route::post('/studentquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);
+
+/*
+|--------------------------------------------------------------------------
+| Import Routes
+|--------------------------------------------------------------------------
+| 
+| Masterdata importálás
+*/
+
+
+Route::post('/masterdataimport', function() {
+    if(null == request()->file)
+    {
+        return redirect()->back();
+    }    
+    $fileName = time().'_'.request()->file->getClientOriginalName();
+    request()->file('file')->storeAs($fileName, 'public');
+
+    Excel::import(new MasterdataImport(), request()->file('file'));
+    return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+    });
+
+/*
+*Familydata importálás
+*/
+Route::post('/familydataimport', function() {
+    if(null == request()->file)
+    {
+        return redirect()->back();
+    }    
+    $fileName = time().'_'.request()->file->getClientOriginalName();
+    request()->file('file')->storeAs($fileName, 'public');
+
+    Excel::import(new FamilydataImport(), request()->file('file'));
+    return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+    });
+/*
+*Socialdata importálás
+*/
+    Route::post('/socialdataimport', function() {
+        if(null == request()->file)
+        {
+            return redirect()->back();
+        }    
+        $fileName = time().'_'.request()->file->getClientOriginalName();
+        request()->file('file')->storeAs($fileName, 'public');
+    
+        Excel::import(new SocialdataImport(), request()->file('file'));
+        return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+        });
+
+
+        /*
+*Guardiandata importálás
+*/
+    Route::post('/guardiandataimport', function() {
+        if(null == request()->file)
+        {
+            return redirect()->back();
+        }    
+        $fileName = time().'_'.request()->file->getClientOriginalName();
+        request()->file('file')->storeAs($fileName, 'public');
+    
+        Excel::import(new GuardiandataImport(), request()->file('file'));
+        return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
+        });
