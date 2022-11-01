@@ -1,7 +1,7 @@
  @extends('layouts.app') 
 
 @section('content')
-<!-- Settlement-et ki kell kommentelni -->>
+<!-- Settlement-et ki kell kommentelni -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8 col-xl-8 col-xxl-7">
