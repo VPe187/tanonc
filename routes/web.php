@@ -70,9 +70,14 @@ Route::get('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController:
 Route::get('/studentedit/{tanulonev}', [App\Http\Controllers\MasterdataController::class, 'studenteditname']);
 //minta
 //Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
+//Route::get('')
 
 
 Route::post('/studentquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);
+
+//Bejelentkezett felhasználó jelszavának módosítása
+Route::get('change_password',[App\Http\Controllers\UserController::class, 'change_password'])->name('change_password');
+Route::post('update_password',[App\Http\Controllers\UserController::class, 'update_password'])->name('update_password');
 
 /*
 |--------------------------------------------------------------------------

@@ -142,7 +142,7 @@ body {
 
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                     <li><a class="dropdown-item" href="{{ route('userprofile') }}"><i class="fa-btn fa-solid fa-id-card"></i>Profil</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-btn fa-solid fa-key"></i>Jelszó változtatás</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('change_password') }}"><i class="fa-btn fa-solid fa-key"></i>Jelszó változtatás</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

@@ -66,9 +66,9 @@ class MasterdataController extends Controller
     public function studenteditname(Request $request)
     {
         
-        echo $request->oktazon;
+        /*echo $request->oktazon;
         echo $request->tanulonev;
-        die();
+        die();*/
         
         $tanulok_res = Masterdata::select("*")->where('viselt_nev_vezeteknev1', $request->tanulonev)->get();
         return view('studentedit')->with('diakok', $tanulok_res);
