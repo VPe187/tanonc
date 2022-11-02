@@ -128,7 +128,7 @@ class UserController extends Controller
 
         #Match The Old Password
         if(!Hash::check($request->old_password, auth()->user()->password)){
-            return back()->with("error", "Old Password Doesn't match!");
+            return back()->with("error", "A régi jelszó nem megfelelő!");
         }
 
 
@@ -137,7 +137,7 @@ class UserController extends Controller
             'password' => Hash::make($request->new_password)
         ]);
 
-        return back()->with("status", "Password changed successfully!"); 
+        return back()->with("status", "A módosítás sikeres!"); 
 
     }
 }
