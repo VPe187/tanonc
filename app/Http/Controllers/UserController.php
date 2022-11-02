@@ -8,6 +8,7 @@ use App\Models\Userdata;
 use App\Models\Settlement;
 use App\Models\Country;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
  
 class UserController extends Controller
 {
@@ -108,29 +109,35 @@ class UserController extends Controller
     }
 
     // Jelszó cseréje
-    public function change_password()
+    public function changepassword()
     {
         return(view('change_password'));
     }
 
     
-    public function update_password( Request $request)
+    public function updatepassword( Request $request)
     {
-        $request->validate([
-            'old_password'=>'required|min:6|max:100',
-            'new_password'=>'required|min:6|max:100',
-            'confirm_password'=>'required|same:new_password'
-        ]);
-        $current_user=auth()->user();
-        if(Hash::check($request->old_password,$current_user->password)){
 
-        $current_user->update([
-            'password'=>bcrypt($request->new_password)
+
+        # Validation
+         $request->validate([
+            'old_password' => 'required',
+            'new_password' => 'required|confirmed',
         ]);
-        return redirect()->back()->with('Sikerült','A jelszó sikeresen meg lett változtatva');
+
+
+        #Match The Old Password
+        if(!Hash::check($request->old_password, auth()->user()->password)){
+            return back()->with("error", "Old Password Doesn't match!");
         }
-        else{
-            return redirect()->back()->with('error','Az új jelszó nem egyezhet a régivel');
-        }
+
+
+        #Update the new Password
+        User::whereId(auth()->user()->id)->update([
+            'password' => Hash::make($request->new_password)
+        ]);
+
+        return back()->with("status", "Password changed successfully!"); 
+
     }
 }

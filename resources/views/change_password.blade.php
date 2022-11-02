@@ -1,72 +1,76 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8 col-xl-8 col-xxl-7">
             <div class="card shadow">
-                <div class="card-header"><i class="fa-solid fa-btn fa-address-card"></i>{{ __('Jelszó változtatás') }}</div>
-
+                <div class="card-header">
+                    <i class="fa-btn fa-solid fa-id-card"></i>{{ __('Jelszó változtatás') }}
+                </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('update_password') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('update_password') }}" autocomplete="off" class="needs-validation">
                         @csrf
+                        
+                        @if (Session::has('success_message'))
+                            <div class="alert alert-success alert-dismissible fade show">
+                                <strong>{{ Session::get('success_message') }}</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
 
-                        <div class="row mb-3">
-                            <label for="old_password" class="col-md-4 col-form-label text-md-end">{{ __('Régi jelszó') }}</label>
-                            <div class="col-md-6">
+                        <!-- Old_Pass  -->
+                        <div class="form-group row mb-3">
+                            <label for="oldPasswordInput" class="col-4 col-form-label">Régi jelszó</label>
+                            <div class="col-md-8">
                                 <div class="input-group">
-                                    <input id="old_password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="old_password">
-                                    <span class="input-group-text"><i class="fa-solid fa-btn fa-key"></i></span>
-                                    @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                    <input name="old_password" type="password" class="form-control @error('old_password') is-invalid @enderror" id="oldPasswordInput" 
+                                    placeholder="Régi jelszó">
+                                    @error('old_password')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
                                 </div>
                             </div>
                         </div>
 
-                       
-
-                        <div class="row mb-3">
-                            <label for="new_password" class="col-md-4 col-form-label text-md-end">{{ __('Új jelszó') }}</label>
-
-                            <div class="col-md-6">
+                        <!-- New_Pass -->
+                        <div class="form-group row mb-3">
+                            <label for="newPasswordInput" class="col-4 col-form-label">Új jelszó</label>
+                            <div class="col-md-8">
                                 <div class="input-group">
-                                    <input id="new_password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                                    <span class="input-group-text"><i class="fa-solid fa-btn fa-key"></i></span>
-                                    @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                    <input name="new_password" type="password" class="form-control @error('new_password') is-invalid @enderror" id="newPasswordInput" 
+                                    placeholder="Új jelszó">
+                                    @error('new_password')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
                                 </div>
                             </div>
-                        </div>
+                        </div>                    
 
-                        <div class="row mb-3">
-                            <label for="confirm_password" class="col-md-4 col-form-label text-md-end">{{ __('Jelszó ellenőrzés') }}</label>
-                            <div class="col-md-6">
+                        <!-- Conf_Pass -->
+                        <div class="form-group row mb-3">
+                            <label for="confirmNewPasswordInput" class="col-4 col-form-label">Új jelszó ellenőrzése</label>
+                            <div class="col-md-8">
                                 <div class="input-group">
-                                    <input id="confirm_password" type="password" class="form-control" name="confirm_password" required autocomplete="confirm_password">
-                                    <span class="input-group-text"><i class="fa-solid fa-btn fa-key"></i></span>
+                                    <input name="new_password_confirmation" type="password" class="form-control @error('new_password_confirmation') is-invalid @enderror" id="confirmNewPasswordInput" 
+                                    placeholder="Új jelszó ellenőrzése">
+                                    @error('old_password')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
                                 </div>
                             </div>
+                        </div>    
+
+                        <div class="card-footer">
+                            <button class="btn btn-success">Módosítás</button>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary shadow">
-                                <i class="fa-solid fa-btn fa-address-card"></i>{{ __('Módosítás') }}
-                                </button>
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 @endsection
