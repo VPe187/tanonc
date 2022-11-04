@@ -70,42 +70,42 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Varga Péter</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
 
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Erős József</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Lisóczki Mihály</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>Fekete Miklós</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                             </tr>
                             <tr>
@@ -113,10 +113,10 @@
                                 <td>Apponyi Zsolt</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
@@ -124,15 +124,15 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
                                 <td>Sándor János</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
@@ -141,10 +141,10 @@
                             <tr>
                                 <th scope="row">8</th>
                                 <td>Ábrahám Imre</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
@@ -154,7 +154,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
@@ -164,7 +164,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr> 
@@ -174,7 +174,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
@@ -184,14 +184,14 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">13</th>
                                 <td>Bereczki István</td>
-                                <td>Igen</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
