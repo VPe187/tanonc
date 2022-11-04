@@ -141,7 +141,7 @@
                             <tr>
                                 <th scope="row">8</th>
                                 <td>Ábrahám Imre</td>
-                                <td>--</td>
+                                <td>Igen</td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>Igen</td>
