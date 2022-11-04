@@ -12,7 +12,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <p class="text-center"><img src="img/tanonc_logo.png" /></p>
+                    <p class="text-center"><img src="img/tanonc_logo.png" height="100px" class="img-fluid" width="400px"></p>
                     <p><hr /></p>
                     <h4 class="display-5">Tisztelt {{ Auth::user()->name }}!</h4><br />
                     <p class="lead">Ön sikeresen bejelentkezett a Tanonc rendszerbe! További lehetőségekért kérem használja a felső menüsort!</p>

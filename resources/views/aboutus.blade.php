@@ -646,9 +646,9 @@
                                            </p>
                         
                                           <ul class="content__container__list">
+                                              <li class="content__container__list__item">Frontend</li>
                                               <li class="content__container__list__item">Backend</li>
-                                              <li class="content__container__list__item">Backend</li>
-                                              <li class="content__container__list__item">Backend</li>
+                                              <li class="content__container__list__item">Frontend</li>
                                               <li class="content__container__list__item">Backend</li>
                                             </ul>
                                         </div>

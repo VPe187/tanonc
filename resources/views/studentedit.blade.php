@@ -14,7 +14,7 @@
                         </div>
                     @endif
                         
-                    <p class="text-center"><img src="/img/tanonc_logo.png" /></p>
+                    <p class="text-center"><img src="/img/tanonc_logo.png" height="100px" class="img-fluid" width="400px"></p>
                     <p>
                         <hr />
                     </p>
