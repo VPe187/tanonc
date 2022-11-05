@@ -33,7 +33,7 @@ Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userpro
 Route::post('/userprofile', [App\Http\Controllers\UserController::class, 'userprofilestore'])->name('userprofile');
 
 // Rólunk
-Route::get('/aboutus', [App\Http\Controllers\AboutUsController::class, 'index']);
+Route::get('/aboutus', [App\Http\Controllers\AboutusController::class, 'index']);
 
 // kirkieg 1 import
 Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
