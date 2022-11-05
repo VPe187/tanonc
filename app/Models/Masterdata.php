@@ -79,5 +79,16 @@ class Masterdata extends Model
       //  return $this->hasOne('App\Models\AuxiliaryData1', 'oktazon', 'oktazon');  //mihez kapcsolodik a model, idegentabla, sajat tabla azonositoja
       return $this->hasOne('App\Models\Familydata', 'oktazon', 'oktazon');
     }
-    
+    public function guardian()
+    {
+      //  return $this->hasOne('App\Models\AuxiliaryData1', 'oktazon', 'oktazon');  //mihez kapcsolodik a model, idegentabla, sajat tabla azonositoja
+      return $this->hasOne('App\Models\Guardian', 'oktazon', 'oktazon');
+    }
+
+    public function social_status()
+    {
+      //  return $this->hasOne('App\Models\AuxiliaryData1', 'oktazon', 'oktazon');  //mihez kapcsolodik a model, idegentabla, sajat tabla azonositoja
+      return $this->hasOne('App\Models\Socialstatus', 'oktazon', 'oktazon');
+    }
+
 }

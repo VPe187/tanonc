@@ -6,6 +6,8 @@ use App\Imports\MasterdataImport;
 use App\Imports\FamilydataImport;
 use App\Imports\SocialdataImport;
 use App\Imports\GuardiandataImport;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Masterdata;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +32,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
-Route::post('/userprofile', [App\Http\Controllers\UserController::class, 'userprofilestore'])->name('userprofile');
+Route::post('/userprofile', [App\Http\Controllers\UserController::class, 'userprofilestore'])->name('userprofilestore');
 
 // Rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutusController::class, 'index']);
@@ -40,8 +42,6 @@ Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::clas
 
 //kir törzsadat  import
 Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);   
-
-
 
 //[App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
@@ -54,9 +54,30 @@ Route::get('/guardiandataimport', [App\Http\Controllers\GuardiandataController::
 //adatvédelmi nyilatkozat
 Route::get('/privacy', [App\Http\Controllers\FooterController::class, 'privacy']);
 
+//family data manuális
+Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController::class, 'index']);
 
-Route::resource('test', App\Http\Controllers\TestController::class);
+//gondviselő data manuális
+Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
 
+// tanuló egyedi lekérdezés
+Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
+
+
+// egyetlen tanuló adatainak lekérése az oktazon alapján
+Route::get('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'studentedit']);
+// egyetlen tanuló adatainak lekérése a vezetéknév alapján
+Route::get('/studentedit/{tanulonev}', [App\Http\Controllers\MasterdataController::class, 'studenteditname']);
+//minta
+//Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
+//Route::get('')
+
+
+Route::post('/studentquery', [App\Http\Controllers\MasterdataController::class, 'uniquedata']);
+
+//Bejelentkezett felhasználó jelszavának módosítása
+Route::get('change_password',[App\Http\Controllers\UserController::class, 'changepassword'])->name('change_password');
+Route::post('update_password',[App\Http\Controllers\UserController::class, 'updatepassword'])->name('update_password');
 
 /*
 |--------------------------------------------------------------------------
@@ -123,8 +144,3 @@ Route::post('/familydataimport', function() {
         Excel::import(new GuardiandataImport(), request()->file('file'));
         return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
         });
-
-
-
-//minta
-//Route::get('/testuserdata', [App\Http\Controllers\UserController::class, 'testuserdata']);
