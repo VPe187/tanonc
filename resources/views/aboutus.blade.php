@@ -55,7 +55,7 @@
                         <thead class="mdb-color darken-3">
                             <tr class="text-black">
                                 <th>#</th>
-                                <th>NEVEK</th>
+                                <th>Nevek</th>
                                 <th>Tervezés</th>
                                 <th>Specifikáció</th>
                                 <th>Fejlesztői környezet</th>
@@ -242,12 +242,12 @@
 
                         </tbody>
                         <!--Table body-->
-                    </table>
-</div>
+                      </table>
+                    </div>
                     <!--Table-->
                 </div>
             </div>
           
-            <br><br><p class="text-center"><img src="img/TeamPic.png" class="img-fluid" mt-5></p> <br><br>
-               
+            <br><br><p class="text-center"><img src="img/TeamPic.png" class="img-fluid" mt-5></p>
+</main>        
   @endsection
