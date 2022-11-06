@@ -34,6 +34,9 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
 Route::get('/userprofile', [App\Http\Controllers\UserController::class, 'userprofile'])->name('userprofile');
 Route::post('/userprofile', [App\Http\Controllers\UserController::class, 'userprofilestore'])->name('userprofilestore');
 
+Route::get('/studentprofile', [App\Http\Controllers\MasterdataController::class, 'studentprofile'])->name('studentprofile');
+
+
 // Rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutusController::class, 'index']);
 

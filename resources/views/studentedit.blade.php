@@ -36,7 +36,7 @@
                                     </td>
                                     <td class="col-md-2" style="text-align: left">
                                             <p><b>Létrehozva:  </b><br>{{$tanulo->created_at}}</p>
-                                            <p><b>Módosítva:   </b><br>{{$tanulo->updated_at}}</p>
+                                            <!-- <p><b>Módosítva:   </b><br>{{$tanulo->updated_at}}</p> -->
                                         
                                         
                                     </td>
@@ -91,17 +91,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Név előtag</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_elotag" value="{{$tanulo->viselt_nev_elotag}} " readonly>
+                                                <input type="text" class="form-control" name="field_viselt_nev_elotag" value="{{$tanulo->viselt_nev_elotag}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Név sorrendje</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_nevsorrend" value="{{$tanulo->viselt_nev_nevsorrend}} " readonly>
+                                                <input type="text" class="form-control" name="field_viselt_nev_nevsorrend" value="{{$tanulo->viselt_nev_nevsorrend}}" readonly>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Vezetéknév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_vezeteknev1" value="{{$tanulo->viselt_nev_vezeteknev1}} " readonly>
+                                                <input type="text" class="form-control" name="field_viselt_nev_vezeteknev1" value="{{$tanulo->viselt_nev_vezeteknev1}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Keresztnév</b></td>
                                             <td class="col-md-3">
@@ -117,7 +117,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési név előtag</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_elotag" value="{{$tanulo->szuletesi_nev_elotag}} " readonly>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_elotag" value="{{$tanulo->szuletesi_nev_elotag}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Születési név sorrendje</b></td>
                                             <td class="col-md-3">
@@ -127,7 +127,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési vezetéknév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_vezeteknev" value="{{$tanulo->szuletesi_nev_vezeteknev}} " readonly>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_vezeteknev" value="{{$tanulo->szuletesi_nev_vezeteknev}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Születési keresztnév</b></td>
                                             <td class="col-md-3">
@@ -137,7 +137,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési dátum</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_datum" value="{{$tanulo->szuletesi_datum}} " readonly>
+                                                <input type="text" class="form-control" name="field_szuletesi_datum" value="{{$tanulo->szuletesi_datum}}" readonly>
                                             </td>                                                
                                                 <td class="col-md-3" style="text-align: right"><b>Születési hely</b></td>
                                                 <td class="col-md-3">
@@ -147,17 +147,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési ország</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_orszag" value="{{$tanulo->szuletesi_orszag}} " readonly>
+                                                <input type="text" class="form-control" name="field_szuletesi_orszag" value="{{$tanulo->szuletesi_orszag}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Második állampolgárság</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allampolgarasag_2" value="{{$tanulo->allampolgarasag_2}}">
+                                                <input type="text" class="form-control" name="field_allampolgarasag_2" value="{{$tanulo->allampolgarsag_2}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Állampolgárság</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allampolgarasag_1" value="{{$tanulo->allampolgarasag_1}} ">
+                                                <input type="text" class="form-control" name="field_allampolgarasag_1" value="{{$tanulo->allampolgarsag_1}}">
                                             </td>
                                             <td></td>
                                             <td></td>
@@ -171,7 +171,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Anyja neve előtag</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_anyja_neve_elotag" value="{{$tanulo->anyja_neve_elotag}} ">
+                                                <input type="text" class="form-control" name="field_anyja_neve_elotag" value="{{$tanulo->anyja_neve_elotag}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Anyja neve névsorrend</b></td>
                                                 <td class="col-md-3">
@@ -181,7 +181,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Anyja vezetékneve</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_anyja_neve_vezeteknev" value="{{$tanulo->anyja_neve_vezeteknev}} " readonly>
+                                                <input type="text" class="form-control" name="field_anyja_neve_vezeteknev" value="{{$tanulo->anyja_neve_vezeteknev}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Anyja keresztneve</b></td>
                                             <td class="col-md-3">
@@ -198,7 +198,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Neme</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control"  name="field_nem" value="{{$tanulo->nem}} " readonly>
+                                                <input type="text" class="form-control"  name="field_nem" value="{{$tanulo->nem}}" readonly>
                                             </td>                                                
                                             <td></td>
                                             <td></td>
@@ -206,7 +206,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Társadalombiztosítási azonosító jel</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tajszam" value="{{$tanulo->tajszam}} " readonly>
+                                                <input type="text" class="form-control" name="field_tajszam" value="{{$tanulo->tajszam}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>TAJ ellenőrzése</b></td>
                                             <td class="col-md-3">
@@ -222,17 +222,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Állandó lakcím irányítószáma</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allando_lakcim_iranyitoszam" value="{{$tanulo->allando_lakcim_iranyitoszam}} ">
+                                                <input type="text" class="form-control" name="field_allando_lakcim_iranyitoszam" value="{{$tanulo->allando_lakcim_iranyitoszam}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Település</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allando_lakcim_telepules" value="{{$tanulo->allando_lakcim_telepules}} ">
+                                                <input type="text" class="form-control" name="field_allando_lakcim_telepules" value="{{$tanulo->allando_lakcim_telepules}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Közterület</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allando_lakcim_kozteruletnev" value="{{$tanulo->allando_lakcim_kozteruletnev}} ">
+                                                <input type="text" class="form-control" name="field_allando_lakcim_kozteruletnev" value="{{$tanulo->allando_lakcim_kozteruletnev}}">
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Közterület jellege</b></td>
                                             <td class="col-md-3">
@@ -242,7 +242,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Házszám</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_allando_lakcim_hazszam" value="{{$tanulo->allando_lakcim_hazszam}} ">
+                                                <input type="text" class="form-control" name="field_allando_lakcim_hazszam" value="{{$tanulo->allando_lakcim_hazszam}}">
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Állandó lakcím pontosítás</b></td>
                                             <td class="col-md-3">
@@ -258,17 +258,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Tartózkodási hely irányítószáma</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_iranyitoszam" value="{{$tanulo->tartozkodasi_cim_iranyitoszam}} ">
+                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_iranyitoszam" value="{{$tanulo->tartozkodasi_cim_iranyitoszam}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Település</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_telepules" value="{{$tanulo->tartozkodasi_cim_telepules}} ">
+                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_telepules" value="{{$tanulo->tartozkodasi_cim_telepules}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Közterület</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_kozteruletnev" value="{{$tanulo->tartozkodasi_cim_kozteruletnev}} ">
+                                                <input type="text" class="form-control" name="field_tartozkodasi_cim_kozteruletnev" value="{{$tanulo->tartozkodasi_cim_kozteruletnev}}">
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Közterület jellege</b></td>
                                             <td class="col-md-3">
@@ -278,7 +278,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Házszám</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tartozkodasi_vcim_hazszam" value="{{$tanulo->tartozkodasi_vcim_hazszam}} ">
+                                                <input type="text" class="form-control" name="field_tartozkodasi_vcim_hazszam" value="{{$tanulo->tartozkodasi_vcim_hazszam}}">
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Tartózkodási hely pontosítás</b></td>
                                             <td class="col-md-3">
@@ -294,17 +294,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Adatkezelő intézmény azonosítója</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_om_azonositoja" value="{{$tanulo->adat_kezelo_intezmeny_om_azonositoja}} ">
+                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_om_azonositoja" value="{{$tanulo->adat_kezelo_intezmeny_om_azonositoja}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Adatkezelő intézmény neve</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_neve" value="{{$tanulo->adat_kezelo_intezmeny_neve}} ">
+                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_neve" value="{{$tanulo->adat_kezelo_intezmeny_neve}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Adatkezelő intézmény címe</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_cime" value="{{$tanulo->adat_kezelo_intezmeny_cime}} ">
+                                                <input type="text" class="form-control" name="field_adat_kezelo_intezmeny_cime" value="{{$tanulo->adat_kezelo_intezmeny_cime}}">
                                             </td>
                                             <td></td>
                                             <td></td>
@@ -312,17 +312,17 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Közoktatási intézmény azonosítója</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_om_azonosito" value="{{$tanulo->om_azonosito}} ">
+                                                <input type="text" class="form-control" name="field_om_azonosito" value="{{$tanulo->om_azonosito}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Közoktatási intézmény neve</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_kozoktatasi_intezmeny_neve" value="{{$tanulo->kozoktatasi_intezmeny_neve}} ">
+                                                <input type="text" class="form-control" name="field_kozoktatasi_intezmeny_neve" value="{{$tanulo->kozoktatasi_intezmeny_neve}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Közoktatási intézmény székhelye</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_kozoktatasi_intezmeny_szekhelye" value="{{$tanulo->kozoktatasi_intezmeny_szekhelye}} ">
+                                                <input type="text" class="form-control" name="field_kozoktatasi_intezmeny_szekhelye" value="{{$tanulo->kozoktatasi_intezmeny_szekhelye}}">
                                             </td>
                                             <td></td>
                                             <td></td>
@@ -330,7 +330,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Ügyviteli hely</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_ugyviteli_hely" value="{{$tanulo->ugyviteli_hely}} ">
+                                                <input type="text" class="form-control" name="field_ugyviteli_hely" value="{{$tanulo->ugyviteli_hely}}">
                                             </td>                                                
                                             <td></td>
                                             <td></td>
@@ -344,87 +344,89 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Tankötelezettség vége</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tankotelezettseg_vege" value="{{$tanulo->tankotelezettseg_vege}} ">
+                                                <input type="date" class="form-control" name="field_tankotelezettseg_vege" value="{{$tanulo->tankotelezettseg_vege}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Diákigazolvány száma</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_ervenyes_diak_igazolvany_szama" value="{{$tanulo->ervenyes_diak_igazolvany_szama}} ">
+                                                <input type="text" class="form-control" name="field_ervenyes_diak_igazolvany_szama" value="{{$tanulo->ervenyes_diak_igazolvany_szama}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Sajátos nevelési igényű</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_sajatos_nevelesi_igenyu" value="{{$tanulo->sajatos_nevelesi_igenyu}} ">
+                                                <input type="text" class="form-control" name="field_sajatos_nevelesi_igenyu" value="{{$tanulo->sajatos_nevelesi_igenyu}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Beilleszkedéssel, tanulási és magatartási nehézséggel küzd</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd" value="{{$tanulo->beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd}} ">
+                                                <input type="text" class="form-control" name="field_beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd" value="{{$tanulo->beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Tankötelezettséget teljesítő</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tankotelezettseget_teljesito" value="{{$tanulo->tankotelezettseget_teljesito}} ">
+                                                <input type="text" class="form-control" name="field_tankotelezettseget_teljesito" value="{{$tanulo->tankotelezettseget_teljesito}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Jogviszony státusza</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_jogviszony_statusza" value="{{$tanulo->jogviszony_statusza}} ">
+                                                <input type="text" class="form-control" name="field_jogviszony_statusza" value="{{$tanulo->jogviszony_statusza}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Jogviszony kezdete</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_jogviszony_kezdete" value="{{$tanulo->jogviszony_kezdete}} ">
+                                                <input type="text" class="form-control" name="field_jogviszony_kezdete" value="{{$tanulo->jogviszony_kezdete}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Jogviszony várható befejezése</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_jogviszony_varhato_befejezese" value="{{$tanulo->jogviszony_varhato_befejezese}} ">
+                                                <input type="text" class="form-control" name="field_jogviszony_varhato_befejezese" value="{{$tanulo->jogviszony_varhato_befejezese}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Jogviszony jellege</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_jogviszony_jellege" value="{{$tanulo->jogviszony_jellege}} ">
+                                                <input type="text" class="form-control" name="field_jogviszony_jellege" value="{{$tanulo->jogviszony_jellege}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Vendégtanuló</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_vendegtanulo" value="{{$tanulo->vendegtanulo}} ">
+                                                <input type="text" class="form-control" name="field_vendegtanulo" value="{{$tanulo->vendegtanulo}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Egyéni munkarend</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_egyeni_munkarend" value="{{$tanulo->egyeni_munkarend}} ">
+                                                <input type="text" class="form-control" name="field_egyeni_munkarend" value="{{$tanulo->egyeni_munkarend}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Ideiglenes óvodai, vendégtanulói jogviszony</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony" value="{{$tanulo->ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony}} ">
+                                                <input type="text" class="form-control" name="field_ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony" value="{{$tanulo->ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Osztály</b></td>
-                                            <td></td>                                                
+                                            <td class="col-md-3">
+                                                <input type="text" class="form-control" name="field_osztaly" value="{{$tanulo->osztaly}}">
+                                            </td>                                                
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Nyitott szolgáltatások</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_nyitott_szolgaltatasok" value="{{$tanulo->nyitott_szolgaltatasok}} ">
+                                                <input type="text" class="form-control" name="field_nyitott_szolgaltatasok" value="{{$tanulo->nyitott_szolgaltatasok}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Lezárt szolgáltatások</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_lezart_szolgaltatasok" value="{{$tanulo->lezart_szolgaltatasok}} ">
+                                                <input type="text" class="form-control" name="field_lezart_szolgaltatasok" value="{{$tanulo->lezart_szolgaltatasok}}">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Belügyminisztériumi nyilvántartásban beazonosított</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_a_bm_szemelyiadat_nyilvantartasaban_beazonositott" value="{{$tanulo->a_bm_szemelyiadat_nyilvantartasaban_beazonositott}} ">
+                                                <input type="text" class="form-control" name="field_a_bm_szemelyiadat_nyilvantartasaban_beazonositott" value="{{$tanulo->a_bm_szemelyiadat_nyilvantartasaban_beazonositott}}">
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Utolsó személyi és lakcímadat frissítés ideje</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja" value="{{$tanulo->utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja}} ">
+                                                <input type="date" class="form-control" name="field_utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja" value="{{$tanulo->utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja}}">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -448,16 +450,16 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_gondviseloneve" value="{{$tanulo->familydata->gondviseloneve}} ">
+                                                <input type="text" class="form-control" name="field_gondviseloneve" value="{{$tanulo->familydata->gondviseloneve}}">
                                             </td> 
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_gondviselotelefonszama" value="{{$tanulo->familydata->gondviselotelefonszama}} ">
+                                                <input type="text" class="form-control" name="field_gondviselotelefonszama" value="{{$tanulo->familydata->gondviselotelefonszama}}">
                                             </td>                                                
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_gondviseloemail" value="{{$tanulo->familydata->gondviseloemail}} ">
+                                                <input type="text" class="form-control" name="field_gondviseloemail" value="{{$tanulo->familydata->gondviseloemail}}">
                                             </td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_torvenyeskepviselo" value="{{$tanulo->familydata->torvenyeskepviselo}} ">
+                                                <input type="text" class="form-control" name="field_torvenyeskepviselo" value="{{$tanulo->familydata->torvenyeskepviselo}}">
                                             </td> 
                                         </tr>
                                     </tbody>
@@ -480,13 +482,13 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_haziorvosneve" value="{{$tanulo->familydata->haziorvosneve}} ">
+                                                <input type="text" class="form-control" name="field_haziorvosneve" value="{{$tanulo->familydata->haziorvosneve}}">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_haziorvostelefon" value="{{$tanulo->familydata->haziorvostelefon}} ">
+                                                <input type="text" class="form-control" name="field_haziorvostelefon" value="{{$tanulo->familydata->haziorvostelefon}}">
                                             </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_covidoltas" value="{{$tanulo->familydata->covidoltas}} ">
+                                                <input type="text" class="form-control" name="field_covidoltas" value="{{$tanulo->familydata->covidoltas}}">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -508,12 +510,13 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny}} ">
+                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny}}">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_kezdete" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny_kezdete}} ">                                                </td>                                                
+                                                <input type="date" class="form-control" name="field_gyermekvedelmikedvezmeny_kezdete" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny_kezdete}}">                                                
+                                            </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_vege" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny_vege}} ">
+                                                <input type="date" class="form-control" name="field_gyermekvedelmikedvezmeny_vege" value="{{$tanulo->social_status->gyermekvedelmikedvezmeny_vege}}">
                                             </td>
                                         </tr>
                                         <tr>
@@ -523,12 +526,13 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_hatranyoshelyzetu" value="{{$tanulo->social_status->hatranyoshelyzetu}} ">
+                                                <input type="text" class="form-control" name="field_hatranyoshelyzetu" value="{{$tanulo->social_status->hatranyoshelyzetu}}">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_hhkezdete" value="{{$tanulo->social_status->hhkezdete}} ">                                                </td>                                                
+                                                <input type="date" class="form-control" name="field_hhkezdete" value="{{$tanulo->social_status->hhkezdete}}">                                                
+                                            </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_hhvege" value="{{$tanulo->social_status->hhvege}} ">
+                                                <input type="date" class="form-control" name="field_hhvege" value="{{$tanulo->social_status->hhvege}}">
                                             </td>
                                         </tr>
                                         <tr>
@@ -538,12 +542,13 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_halmozottanhatranyoshelyzetu" value="{{$tanulo->social_status->halmozottanhatranyoshelyzetu}} ">
+                                                <input type="text" class="form-control" name="field_halmozottanhatranyoshelyzetu" value="{{$tanulo->social_status->halmozottanhatranyoshelyzetu}}">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_hhh_kezdete" value="{{$tanulo->social_status->hhh_kezdete}} ">                                                </td>                                                
+                                                <input type="date" class="form-control" name="field_hhh_kezdete" value="{{$tanulo->social_status->hhh_kezdete}}">
+                                            </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_hhh_vege" value="{{$tanulo->social_status->hhh_vege}} ">
+                                                <input type="date" class="form-control" name="field_hhh_vege" value="{{$tanulo->social_status->hhh_vege}}">
                                             </td>
                                         </tr>
                                     </tbody>
