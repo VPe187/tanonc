@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -63,18 +64,19 @@
                                         <td style="vertical-align: left">{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}</td>
                                         <td style="vertical-align: left">{{$tanulo->osztaly}}</td>
                                         <td style="vertical-align: middle"><a href= "{{  url('studentedit/'.$tanulo->oktazon)}}"><button class="btn btn-sm btn-primary"><i class="fa-fw fa-solid fa-pen-to-square"></i></button></a>
-                                        
-                                           
                                     <tr>
                                 @endforeach
                             </tbody>
-                            
                         </table>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
+<main class="py-4 mt-4">
+    <div class="content" style = "min-height: 400px">
+        @yield('content')
+    </div>
+</main>
 @endsection

@@ -47,167 +47,167 @@
                     
                     <p><hr /></p>
                     <div class="table-responsive">
-                        <table class="table table-hover">
+                        <table class="table table-hover"> 
+                            
                             <thead>
-                                <tr>
-                                    <th>id</th>
-                                    <th>oktazon</th>
-                                    <th>viselt_nev_elotag</th>
-                                    <th>viselt_nev_vezeteknev1</th>
-                                    <th>viselt_nev_keresztnev2</th>
-                                    <th>viselt_nev_nevsorrend</th>
-                                    <th>szuletesi_nev_elotag</th>
-                                    <th>szuletesi_nev_vezeteknev</th>
-                                    <th>szuletesi_nev_keresztnev</th>
-                                    <th>szuletesi_nev_nevsorrend</th>
-                                    <th>anyja_neve_elotag</th>
-                                    <th>anyja_neve_vezeteknev</th>
-                                    <th>anyja_neve_keresztnev</th>
-                                    <th>anyja_neve_nevsorrend</th>
-                                    <th>szuletesi_datum</th>
-                                    <th>szuletesi_hely</th>
-                                    <th>szuletesi_orszag</th>
-                                    <th>allampolgarsag_1</th>
-                                    <th>allampolgarsag_2</th>
-                                    <th>nem</th>
-                                    <th>tajszam</th>
-                                    <th>taj_ellenorzes</th>
-                                    <th>allando_lakcim_iranyitoszam</th>
-                                    <th>allando_lakcim_telepules</th>
-                                    <th>allando_lakcim_kozteruletnev</th>
-                                    <th>allando_lakcim_kozterulet_jelleg</th>
-                                    <th>allando_lakcim_hazszam</th>
-                                    <th>allando_lakcim_pontositas</th>
-                                    <th>tartozkodasi_cim_iranyitoszam</th>
-                                    <th>tartozkodasi_cim_telepules</th>
-                                    <th>tartozkodasi_cim_kozteruletnev</th>
-                                    <th>tartozkodasi_cim_kozterulet_jelleg</th>
-                                    <th>tartozkodasi_cim_hazszam</th>
-                                    <th>tartozkodasi_cim_pontositas</th>
-                                    <th>adat_kezelo_intezmeny_om_azonositoja</th>
-                                    <th>adat_kezelo_intezmeny_neve</th>
-                                    <th>adat_kezelo_intezmeny_cime</th>
-                                    <th>tankotelezettseg_vege</th>
-                                    <th>tankotelezettseget_teljesito</th>
-                                    <th>sajatos_nevelesi_igenyu</th>
-                                    <th>beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd</th>
-                                    <th>ervenyes_diak_igazolvany_szama</th>
-                                    <th>kozoktatasi_intezmeny_neve</th>
-                                    <th>kozoktatasi_intezmeny_szekhelye</th>
-                                    <th>om_azonosito</th>
-                                    <th>ugyviteli_hely</th>
-                                    <th>jogviszony_statusza</th>
-                                    <th>jogviszony_kezdete</th>
-                                    <th>jogviszony_varhato_befejezese</th>
-                                    <th>jogviszony_jellege</th>
-                                    <th>vendegtanulo</th>
-                                    <th>egyeni_munkarend</th>
-                                    <th>ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony</th>
-                                    <th>osztaly</th>
-                                    <th style="width: 30%">nyitott_szolgaltatasok</th>
-                                    <th>lezart_szolgaltatasok</th>
-                                    <th>a_bm_szemelyiadat_nyilvantartasaban_beazonositott</th>
-                                    <th>utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja</th>
-                                    <th>created_at</th>
-                                    <th>updated_at</th>
-                                    <th>gondviseloneve</th>
-                                    <th>gondviselotelefonszama</th>
-                                    <th>gondviseloemail</th>
-                                    <th>torvenyeskepviselo</th>
-                                    <th>haziorvosneve</th>
-                                    <th>haziorvostelefon</th>
-                                    <th>covidoltas</th>
-                                    <th>gyermekvedelmikedvezmeny</th>
-                                    <th>gyermekvedelmikedvezmeny_kezdete</th>
-                                    <th>gyermekvedelmikedvezmeny_vege</th>
-                                    <th>hatranyoshelyzetu</th>
-                                    <th>hhvege</th>
-                                    <th>halmozottanhatranyoshelyzetu</th>
-                                    <th>hhh_kezdete</th>
-                                    <th>hhh_vege</th>
+                                <tr class="text-nowrap" style="border-left: 3px solid lightblue">
+                                    <th style="background: lightgrey">Id</th>
+                                    <th style="background: lightgrey">Oktatási azonosító</th>
+                                    <th style="background: lightgrey">Viselt név előtag</th>
+                                    <th style="background: lightgrey">Viselt vezetéknév</th>
+                                    <th style="background: lightgrey">Viselt keresztnév</th>
+                                    <th style="background: lightgrey">Viselt név névsorrend</th>
+                                    <th style="background: lightgrey">Születési név előtag</th>
+                                    <th style="background: lightgrey">Szuletési vezetéknév</th>
+                                    <th style="background: lightgrey">Születési keresztnév</th>
+                                    <th style="background: lightgrey">Születési név névsorrend</th>
+                                    <th style="background: lightgrey">Anyja neve előtag</th>
+                                    <th style="background: lightgrey">Anyja neve vezeteknév</th>
+                                    <th style="background: lightgrey">Anyja neve keresztnév</th>
+                                    <th style="background: lightgrey">Anyja neve névsorrend</th>
+                                    <th style="background: lightgrey">Születési dátum</th>
+                                    <th style="background: lightgrey">Születési hely</th>
+                                    <th style="background: lightgrey">Születési ország</th>
+                                    <th style="background: lightgrey">Állampolgárság 1</th>
+                                    <th style="background: lightgrey">Állampolgárság 2</th>
+                                    <th style="background: lightgrey">Neme</th>
+                                    <th style="background: lightgrey">TAJ szám</th>
+                                    <th style="background: lightgrey">TAJ ellenőrzés</th>
+                                    <th style="background: lightgrey">Állandó lakcím irányitószám</th>
+                                    <th style="background: lightgrey">Állandó lakcím település</th>
+                                    <th style="background: lightgrey">Állandó lakcím közteruletnév</th>
+                                    <th style="background: lightgrey">Állandó lakcím közterulet jelleg</th>
+                                    <th style="background: lightgrey">Állandó lakcím házszám</th>
+                                    <th style="background: lightgrey">Állandó lakcím pontositás</th>
+                                    <th style="background: lightgrey">Tartozkodási cím irányítoszám</th>
+                                    <th style="background: lightgrey">Tartozkodási cím település</th>
+                                    <th style="background: lightgrey">Tartozkodási cím közterület neve</th>
+                                    <th style="background: lightgrey">Tartozkodási cím közterület jelleg</th>
+                                    <th style="background: lightgrey">Tartozkodási cím házszám</th>
+                                    <th style="background: lightgrey">Tartozkodási cím pontosítás</th>
+                                    <th style="background: lightgrey">Adat kezelő intézmény OM azonosítója</th>
+                                    <th style="background: lightgrey">Adat kezelő intézmény neve</th>
+                                    <th style="background: lightgrey">Adat kezelő intézmény címe</th>
+                                    <th style="background: lightgrey">Tankötelezettség vége</th>
+                                    <th style="background: lightgrey">Tankötelezettségét teljesítő</th>
+                                    <th style="background: lightgrey">Sajátos nevelési igényű</th>
+                                    <th style="background: lightgrey">Beilleszkedéssel, tanulási, magatartási nehézséggel küzd</th>
+                                    <th style="background: lightgrey">Érvényes diák igazolvány száma</th>
+                                    <th style="background: lightgrey">Közoktatási intézmény neve</th>
+                                    <th style="background: lightgrey">Közoktatási intézmény székhelye</th>
+                                    <th style="background: lightgrey">OM azonosító</th>
+                                    <th style="background: lightgrey">Ügyviteli hely</th>
+                                    <th style="background: lightgrey">Jogviszony státusza</th>
+                                    <th style="background: lightgrey">Jogviszony kezdete</th>
+                                    <th style="background: lightgrey">Jogviszony várható befejezése</th>
+                                    <th style="background: lightgrey">Jogviszony jellege</th>
+                                    <th style="background: lightgrey">Vendegtanuló</th>
+                                    <th style="background: lightgrey">Egyéni munkarend</th>
+                                    <th style="background: lightgrey">Ideiglenes óvodai, ideiglenes vendégtanulói jogviszony</th>
+                                    <th style="background: lightgrey">Osztály</th>
+                                    <th style="background: lightgrey">Nyitott szolgáltatások</th>
+                                    <th style="background: lightgrey">Lezárt szolgáltatások</th>
+                                    <th style="background: lightgrey">A BM személyiadat nyilvántartásában beazonosított</th>
+                                    <th style="background: lightgrey">Utolsó személyiadat és lakcímnyilvántartás frissítés időpontja</th>
+                                    <!--<th style="background: lightgrey">Created at</th>
+                                    <th style="background: lightgrey">Updated at</th> -->
+                                    <th style="background: lightgrey">Gondviselő neve</th>
+                                    <th style="background: lightgrey">Gondviselő telefonszáma</th>
+                                    <th style="background: lightgrey">Gondviselő email címe</th>
+                                    <th style="background: lightgrey">Törvényes képviselő neve</th>
+                                    <th style="background: lightgrey">Háziorvos neve</th>
+                                    <th style="background: lightgrey">Háziorvos telefonszáma</th>
+                                    <th style="background: lightgrey">COVID-19 oltással rendelkezik</th>
+                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény</th>
+                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény kezdete</th>
+                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény vége</th>
+                                    <th style="background: lightgrey">Hátrányos helyzetű</th>
+                                    <th style="background: lightgrey">Hátrányos helyzetű státusz kezdete</th>
+                                    <th style="background: lightgrey">Hátrányos helyzetű státusz vége</th>
+                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű</th>
+                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű státusz kezdete</th>
+                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű státusz vége</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($diakok as $tanulo)
-                                    <tr style="height: 40px">
-                                            <td style="vertical-align: left">{{$tanulo->id}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->oktazon}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->viselt_nev_elotag}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->viselt_nev_vezeteknev1}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->viselt_nev_keresztnev2}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->viselt_nev_nevsorrend}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_nev_elotag}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_nev_vezeteknev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_nev_keresztnev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_nev_nevsorrend}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->anyja_neve_elotag}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->anyja_neve_vezeteknev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->anyja_neve_keresztnev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->anyja_neve_nevsorrend}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_datum}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_hely}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->szuletesi_orszag}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allampolgarsag_1}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allampolgarsag_2}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->nem}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tajszam}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->taj_ellenorzes}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_iranyitoszam}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_telepules}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_kozteruletnev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_kozterulet_jelleg}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_hazszam}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->allando_lakcim_pontositas}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_iranyitoszam}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_telepules}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_kozteruletnev}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_kozterulet_jelleg}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_hazszam}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tartozkodasi_cim_pontositas}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->adat_kezelo_intezmeny_om_azonositoja}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->adat_kezelo_intezmeny_neve}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->adat_kezelo_intezmeny_cime}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tankotelezettseg_vege}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->tankotelezettseget_teljesito}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->sajatos_nevelesi_igenyu}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->ervenyes_diak_igazolvany_szama}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->kozoktatasi_intezmeny_neve}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->kozoktatasi_intezmeny_szekhelye}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->om_azonosito}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->ugyviteli_hely}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->jogviszony_statusza}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->jogviszony_kezdete}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->jogviszony_varhato_befejezese}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->jogviszony_jellege}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->vendegtanulo}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->egyeni_munkarend}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->osztaly}}</td>
-                                            <td style="vertical-align: left" class="width: 500px">{{$tanulo->nyitott_szolgaltatasok}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->lezart_szolgaltatasok}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->a_bm_szemelyiadat_nyilvantartasaban_beazonositott}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->created_at}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->updated_at}}</td>
+                                    <tr class="text-nowrap" style="border-left: 3px solid lightblue">
+                                            <td>{{$tanulo->id}}</td>
+                                            <td style="background: lightgrey">{{$tanulo->oktazon}}</td>
+                                            <td>{{$tanulo->viselt_nev_elotag}}</td>
+                                            <td>{{$tanulo->viselt_nev_vezeteknev1}}</td>
+                                            <td>{{$tanulo->viselt_nev_keresztnev2}}</td>
+                                            <td>{{$tanulo->viselt_nev_nevsorrend}}</td>
+                                            <td>{{$tanulo->szuletesi_nev_elotag}}</td>
+                                            <td>{{$tanulo->szuletesi_nev_vezeteknev}}</td>
+                                            <td>{{$tanulo->szuletesi_nev_keresztnev}}</td>
+                                            <td>{{$tanulo->szuletesi_nev_nevsorrend}}</td>
+                                            <td>{{$tanulo->anyja_neve_elotag}}</td>
+                                            <td>{{$tanulo->anyja_neve_vezeteknev}}</td>
+                                            <td>{{$tanulo->anyja_neve_keresztnev}}</td>
+                                            <td>{{$tanulo->anyja_neve_nevsorrend}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->szuletesi_datum))}}</td>
+                                            <td>{{$tanulo->szuletesi_hely}}</td>
+                                            <td>{{$tanulo->szuletesi_orszag}}</td>
+                                            <td>{{$tanulo->allampolgarsag_1}}</td>
+                                            <td>{{$tanulo->allampolgarsag_2}}</td>
+                                            <td>{{$tanulo->nem}}</td>
+                                            <td>{{$tanulo->tajszam}}</td>
+                                            <td>{{$tanulo->taj_ellenorzes}}</td>
+                                            <td>{{$tanulo->allando_lakcim_iranyitoszam}}</td>
+                                            <td>{{$tanulo->allando_lakcim_telepules}}</td>
+                                            <td>{{$tanulo->allando_lakcim_kozteruletnev}}</td>
+                                            <td>{{$tanulo->allando_lakcim_kozterulet_jelleg}}</td>
+                                            <td>{{$tanulo->allando_lakcim_hazszam}}</td>
+                                            <td>{{$tanulo->allando_lakcim_pontositas}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_iranyitoszam}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_telepules}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_kozteruletnev}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_kozterulet_jelleg}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_hazszam}}</td>
+                                            <td>{{$tanulo->tartozkodasi_cim_pontositas}}</td>
+                                            <td>{{$tanulo->adat_kezelo_intezmeny_om_azonositoja}}</td>
+                                            <td>{{$tanulo->adat_kezelo_intezmeny_neve}}</td>
+                                            <td>{{$tanulo->adat_kezelo_intezmeny_cime}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->tankotelezettseg_vege))}}</td>
+                                            <td>{{$tanulo->tankotelezettseget_teljesito}}</td>
+                                            <td>{{$tanulo->sajatos_nevelesi_igenyu}}</td>
+                                            <td>{{$tanulo->beilleszkedessel_tanulasi_magatartasi_nehezseggel_kuzd}}</td>
+                                            <td>{{$tanulo->ervenyes_diak_igazolvany_szama}}</td>
+                                            <td>{{$tanulo->kozoktatasi_intezmeny_neve}}</td>
+                                            <td>{{$tanulo->kozoktatasi_intezmeny_szekhelye}}</td>
+                                            <td>{{$tanulo->om_azonosito}}</td>
+                                            <td>{{$tanulo->ugyviteli_hely}}</td>
+                                            <td>{{$tanulo->jogviszony_statusza}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->jogviszony_kezdete))}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->jogviszony_varhato_befejezese))}}</td>
+                                            <td>{{$tanulo->jogviszony_jellege}}</td>
+                                            <td>{{$tanulo->vendegtanulo}}</td>
+                                            <td>{{$tanulo->egyeni_munkarend}}</td>
+                                            <td>{{$tanulo->ideiglenes_ovodai_ideiglenes_vendegtanuloi_jogviszony}}</td>
+                                            <td>{{$tanulo->osztaly}}</td>
+                                            <td>{{$tanulo->nyitott_szolgaltatasok}}</td>
+                                            <td>{{$tanulo->lezart_szolgaltatasok}}</td>
+                                            <td>{{$tanulo->a_bm_szemelyiadat_nyilvantartasaban_beazonositott}}</td>
+                                            <td>{{$tanulo->utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja}}</td>
+                                            
+                                            <td>{{$tanulo->familydata->gondviseloneve}}</td>
+                                            <td>{{$tanulo->familydata->gondviselotelefonszama}}</td>
+                                            <td>{{$tanulo->familydata->gondviseloemail}}</td>
+                                            <td>{{$tanulo->familydata->torvenyeskepviselo}}</td>
+                                            <td>{{$tanulo->familydata->haziorvosneve}}</td>
+                                            <td>{{$tanulo->familydata->haziorvostelefon}}</td>
+                                            <td>{{$tanulo->familydata->covidoltas}}</td>
 
-                                            <td style="vertical-align: left">{{$tanulo->gondviseloneve}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->gondviselotelefonszama}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->gondviseloemail}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->torvenyeskepviselo}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->haziorvosneve}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->haziorvostelefon}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->covidoltas}}</td>
-
-                                            <td style="vertical-align: left">{{$tanulo->gyermekvedelmikedvezmeny}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->gyermekvedelmikedvezmeny_kezdete}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->gyermekvedelmikedvezmeny_vege}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->hatranyoshelyzetu}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->hhkezdete}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->hhvege}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->halmozottanhatranyoshelyzetu}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->hhh_kezdete}}</td>
-                                            <td style="vertical-align: left">{{$tanulo->hhh_vege}}</td>
+                                            <td>{{$tanulo->social_status->gyermekvedelmikedvezmeny}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->gyermekvedelmikedvezmeny_kezdete))}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->gyermekvedelmikedvezmeny_vege))}}</td>
+                                            <td>{{$tanulo->social_status->hatranyoshelyzetu}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhkezdete))}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhvege))}}</td>
+                                            <td>{{$tanulo->social_status->halmozottanhatranyoshelyzetu}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhh_kezdete))}}</td>
+                                            <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhh_vege))}}</td>
                                     <tr>
                                 @endforeach
                             </tbody>
