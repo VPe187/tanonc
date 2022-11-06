@@ -60,12 +60,16 @@ Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController
 //gondviselő data manuális
 Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
 
-// tanuló egyedi lekérdezés
+// Összes tanuló kilistázása
 Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
 
 
 // egyetlen tanuló adatainak lekérése az oktazon alapján
 Route::get('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'studentedit']);
+
+//  
+Route::post('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'poststudentedit']);
+
 // egyetlen tanuló adatainak lekérése a vezetéknév alapján
 Route::get('/studentedit/{tanulonev}', [App\Http\Controllers\MasterdataController::class, 'studenteditname']);
 //minta

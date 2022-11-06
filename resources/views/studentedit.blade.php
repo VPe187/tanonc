@@ -45,6 +45,7 @@
                                             <button type="submit" class="btn btn-sm btn-primary mb-5 mt-4 me-4">
                                                 <i class="fa-btn fa-solid fa-floppy-disk"></i>Módosítás
                                             </button>
+                                            <!-- <a href="{{url('/studentedit')}}"></a> -->
                                         
                                     </td>
                                 </tr>
@@ -53,8 +54,11 @@
                     </div>
                     <hr />                  
                     <div class="card-body">
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('userprofile') }}" autocomplete="off" class="needs-validation">
+                        <form class="form-horizontal" role="form" method="POST" action="{{ url('studentedit/'.$tanulo->oktazon) }}">
                             @csrf
+                            <button type="submit" class="btn btn-sm btn-primary mb-5 mt-4 me-4">
+                                <i class="fa-btn fa-solid fa-floppy-disk"></i>Módosítás
+                            </button>
                                 
                             @if (Session::has('success_message'))
                                 <div class="alert alert-success alert-dismissible fade show">
@@ -474,12 +478,12 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gondviseloneve" value="{{$tanulo->familydata->haziorvosneve}} ">
+                                                <input type="text" class="form-control" name="field_haziorvosneve" value="{{$tanulo->familydata->haziorvosneve}} ">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gondviselotelefonszama" value="{{$tanulo->familydata->haziorvostelefon}} ">                                                </td>                                                
+                                                <input type="text" class="form-control" name="field_haziorvostelefon" value="{{$tanulo->familydata->haziorvostelefon}} ">                                                </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gondviseloemail" value="{{$tanulo->familydata->covidoltas}} ">
+                                                <input type="text" class="form-control" name="field_covidoltas" value="{{$tanulo->familydata->covidoltas}} ">
                                             </td>
                                         </tr>
                                     </tbody>

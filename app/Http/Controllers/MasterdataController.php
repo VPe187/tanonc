@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Masterdata;
+use App\Models\Familydata;
 
 class MasterdataController extends Controller
 {
@@ -74,4 +75,26 @@ class MasterdataController extends Controller
         return view('studentedit')->with('diakok', $tanulok_res);
 
     }
+
+    public function poststudentedit(Request $request)
+    {
+        /*echo $request->oktazon;
+        echo $request->tanulonev;
+        die();*/
+        
+        //$tanulok_res = Masterdata::select("*")->where('oktazon', $request->oktazon)->first();
+        $tanulok_res = Masterdata::select("*")->where('oktazon', $request->oktazon)->get()->first();
+        $tanulok_family_res = Familydata::select("*")->where('oktazon', $request->oktazon)->get()->first();
+        $tanulok_res->allando_lakcim_kozteruletnev = $request->get('field_allando_lakcim_kozteruletnev');
+        $tanulok_family_res->haziorvosneve = $request->get('field_haziorvosneve');
+     
+        $tanulok_res->save();
+        $tanulok_family_res->save();
+
+        //return view('studentedit')->with('diakok', $tanulok_res);
+        return redirect ('/studentedit/'.$request->oktazon)->with('success_message','Rögzítés sikeresen megtörtént');
+
+        
+
+    }    
 }
