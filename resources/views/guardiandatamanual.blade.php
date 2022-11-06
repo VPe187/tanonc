@@ -64,7 +64,7 @@
                             <label for="fieldUserPhoneNumber" class="col-4 col-form-label">E-mail</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserPhoneNumber') is-invalid @enderror" name="fieldUserPhoneNumber" value="{{ isset($userdata->telefonszam) ? $userdata->telefonszam : '' }}" pattern="^.{0,14}$" placeholder="telefonszám">
+                                    <input type="text" class="form-control @error('fieldUserPhoneNumber') is-invalid @enderror" name="fieldUserPhoneNumber" value="{{ isset($userdata->telefonszam) ? $userdata->telefonszam : '' }}" pattern="^.{0,14}$" placeholder="email">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-phone"></i></span>
                                     @error('fieldUserPhoneNumber')
                                         <div class="invalid-feedback">{{$message}}</div>
