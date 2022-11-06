@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Userdata;
 use App\Models\Settlement;
 use App\Models\Country;
+use App\Models\Publicareatype;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
  
@@ -41,9 +42,10 @@ class UserController extends Controller
         $user_res = Userdata::where('user_id', $user_id)->get()->first();
         $country_res = Country::select('orszag')->orderBy("orszag")->get();
         $Birthplace_res = Settlement::select('telepules')->orderBy("telepules")->get();
+        $publicareatype_res =Publicareatype::select('kozterulet_tipus')->orderBy("kozterulet_tipus")->get();
 
         
-        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res)->with('countries', $country_res)->with('birthplaces', $Birthplace_res);
+        return view('userprofile')->with('userdata', $user_res)->with('settlements', $settl_res)->with('countries', $country_res)->with('birthplaces', $Birthplace_res)->with('publicareatypes', $publicareatype_res);
     }
  
     public function testuserdata(){
@@ -95,7 +97,7 @@ class UserController extends Controller
         $user_res->iranyitoszam = $request->get('fieldUserZipCode');
         $user_res->telepules = $request->get('fieldUserCity');
         $user_res->kozterulet_neve = $request->get('fieldUserStreet');
-        $user_res->kozterulet_tipus_id = 0;
+        $user_res->kozterulet_tipus_id = $request->get('fieldUserStreetType');;
         $user_res->hazszam = $request->get('fieldUserHouseNumber');
         $user_res->emelet = $request->get('fieldUserFloorNumber');
         $user_res->ajto = $request->get('fieldUserDoorNumber');
