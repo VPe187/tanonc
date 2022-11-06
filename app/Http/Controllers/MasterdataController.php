@@ -54,6 +54,14 @@ class MasterdataController extends Controller
         return view('uniquedataquery')->with('diakok', $tanulok_res);
     }
 
+    public function query()
+    {
+        $tanulok_res = Masterdata::all();
+ 
+        return view('query')->with('diakok', $tanulok_res);
+    }
+
+
 
     // Keresés eredménye
     public function studentedit(Request $request)

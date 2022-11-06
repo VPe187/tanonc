@@ -40,6 +40,9 @@ Route::get('/studentprofile', [App\Http\Controllers\MasterdataController::class,
 // Rólunk
 Route::get('/aboutus', [App\Http\Controllers\AboutusController::class, 'index']);
 
+// Full query route
+Route::get('/query', [App\Http\Controllers\MasterdataController::class, 'query']);
+
 // kirkieg 1 import
 Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
 
