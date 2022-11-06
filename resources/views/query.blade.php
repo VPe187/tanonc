@@ -129,7 +129,7 @@
                             </thead>
                             <tbody>
                                 @foreach($diakok as $tanulo)
-                                    <tr>
+                                    <tr style="height: 40px">
                                             <td style="vertical-align: left">{{$tanulo->id}}</td>
                                             <td style="vertical-align: left">{{$tanulo->oktazon}}</td>
                                             <td style="vertical-align: left">{{$tanulo->viselt_nev_elotag}}</td>
