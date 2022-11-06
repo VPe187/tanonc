@@ -66,6 +66,9 @@ Route::get('/familydatamanual', [App\Http\Controllers\FamilydataManualController
 //gondviselő data manuális
 Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualController::class, 'index']);
 
+//Social data manuális
+Route::get('/socialdatamanual', [App\Http\Controllers\SocialdatamanualController::class, 'index']);
+
 // Összes tanuló kilistázása
 Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
 
