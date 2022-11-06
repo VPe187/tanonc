@@ -41,7 +41,7 @@
                                         
                                     </td>
                                     <td class="col-md-2" style="text-align: right">
-                                        
+                                    <form class="form-horizontal" role="form" method="POST" action="{{ url('studentedit/'.$tanulo->oktazon) }}">    
                                             <button type="submit" class="btn btn-sm btn-primary mb-5 mt-4 me-4">
                                                 <i class="fa-btn fa-solid fa-floppy-disk"></i>Módosítás
                                             </button>
@@ -54,17 +54,19 @@
                     </div>
                     <hr />                  
                     <div class="card-body">
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('studentedit/'.$tanulo->oktazon) }}">
+                    
                             @csrf
-                            <button type="submit" class="btn btn-sm btn-primary mb-5 mt-4 me-4">
-                                <i class="fa-btn fa-solid fa-floppy-disk"></i>Módosítás
-                            </button>
-                                
+                            
                             @if (Session::has('success_message'))
                                 <div class="alert alert-success alert-dismissible fade show">
                                     <strong>{{ Session::get('success_message') }}</strong>
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
+                      <!--      <button type="submit" class="btn btn-sm btn-primary mb-5 mt-4 me-4">
+                                <i class="fa-btn fa-solid fa-floppy-disk"></i>Módosítás
+                            </button>
+                        -->         
+                          
                             @endif
                             <div class="table-responsive">
                                 <table class="table table-borderless table-sm align-middle table-light">
@@ -481,7 +483,8 @@
                                                 <input type="text" class="form-control" name="field_haziorvosneve" value="{{$tanulo->familydata->haziorvosneve}} ">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_haziorvostelefon" value="{{$tanulo->familydata->haziorvostelefon}} ">                                                </td>                                                
+                                                <input type="text" class="form-control" name="field_haziorvostelefon" value="{{$tanulo->familydata->haziorvostelefon}} ">
+                                            </td>                                                
                                             <td class="col-md-4">
                                                 <input type="text" class="form-control" name="field_covidoltas" value="{{$tanulo->familydata->covidoltas}} ">
                                             </td>
@@ -520,12 +523,12 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny" value="{{$tanulo->social_status->hatranyoshelyzetu}} ">
+                                                <input type="text" class="form-control" name="field_hatranyoshelyzetu" value="{{$tanulo->social_status->hatranyoshelyzetu}} ">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_kezdete" value="{{$tanulo->social_status->hhkezdete}} ">                                                </td>                                                
+                                                <input type="text" class="form-control" name="field_hhkezdete" value="{{$tanulo->social_status->hhkezdete}} ">                                                </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_vege" value="{{$tanulo->social_status->hhvege}} ">
+                                                <input type="text" class="form-control" name="field_hhvege" value="{{$tanulo->social_status->hhvege}} ">
                                             </td>
                                         </tr>
                                         <tr>
@@ -535,12 +538,12 @@
                                         </tr>
                                         <tr>
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny" value="{{$tanulo->social_status->halmozottanhatranyoshelyzetu}} ">
+                                                <input type="text" class="form-control" name="field_halmozottanhatranyoshelyzetu" value="{{$tanulo->social_status->halmozottanhatranyoshelyzetu}} ">
                                             </td> 
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_kezdete" value="{{$tanulo->social_status->hhh_kezdete}} ">                                                </td>                                                
+                                                <input type="text" class="form-control" name="field_hhh_kezdete" value="{{$tanulo->social_status->hhh_kezdete}} ">                                                </td>                                                
                                             <td class="col-md-4">
-                                                <input type="text" class="form-control" name="field_gyermekvedelmikedvezmeny_vege" value="{{$tanulo->social_status->hhh_vege}} ">
+                                                <input type="text" class="form-control" name="field_hhh_vege" value="{{$tanulo->social_status->hhh_vege}} ">
                                             </td>
                                         </tr>
                                     </tbody>
