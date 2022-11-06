@@ -188,6 +188,21 @@
                             </div>
                         </div>
 
+                          <!-- UserStreetType -->
+                          <div class="form-group row mb-3">
+                            <label for="fieldUserStreetType" class="col-4 col-form-label">Közterület típusa</label>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <select class="form-select" name="fieldUserStreetType">
+                                        @foreach($publicareatypes as $key => $publicareatype)
+                                            <option value="{{isset($publicareatype->kozterulet_tipus) ? $publicareatype->kozterulet_tipus : ''}}" {{ isset($userdata->kozterulet_tipus_id) && $userdata->kozterulet_tipus_id == $publicareatype->kozterulet_tipus ? 'selected' : '' }}> {{$publicareatype->kozterulet_tipus}}</option>
+                                        @endforeach
+                                    </select>
+                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-location-dot"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- UserHouseNumber -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserHouseNumber" class="col-4 col-form-label">Házszám</label>
