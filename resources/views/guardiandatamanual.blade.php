@@ -7,7 +7,7 @@
         <div class="col-xs-12 col-sm-12 col-md-11 col-lg-8 col-xl-8 col-xxl-7">
             <div class="card shadow">
                 <div class="card-header">
-                    <i class="fa-btn fa-solid fa-id-card"></i>{{ __('Szociális státusz') }}
+                    <i class="fa-btn fa-solid fa-id-card"></i>{{ __('Szülő-Gondviselő') }}
                 </div>
                 <div class="card-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('') }}" autocomplete="off" class="needs-validation">
@@ -20,31 +20,6 @@
                             </div>
                         @endif
 
-                        <!-- Oktatási azonosító  -->
-                        <div class="form-group row mb-3">
-                            <label for="fieldUserId" class="col-4 col-form-label">Oktatási azonosító</label>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserId" value="{{ Auth::user()->id }}" readonly>
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Gondviselő azonosító  -->
-                        <div class="form-group row mb-3">
-                            <label for="fieldUserId" class="col-4 col-form-label">Gondviselő azonosító</label>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserId2" value="{{ Auth::user()->id }}" readonly>
-                                    <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <hr>
-                        
-                                            
                         <!-- UserPhoneNumber -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserPhoneNumber" class="col-4 col-form-label">Telefonszám</label>
