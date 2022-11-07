@@ -133,7 +133,11 @@ class UserController extends Controller
             return back()->with("error", "A régi jelszó nem megfelelő!");
         }
 
+        if(Hash::check($request->new_password, auth()->user()->password)){
+            return back()->with("error", 'A régi és az új jelszó nem egyezhetnek meg!');
+        }
 
+    
         #Update the new Password
         User::whereId(auth()->user()->id)->update([
             'password' => Hash::make($request->new_password)
