@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow">
-                <div class="card-header"><i class="fa-btn fa-solid fa-table-columns"></i>Gondviselői adatok importálása</div>
+                <div class="card-header"><i class="fa-btn fa-solid fa-table-columns"></i>Szülő-gondviselői adatok importálása</div>
                     <div class="card-body">
 
                         @if (Session::has('message'))
