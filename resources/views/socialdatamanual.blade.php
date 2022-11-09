@@ -20,6 +20,7 @@
                             </div>
                         @endif
 
+                         <!-- Oktatási azonosító -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserId" class="col-4 col-form-label">Oktatási azonosító</label>
                             <div class="col-md-8">
@@ -35,10 +36,10 @@
                         
                         <!-- Gyermekvédelmi kedvezmény radio -->
                          <div class="form-group row mb-3">
-                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="GyermKedv">Gyermekvédelmi kedvezmény</label>
+                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="ChildrenDisc">Gyermekvédelmi kedvezmény</label>
                         <div class="col-md-8">
                         <div class="input-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="elect">
                         <option>Jogosult</option>
                         <option>Nem jogosult</option>
                         </select>
@@ -52,7 +53,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">Gyermekvédelmi kedvezmény kezdete</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="gyermKezd" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="ChildStart" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
@@ -63,7 +64,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">Gyermekvédelmi kedvezmény vége</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="GyermVeg" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="ChildOv" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
@@ -71,10 +72,10 @@
                        
                         <!-- Hátrányos helyzetű check  -->
                         <div class="form-group row mb-3">
-                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="Hatr">Hátrányos helyzetű?</label>
+                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="DisAd">Hátrányos helyzetű?</label>
                         <div class="col-md-8">
                         <div class="input-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="Select1">
                         <option>Igen</option>
                         <option>Nem</option>
                         </select>
@@ -88,7 +89,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">HH kezdete</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="HhKezd" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="HhStart" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
@@ -99,7 +100,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">HH vége</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="HhVeg" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="HhOv" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
@@ -107,10 +108,10 @@
 
                         <!-- Halmozottan hátrányos helyzetű radio -->
                         <div class="form-group row mb-3">
-                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="HalmHatr">Halmozottan hátrányos helyzetű?</label>
+                        <label for="exampleFormControlSelect1" class="col-4 col-form-label" name="SecCumu">Halmozottan hátrányos helyzetű?</label>
                         <div class="col-md-8">
                         <div class="input-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="Select2">
                         <option>Igen</option>
                         <option>Nem</option>
                         </select>
@@ -124,7 +125,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">HHH kezdete</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="HHHkezd" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="HHHstart" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
@@ -135,7 +136,7 @@
                             <label for="fieldUserBirthdate" class="col-4 col-form-label">HHH vége</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="date" class="form-control" name="HhhVeg" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
+                                    <input type="date" class="form-control" name="HhhOv" value="{{ isset($userdata->szuletesi_ido) ? $userdata->szuletesi_ido->format('Y-m-d') : date('Y-m-d')}}" required>
                                     <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></i></span>
                                 </div>
                             </div>
