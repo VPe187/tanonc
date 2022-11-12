@@ -102,10 +102,10 @@ body {
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="exportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-cloud-arrow-down"></i>{{ __('Lekérdezések') }}</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="exportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-btn fa-solid fa-cloud-arrow-down"></i>{{ __('Tanulói adatok') }}</a>
                             <ul class="dropdown-menu" aria-labelledby="exportDropdown">
                                 <li><a class="dropdown-item" href="{{ url('/uniquedataquery') }}"><i class="fa-btn fa-solid fa-user"></i>{{ __('Tanulók karbantartása') }}</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/query') }}"><i class="fa-btn fa-solid fa-user"></i>{{ __('Tanulók lekérdezése') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/query') }}"><i class="fa-btn fa-solid fa-user"></i>{{ __('Tanulók listázása') }}</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

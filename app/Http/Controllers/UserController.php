@@ -34,7 +34,8 @@ class UserController extends Controller
  
         return view('users')->with('fhk', $felhasznalok);
     }
- 
+    /*****************************************USER PROFILE*******************************/
+
     public function userprofile() {
         $user_id = Auth::user()->id;
  
@@ -63,7 +64,8 @@ class UserController extends Controller
  
         return redirect('/users');
     }
- 
+
+  
     public function userprofilestore(Request $request){
  
         $request->validate(
@@ -107,9 +109,10 @@ class UserController extends Controller
  
         $user_res->save();
  
-        return redirect ('/userprofile')->with('success_message','Rögzítés sikeresen megtörtént');
+        return redirect ('/userprofile')->with('success_message','Rögzítés sikeresen megtörtént!');
     }
 
+    /*******************************PASSWORD CHANGE************************************/
     // Jelszó cseréje
     public function changepassword()
     {
@@ -144,6 +147,8 @@ class UserController extends Controller
         ]);
 
         return back()->with("status", "A módosítás sikeres!"); 
+
+        /************************************************************************************/
 
     }
 }
