@@ -25,7 +25,7 @@
                             <label for="fieldUserId" class="col-4 col-form-label">Azonosító</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserId" value="{{ Auth::user()->id }}" readonly>
+                                    <input type="text" class="form-control" name="fieldUserId" id="disabledInput" placeholder="Disabled" value="{{ Auth::user()->id }}" disabled>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                             <label for="fieldUserName" class="col-4 col-form-label">Név</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserName" value="{{ Auth::user()->name }}" readonly>
+                                    <input type="text" class="form-control" name="fieldUserName" id="disabledInput" placeholder="Disabled" value="{{ Auth::user()->name }}" disabled>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-file-signature"></i></span>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                             <label for="fieldUserEmail" class="col-4 col-form-label">Email cím</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserEmail" value="{{ Auth::user()->email }}" readonly>
+                                    <input type="text" class="form-control" name="fieldUserEmail" id="disabledInput" placeholder="Disabled" value="{{ Auth::user()->email }}" disabled>
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-at"></i></span>
                                 </div>
                             </div>
