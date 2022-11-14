@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('userprofile') }}" autocomplete="off" class="needs-validation">
                         @csrf
-                        
+
                         @if (Session::has('success_message'))
                             <div class="alert alert-success alert-dismissible fade show">
                                 <strong>{{ Session::get('success_message') }}</strong>
@@ -40,7 +40,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-file-signature"></i></span>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
 
                         <!-- UserEmail -->
                         <div class="form-group row mb-3">
@@ -51,7 +51,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-at"></i></span>
                                 </div>
                             </div>
-                        </div>                                                
+                        </div>
 
                         <hr>
 
@@ -67,8 +67,8 @@
                                     @enderror
                                 </div>
                             </div>
-                        </div>                 
-                        
+                        </div>
+
                         <!-- UserFirstName -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserFirstName" class="col-4 col-form-label">Keresztnév</label>
@@ -78,11 +78,11 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                     @error('fieldUserFirstName')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror                                    
+                                    @enderror
                                 </div>
                             </div>
-                        </div> 
-                        
+                        </div>
+
                         <!-- UserFirstName2 -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserFirstName2" class="col-4 col-form-label">Második keresztnév</label>
@@ -92,11 +92,11 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-pen-to-square"></i></span>
                                     @error('fieldUserFirstName2')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror    
+                                    @enderror
                                 </div>
                             </div>
-                        </div>        
-                        
+                        </div>
+
                         <!-- UserNickName -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserNickName" class="col-4 col-form-label">Becenév</label>
@@ -106,11 +106,11 @@
                                     <span class="input-group-text"><i class="fa-fw fa-brands fa-odnoklassniki"></i></span>
                                     @error('fieldUserNickName')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
-                        </div>    
-                        
+                        </div>
+
                         <!-- UserMotherName -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserMotherName" class="col-4 col-form-label">Anyja neve</label>
@@ -120,11 +120,11 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-person-breastfeeding"></i></span>
                                     @error('fieldUserMotherName')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
-                        </div>       
-                        
+                        </div>
+
                         <!-- UserCountry -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserCountry" class="col-4 col-form-label">Ország</label>
@@ -139,21 +139,21 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-earth-europe"></i></span>
                                     @error('fieldUserCountry')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
-                        </div>                           
+                        </div>
 
                         <!-- UserZipCode -->
                         <div class="form-group row mb-3">
                             <label for="fieldUserZipCode" class="col-4 col-form-label">Irányítószám</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control @error('fieldUserZipCode') is-invalid @enderror" name="fieldUserZipCode" value="{{ isset($userdata->iranyitoszam) ? $userdata->iranyitoszam : '' }}" pattern="^.{4,4}$" placeholder="irányítószám">
+                                    <input type="text" class="form-control @error('fieldUserZipCode') is-invalid @enderror" name="fieldUserZipCode" value="{{ isset($userdata->iranyitoszam) ? $userdata->iranyitoszam : '' }}" pattern="^.{4,4}$" placeholder="irányítószám" id="fieldUserZipCode">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-signs-post"></i></span>
                                     @error('fieldUserZipCode')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                             <div class="col-md-8">
                                 <div class="input-group">
                                     <!--<input type="text" class="form-control" name="fieldUserCity" value="{{ isset($userdata->telepules) ? $userdata->telepules : '' }}" pattern="^.{0,30}$" required>-->
-                                    <select class="form-select" name="fieldUserCity">
+                                    <select class="form-select" name="fieldUserCity" id="fieldUserCity">
                                         @foreach($settlements as $key => $settlement)
                                             <option value="{{isset($settlement->telepules) ? $settlement->telepules : ''}}" {{ isset($userdata->telepules) && $userdata->telepules == $settlement->telepules ? 'selected' : '' }}> {{$settlement->telepules}}</option>
                                         @endforeach
@@ -183,7 +183,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-building"></i></span>
                                     @error('fieldUserStreet')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-house"></i></span>
                                     @error('fieldUserHouseNumber')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-list-ol"></i></span>
                                     @error('fieldUserFloorNumber')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-door-open"></i></span>
                                     @error('fieldUserDoorNumber')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -270,7 +270,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-bed-pulse"></i></span>
                                     @error('fieldUserBirthPlace')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -284,7 +284,7 @@
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-phone"></i></span>
                                     @error('fieldUserPhoneNumber')
                                         <div class="invalid-feedback">{{$message}}</div>
-                                    @enderror 
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -296,7 +296,7 @@
                                 </button>
                                 <a href="{{url('/home')}}" class="btn btn-danger mb-5 mt-4 ms-4">
                                     <i class="fa-btn fa-solid fa-xmark"></i>Mégsem
-                                </a>                                
+                                </a>
                             </div>
                         </div>
                     </form>
@@ -306,4 +306,41 @@
     </div>
 </div>
 
+@endsection
+
+@section ('script_body')
+$('#fieldUserZipCode').on('change', function (e) {
+    e.preventDefault();
+    var pob = $('#fieldUserZipCode').val();
+    getPOBoxes (pob);
+});
+
+function getPOBoxes (POBox) {
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.ajax({
+        type: 'POST',
+        url: '{{url('/getsettlements')}}',
+        data: {
+            pobox : POBox,
+        },
+        success: function (data) {
+            var fieldUserCitySelect = $("#fieldUserCity");
+            fieldUserCitySelect.empty();
+            $.each(data.settlements, function(index, item) {
+                fieldUserCitySelect.append( '<option value="'
+                + item.telepules
+                + '">'
+                + item.telepules
+                + '</option>' );
+            });
+        }
+    })
+
+}
 @endsection

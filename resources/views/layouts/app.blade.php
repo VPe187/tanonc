@@ -26,7 +26,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;                
+    -o-background-size: cover;
 }
 </style>
 <body>
@@ -98,7 +98,7 @@ body {
                                             <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a>
                                     </li>
                                 </li>
-                                
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -117,7 +117,7 @@ body {
                             <ul class="dropdown-menu" aria-labelledby="adminDropdown">
                                 <li><a class="dropdown-item" href="{{ url('users') }}"><i class="fa-btn fa-solid fa-users"></i>{{ __('Felhasználók') }}</a></li>
                             </ul>
-                        </li>                        
+                        </li>
                         @endguest
                     </ul>
 
@@ -156,7 +156,6 @@ body {
                                 </ul>
                             </li>
                         @endguest
-
                     </ul>
                 </div>
             </div>
@@ -167,8 +166,10 @@ body {
             </div>
         </main>
     </div>
-    
+
         @include('footer')
-    
+        <script type="module">
+            @yield('script_body')
+        </script>
     </body>
 </html>

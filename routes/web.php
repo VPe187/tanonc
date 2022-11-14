@@ -47,7 +47,7 @@ Route::get('/query', [App\Http\Controllers\MasterdataController::class, 'query']
 Route::get('/familydataimport', [App\Http\Controllers\FamilydataController::class, 'index']);
 
 //kir törzsadat  import
-Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);   
+Route::get('/masterdataimport', [App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
 //[App\Http\Controllers\MasterdataController::class, 'masterdata']);
 
@@ -76,7 +76,7 @@ Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class
 // egyetlen tanuló adatainak lekérése az oktazon alapján
 Route::get('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'studentedit']);
 
-//  
+//
 Route::post('/studentedit/{oktazon}', [App\Http\Controllers\MasterdataController::class, 'poststudentedit']);
 
 // egyetlen tanuló adatainak lekérése a vezetéknév alapján
@@ -96,7 +96,7 @@ Route::post('update_password',[App\Http\Controllers\UserController::class, 'upda
 |--------------------------------------------------------------------------
 | Import Routes
 |--------------------------------------------------------------------------
-| 
+|
 | Masterdata importálás
 */
 
@@ -105,7 +105,7 @@ Route::post('/masterdataimport', function() {
     if(null == request()->file)
     {
         return redirect()->back();
-    }    
+    }
     $fileName = time().'_'.request()->file->getClientOriginalName();
     request()->file('file')->storeAs($fileName, 'public');
 
@@ -120,7 +120,7 @@ Route::post('/familydataimport', function() {
     if(null == request()->file)
     {
         return redirect()->back();
-    }    
+    }
     $fileName = time().'_'.request()->file->getClientOriginalName();
     request()->file('file')->storeAs($fileName, 'public');
 
@@ -134,10 +134,10 @@ Route::post('/familydataimport', function() {
         if(null == request()->file)
         {
             return redirect()->back();
-        }    
+        }
         $fileName = time().'_'.request()->file->getClientOriginalName();
         request()->file('file')->storeAs($fileName, 'public');
-    
+
         Excel::import(new SocialdataImport(), request()->file('file'));
         return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
         });
@@ -150,10 +150,12 @@ Route::post('/familydataimport', function() {
         if(null == request()->file)
         {
             return redirect()->back();
-        }    
+        }
         $fileName = time().'_'.request()->file->getClientOriginalName();
         request()->file('file')->storeAs($fileName, 'public');
-    
+
         Excel::import(new GuardiandataImport(), request()->file('file'));
         return redirect()->back()->with('message','Az adatok feltöltése sikeresen megtörtént!');
-        });
+    });
+
+Route::post('/getsettlements', [App\Http\Controllers\UserController::class, 'getsettlements'])->name('getsettlements');
