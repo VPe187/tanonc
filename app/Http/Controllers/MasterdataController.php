@@ -194,8 +194,20 @@ class MasterdataController extends Controller
 
         //return view('studentedit')->with('diakok', $tanulok_res);
         return redirect ('studentedit/'.$request->oktazon)->with('success_message','Az adatok módosítása sikeresen megtörtént');
+    }
+    public function studentremove(Request $request) {
+        //$user_id = Auth::user()->id;
+ 
+        //$settl_res = Settlement::select("telepules")->orderBy("telepules")->get();
+        //$user_res = Userdata::where('user_id', $user_id)->get()->first();
+        //$country_res = Country::select('orszag')->orderBy("orszag")->get();
+        //$Birthplace_res = Settlement::select('telepules')->orderBy("telepules")->get();
+        $oktazon = $request->oktazon;
+        Masterdata::select('delete from masterdata where oktazon = ?',[$oktazon]);
+        //$tanulok_res -> delete();
 
         
+        return redirect ('uniquedataquery')->with('success_message','Az adatok módosítása sikeresen megtörtént');
+    }
 
-    }    
 }

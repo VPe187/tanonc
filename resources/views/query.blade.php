@@ -209,6 +209,7 @@
                                             <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhh_kezdete))}}</td>
                                             <td>{{date('Y-m-d', strtotime($tanulo->social_status->hhh_vege))}}</td>
                                     <tr>
+                                        
                                 @endforeach
                             </tbody>
                             
