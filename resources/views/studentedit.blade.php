@@ -75,11 +75,11 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Tanuló neve</b></td>
                                             <td class="col-md-3">
-                                          <input type="text" class="form-control" id="disabledInput" placeholder="Disabled" value="{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}" disabled>
+                                          <input type="text" class="form-control" id="disabledInput"  value="{{$tanulo->viselt_nev_vezeteknev1}} {{$tanulo->viselt_nev_keresztnev2}}" disabled>
                                                                                         </td>
                                             <td class="col-md-3" style="text-align: right"><b>Oktatási azonosító</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" id="disabledInput" placeholder="Disabled" value="{{$tanulo->oktazon}}" disabled>
+                                                <input type="text" class="form-control" id="disabledInput" value="{{$tanulo->oktazon}}" disabled>
                                             </td>
                                         </tr>
                                         <tr class="table-info">
@@ -91,21 +91,21 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Név előtag</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_elotag" id="disabledInput" placeholder="Disabled" value="{{$tanulo->viselt_nev_elotag}}" disabled>
+                                                <input type="text" class="form-control" name="field_viselt_nev_elotag"  value="{{$tanulo->viselt_nev_elotag}}" disabled>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Név sorrendje</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_nevsorrend" id="disabledInput" placeholder="Disabled" value="{{$tanulo->viselt_nev_nevsorrend}}" disabled>
+                                                <input type="text" class="form-control" name="field_viselt_nev_nevsorrend" value="{{$tanulo->viselt_nev_nevsorrend}}" readonly>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Vezetéknév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_vezeteknev1" id="disabledInput" placeholder="Disabled" value="{{$tanulo->viselt_nev_vezeteknev1}}" disabled>
+                                                <input type="text" class="form-control" name="field_viselt_nev_vezeteknev1" value="{{$tanulo->viselt_nev_vezeteknev1}}" readonly>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Keresztnév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_viselt_nev_keresztnev2" id="disabledInput" placeholder="Disabled" value="{{$tanulo->viselt_nev_keresztnev2}}" disabled>
+                                                <input type="text" class="form-control" name="field_viselt_nev_keresztnev2" id="disabledInput" value="{{$tanulo->viselt_nev_keresztnev2}}" disabled>
                                             </td>
                                         </tr>
                                         <tr class="table-info">
@@ -117,37 +117,37 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési név előtag</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_elotag" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_nev_elotag}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_elotag" id="disabledInput" value="{{$tanulo->szuletesi_nev_elotag}}" disabled >
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Születési név sorrendje</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_nevsorrend" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_nev_nevsorrend}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_nevsorrend" id="disabledInput" value="{{$tanulo->szuletesi_nev_nevsorrend}}" disabled>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési vezetéknév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_vezeteknev" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_nev_vezeteknev}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_vezeteknev" id="disabledInput"  value="{{$tanulo->szuletesi_nev_vezeteknev}}" disabled>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Születési keresztnév</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_nev_keresztnev" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_nev_keresztnev}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_nev_keresztnev" id="disabledInput" value="{{$tanulo->szuletesi_nev_keresztnev}}" disabled>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési dátum</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_datum" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_datum}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_datum" id="disabledInput" value="{{$tanulo->szuletesi_datum}}" disabled>
                                             </td>                                                
                                                 <td class="col-md-3" style="text-align: right"><b>Születési hely</b></td>
                                                 <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_hely" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_hely}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_hely" id="disabledInput" value="{{$tanulo->szuletesi_hely}}" disabled>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Születési ország</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_szuletesi_orszag" id="disabledInput" placeholder="Disabled" value="{{$tanulo->szuletesi_orszag}}" disabled>
+                                                <input type="text" class="form-control" name="field_szuletesi_orszag" id="disabledInput" value="{{$tanulo->szuletesi_orszag}}" disabled>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Második állampolgárság</b></td>
                                             <td class="col-md-3">
@@ -175,17 +175,17 @@
                                             </td>                                                
                                             <td class="col-md-3" style="text-align: right"><b>Anyja neve névsorrend</b></td>
                                                 <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_anyja_neve_nevsorrend" id="disabledInput" placeholder="Disabled" value="{{$tanulo->anyja_neve_nevsorrend}}" disabled>
+                                                <input type="text" class="form-control" name="field_anyja_neve_nevsorrend" id="disabledInput" value="{{$tanulo->anyja_neve_nevsorrend}}" disabled>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Anyja vezetékneve</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_anyja_neve_vezeteknev" id="disabledInput" placeholder="Disabled" value="{{$tanulo->anyja_neve_vezeteknev}}" disabled>
+                                                <input type="text" class="form-control" name="field_anyja_neve_vezeteknev" id="disabledInput" value="{{$tanulo->anyja_neve_vezeteknev}}" disabled>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>Anyja keresztneve</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_anyja_neve_keresztnev" id="disabledInput" placeholder="Disabled" value="{{$tanulo->anyja_neve_keresztnev}}" disabled>
+                                                <input type="text" class="form-control" name="field_anyja_neve_keresztnev" id="disabledInput" value="{{$tanulo->anyja_neve_keresztnev}}" disabled>
                                             </td>
                                         </tr>
                                                                                 
@@ -198,7 +198,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Neme</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control"  name="field_nem" id="disabledInput" placeholder="Disabled" value="{{$tanulo->nem}}" disabled>
+                                                <input type="text" class="form-control"  name="field_nem" id="disabledInput" value="{{$tanulo->nem}}" disabled>
                                             </td>                                                
                                             <td></td>
                                             <td></td>
@@ -206,7 +206,7 @@
                                         <tr>
                                             <td class="col-md-3" style="text-align: right"><b>Társadalombiztosítási azonosító jel</b></td>
                                             <td class="col-md-3">
-                                                <input type="text" class="form-control" name="field_tajszam" id="disabledInput" placeholder="Disabled" value="{{$tanulo->tajszam}}" disabled>
+                                                <input type="text" class="form-control" name="field_tajszam" id="disabledInput" value="{{$tanulo->tajszam}}" disabled>
                                             </td>
                                             <td class="col-md-3" style="text-align: right"><b>TAJ ellenőrzése</b></td>
                                             <td class="col-md-3">
