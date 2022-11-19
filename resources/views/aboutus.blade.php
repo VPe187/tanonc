@@ -61,7 +61,10 @@
                                 <th>Fejlesztői környezet</th>
                                 <th>Frontend</th>
                                 <th>Backend</th>
+                                <th>Tesztelés</th>
                                 <th>Weboldal publikálása</th>
+                                <th>Felhasználói utmutató</th>
+
                             </tr>
                         </thead>
                         <!--Table head-->
@@ -70,6 +73,8 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Varga Péter</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
@@ -86,6 +91,8 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
@@ -96,6 +103,8 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
@@ -106,6 +115,8 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
@@ -116,7 +127,9 @@
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
@@ -126,6 +139,8 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
@@ -135,6 +150,8 @@
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
@@ -147,6 +164,8 @@
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">9</th>
@@ -154,6 +173,8 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
@@ -165,6 +186,8 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr> 
@@ -177,6 +200,8 @@
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">12</th>
@@ -187,11 +212,15 @@
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">13</th>
                                 <td>Bereczki István</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
+                                <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
@@ -206,11 +235,15 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr> 
                             <tr>
                                 <th scope="row">15</th>
                                 <td>Balázs Máté</td>
+                                <td>--</td>
+                                <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
@@ -227,6 +260,8 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">17</th>
@@ -236,11 +271,15 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td>--</td>
                                 <td>--</td>
                             </tr>
                             <tr>
                                 <th scope="row">18</th>
                                 <td>Németh Gyula</td>
+                                <td>--</td>
+                                <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
