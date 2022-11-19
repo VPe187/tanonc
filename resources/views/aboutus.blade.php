@@ -63,7 +63,7 @@
                                 <th>Backend</th>
                                 <th>Tesztelés</th>
                                 <th>Weboldal publikálása</th>
-                                <th>Felhasználói utmutató</th>
+                                <th>Felhasználói útmutató</th>
 
                             </tr>
                         </thead>
