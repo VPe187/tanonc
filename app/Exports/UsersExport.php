@@ -7,7 +7,7 @@ use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use App\Models\Familydata;
 use App\Models\Socialstatus;
-
+use Illuminate\Support\Facades\DB;
 
 class UsersExport implements FromCollection,WithHeadings
 {
@@ -101,9 +101,30 @@ class UsersExport implements FromCollection,WithHeadings
     /**
     * @return \Illuminate\Support\Collection
     */
-    public function collection()
+    public function collection() //    (Request $request)
     {
-        return Masterdata::all();
+        $Master_res = DB::table('masterdata')
+        ->join('familydata', 'familydata.oktazon', '=', 'masterdata.oktazon')
+        ->join('social_status', 'social_status.oktazon', '=', 'masterdata.oktazon')
+        ->select('masterdata.*', 'familydata.*', 'social_status.*')
+        ->get();
+        
+        /*
+        ->where('szuletesi_hely', $request->szuletesi_hely , 'or',
+             'allando_lakcim_telepules', $request->allando_lakcim_telepules, 'or',
+             'kozoktatasi_intezmeny_neve', $request->kozoktatasi_intezmeny_neve )
+        ->get();
+        */
+        //$Family_res = Familydata::all();
+        //$Social_res = Socialstatus::all();
+        //$ResultArray = ($Master_res $Family_res $Social_res); //, $Family_res, $Social_res];
+        
+        return $Master_res;
+
+        //return Masterdata::all();
+        
+        
+        
         //$tables='SELECT * FROM masterdata inner join familydata on masterdata.oktazon = familydata.oktazon';
         //return $tables::all();
         /*$shares = DB::table('masterdata')
