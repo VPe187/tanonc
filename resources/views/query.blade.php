@@ -15,23 +15,25 @@
                     <p class="text-center"><img src="img/tanonc_logo.png" height="100px" class="img-fluid" width="400px"></p>
                     <p><hr /></p>
                     <h4>Keresés</h4><br />
+                    <!--Exportálás Excelbe -->
+                    <h5><a class="float-end" href="{{ url('/export-file') }}"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></h5>                
                     <div class="form-group row mb-3">
                         <!-- Keresés oktatási azonosító alapján -->
                         <div class="col-md-6">
-                            
+                        
                             <form action="/studentquery" method="post">
                                 @csrf
                                 <div class="input-group">
                                     <input class="form-control" type="search" name="oktazon" placeholder="Keresés oktatási azonosító alapján">&nbsp;
                                     
                                     <span class="input-group-text"><button type="submit" class="btn btn-sm noborder"><i class="fa-fw fa-sharp fa-solid fa-magnifying-glass"></i></button></span>
-                                    
+                                                                        
                                 </div>
                                 <!-- <span style="text-align: right"><a href="{{ url('/uniquedataquery') }}"><button type="button" class="btn btn-primary">Mindent mutat</button></a></span> -->
                             </form>
-                            
+                           
                         </div>
-
+                        
                         <!--Keresés név alapján
                         <div class="col-md-4">
                             <form action="/studentquery" method="post">

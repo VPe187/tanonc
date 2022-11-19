@@ -8,6 +8,8 @@ use App\Imports\SocialdataImport;
 use App\Imports\GuardiandataImport;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Masterdata;
+use App\Http\Controllers\UserImportExportController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +73,11 @@ Route::get('/socialdatamanual', [App\Http\Controllers\SocialdatamanualController
 
 // Összes tanuló kilistázása
 Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);
+
+//Route::get('import-export', [UserImportExportController::class, 'importExport']);
+Route::get('export-file', [UserImportExportController::class, 'exportFile'])->name('export-file');
+Route::post('import-file', [UserImportExportController::class, 'importFile'])->name('import-file');
+
 
 
 // egyetlen tanuló adatainak lekérése az oktazon alapján

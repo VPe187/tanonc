@@ -109,7 +109,7 @@ body {
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="{{ url('/exceldataexport') }}"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/export-file') }}"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
