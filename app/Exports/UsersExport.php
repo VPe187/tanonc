@@ -14,7 +14,6 @@ class UsersExport implements FromCollection,WithHeadings
 
     public function headings():array{
         return[
-            'id',
             'oktazon',
             'viselt_nev_elotag',
             'viselt_nev_vezeteknev1',
@@ -72,8 +71,7 @@ class UsersExport implements FromCollection,WithHeadings
             'lezart_szolgaltatasok',
             'a_bm_szemelyiadat_nyilvantartasaban_beazonositott',
             'utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja',
-            'created',
-            'modified',   
+            
             'gondviseloazon',      
             'gondviseloneve',
             'gondviselotelefonszama',
@@ -94,7 +92,6 @@ class UsersExport implements FromCollection,WithHeadings
             'hhh_kezdete',
             'hhh_vege'
 
-      
         ];
     }
     //private $fileName= "users.xlsx";
@@ -107,7 +104,6 @@ class UsersExport implements FromCollection,WithHeadings
         ->join('familydata', 'familydata.oktazon', '=', 'masterdata.oktazon')
         ->join('social_status', 'social_status.oktazon', '=', 'masterdata.oktazon')
         ->select(
-            'masterdata.id',
             'masterdata.oktazon',
             'masterdata.viselt_nev_elotag',
             'masterdata.viselt_nev_vezeteknev1',
@@ -165,9 +161,7 @@ class UsersExport implements FromCollection,WithHeadings
             'masterdata.lezart_szolgaltatasok',
             'masterdata.a_bm_szemelyiadat_nyilvantartasaban_beazonositott',
             'masterdata.utolso_szemelyiadat_es_lakcimnyilvantartas_frissites_idopontja',
-            'masterdata.created_at',
-            'masterdata.updated_at',
-
+            
             'familydata.gondviseloazon',      
             'familydata.gondviseloneve',
             'familydata.gondviselotelefonszama',
@@ -178,7 +172,6 @@ class UsersExport implements FromCollection,WithHeadings
             'familydata.covidoltas', 
             
             'social_status.szocazon',
-            
             'social_status.gyermekvedelmikedvezmeny',
             'social_status.gyermekvedelmikedvezmeny_kezdete',
             'social_status.gyermekvedelmikedvezmeny_vege',
