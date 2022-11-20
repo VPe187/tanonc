@@ -15,9 +15,11 @@
                     <p class="text-center"><img src="img/tanonc_logo.png" height="100px" class="img-fluid" width="400px"></p>
                     <p><hr /></p>
                     <h4>Keresés</h4><br />
-                    <!--Exportálás Excelbe -->
-                    <h5><a class="float-end" href="{{ url('/export-file') }}"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></h5>                
-                    <div class="form-group row mb-3">
+                    <!--Exportálás Excelbe-->
+                    <a href="{{url('/export-file')}}" class="btn btn-primary float-end mb-6 mt-6 ms-6">
+                                    <i class="fa-btn fa-solid fa-file-excel" style="color:lightgreen;"></i>Exportálás </a>
+                    <!--<h5><a class="float-end" href="{{ url('/export-file') }}"><i class="fa-btn fa-sharp fa-solid fa-file-excel"></i>{{ __('Exportálás Excelbe') }}</a></h5>                
+                    <div class="form-group row mb-3">-->
                         <!-- Keresés oktatási azonosító alapján -->
                         <div class="col-md-6">
                         
@@ -46,8 +48,8 @@
                         </div>
                          -->
                     </div>
-                    
-                    <p><hr /></p>
+                    <hr/>               
+                    <!--<p></p>-->                      
                     <div class="table-responsive">
                         <table class="table table-hover"> 
                             

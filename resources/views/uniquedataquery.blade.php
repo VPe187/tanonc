@@ -32,7 +32,7 @@
                             </form>
                             
                         </div>
-
+                        <p></p>
                         <!--Keresés név alapján
                         <div class="col-md-4">
                             <form action="/studentquery" method="post">
