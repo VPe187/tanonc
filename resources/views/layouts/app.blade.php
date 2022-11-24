@@ -86,6 +86,10 @@ body {
                                         &nbsp;&nbsp;<i class="fa-solid fa-database">&nbsp;</i>Rögzítés kézzel
                                     </h6>
                                     <li>
+                                        <a href="{{ url('/kirdatamanual') }}" class="dropdown-item" href="#">
+                                            <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Kir master (1)') }}</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ url('/familydatamanual') }}" class="dropdown-item" href="#">
                                             <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Family data (1)') }}</a>
                                     </li>
@@ -98,7 +102,7 @@ body {
                                             <i class="fa-btn fa-solid fa-file-import"></i>{{ __('Guardian (3)') }}</a>
                                     </li>
                                 </li>
-
+                                    
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
