@@ -34,3 +34,15 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
     font-family: 'Varela Round', sans-serif;
     font-style: bold;
 }
+
+.sticky-table-column {
+    /* Background color */
+    background-color: #9ca3af;
+
+    /* Stick to the left */
+    left: 0;
+    position: sticky;
+
+    /* Displayed on top of other rows when scrolling */
+    
+}
