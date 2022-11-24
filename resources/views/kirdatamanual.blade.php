@@ -24,7 +24,7 @@
                             <label for="fieldUserId" class="col-4 col-form-label">Oktatási azonosító</label>
                             <div class="col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="fieldUserId" value="{{ Auth::user()->id }}" readonly>
+                                    <input type="text" class="form-control" name="oktazon">
                                     <span class="input-group-text"><i class="fa-fw fa-solid fa-key"></i></span>
                                 </div>
                             </div>
