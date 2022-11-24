@@ -224,7 +224,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                             </tr>
                             <tr>
