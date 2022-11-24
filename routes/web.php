@@ -70,6 +70,8 @@ Route::get('/guardiandatamanual', [App\Http\Controllers\GuardiandataManualContro
 
 //Social data manuális
 Route::get('/socialdatamanual', [App\Http\Controllers\SocialdatamanualController::class, 'index']);
+//Kir data manuális
+Route::get('/kirdatamanual', [App\Http\Controllers\KirdatamanualController::class, 'index']);
 
 // Összes tanuló kilistázása
 Route::get('/uniquedataquery', [App\Http\Controllers\MasterdataController::class, 'student']);

@@ -55,8 +55,8 @@
                             
                             <thead>
                                 <tr class="text-nowrap" style="border-left: 3px solid lightblue">
-                                    <th style="background: lightgrey">Id</th>
-                                    <th style="background: lightgrey">Oktatási azonosító</th>
+                                    <th  style="background: lightgrey">Id</th>
+                                    <th class="sticky-table-column" style="background: lightgrey">Oktatási azonosító</th>
                                     <th style="background: lightgrey">Viselt név előtag</th>
                                     <th style="background: lightgrey">Viselt vezetéknév</th>
                                     <th style="background: lightgrey">Viselt keresztnév</th>
@@ -137,7 +137,7 @@
                                 @foreach($diakok as $tanulo)
                                     <tr class="text-nowrap" style="border-left: 3px solid lightblue">
                                             <td>{{$tanulo->id}}</td>
-                                            <td style="background: lightgrey">{{$tanulo->oktazon}}</td>
+                                            <td class="sticky-table-column" style="background: lightgrey">{{$tanulo->oktazon}}</td>
                                             <td>{{$tanulo->viselt_nev_elotag}}</td>
                                             <td>{{$tanulo->viselt_nev_vezeteknev1}}</td>
                                             <td>{{$tanulo->viselt_nev_keresztnev2}}</td>
