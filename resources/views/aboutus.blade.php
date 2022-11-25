@@ -153,7 +153,7 @@
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">8</th>
@@ -165,7 +165,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">9</th>
@@ -225,7 +225,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">14</th>
@@ -247,7 +247,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                                 <td>--</td>
                                 <td>--</td>
                             </tr>
@@ -261,7 +261,7 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">17</th>
@@ -284,8 +284,8 @@
                                 <td>--</td>
                                 <td>--</td>
                                 <td>--</td>
-                                <td>--</td>
-                                <td>--</td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
+                                <td><span id="boot-icon" class="bi bi-check" style="color: rgb(0, 128, 55);"><i class="fa-solid fa-check"></i></span></td>
                             </tr>
 
 
