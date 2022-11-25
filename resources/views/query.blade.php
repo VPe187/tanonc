@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="{{ asset('scroll.js') }}"></script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -53,91 +54,91 @@
                     <div class="table-responsive">
                         <table class="table table-hover"> 
                             
-                            <thead>
-                                <tr class="text-nowrap" style="border-left: 3px solid lightblue">
-                                    <th  style="background: lightgrey">Id</th>
-                                    <th class="sticky-table-column" style="background: lightgrey">Oktatási azonosító</th>
-                                    <th style="background: lightgrey">Viselt név előtag</th>
-                                    <th style="background: lightgrey">Viselt vezetéknév</th>
-                                    <th style="background: lightgrey">Viselt keresztnév</th>
-                                    <th style="background: lightgrey">Viselt név névsorrend</th>
-                                    <th style="background: lightgrey">Születési név előtag</th>
-                                    <th style="background: lightgrey">Szuletési vezetéknév</th>
-                                    <th style="background: lightgrey">Születési keresztnév</th>
-                                    <th style="background: lightgrey">Születési név névsorrend</th>
-                                    <th style="background: lightgrey">Anyja neve előtag</th>
-                                    <th style="background: lightgrey">Anyja neve vezeteknév</th>
-                                    <th style="background: lightgrey">Anyja neve keresztnév</th>
-                                    <th style="background: lightgrey">Anyja neve névsorrend</th>
-                                    <th style="background: lightgrey">Születési dátum</th>
-                                    <th style="background: lightgrey">Születési hely</th>
-                                    <th style="background: lightgrey">Születési ország</th>
-                                    <th style="background: lightgrey">Állampolgárság 1</th>
-                                    <th style="background: lightgrey">Állampolgárság 2</th>
-                                    <th style="background: lightgrey">Neme</th>
-                                    <th style="background: lightgrey">TAJ szám</th>
-                                    <th style="background: lightgrey">TAJ ellenőrzés</th>
-                                    <th style="background: lightgrey">Állandó lakcím irányitószám</th>
-                                    <th style="background: lightgrey">Állandó lakcím település</th>
-                                    <th style="background: lightgrey">Állandó lakcím közteruletnév</th>
-                                    <th style="background: lightgrey">Állandó lakcím közterulet jelleg</th>
-                                    <th style="background: lightgrey">Állandó lakcím házszám</th>
-                                    <th style="background: lightgrey">Állandó lakcím pontositás</th>
-                                    <th style="background: lightgrey">Tartozkodási cím irányítoszám</th>
-                                    <th style="background: lightgrey">Tartozkodási cím település</th>
-                                    <th style="background: lightgrey">Tartozkodási cím közterület neve</th>
-                                    <th style="background: lightgrey">Tartozkodási cím közterület jelleg</th>
-                                    <th style="background: lightgrey">Tartozkodási cím házszám</th>
-                                    <th style="background: lightgrey">Tartozkodási cím pontosítás</th>
-                                    <th style="background: lightgrey">Adat kezelő intézmény OM azonosítója</th>
-                                    <th style="background: lightgrey">Adat kezelő intézmény neve</th>
-                                    <th style="background: lightgrey">Adat kezelő intézmény címe</th>
-                                    <th style="background: lightgrey">Tankötelezettség vége</th>
-                                    <th style="background: lightgrey">Tankötelezettségét teljesítő</th>
-                                    <th style="background: lightgrey">Sajátos nevelési igényű</th>
-                                    <th style="background: lightgrey">Beilleszkedéssel, tanulási, magatartási nehézséggel küzd</th>
-                                    <th style="background: lightgrey">Érvényes diák igazolvány száma</th>
-                                    <th style="background: lightgrey">Közoktatási intézmény neve</th>
-                                    <th style="background: lightgrey">Közoktatási intézmény székhelye</th>
-                                    <th style="background: lightgrey">OM azonosító</th>
-                                    <th style="background: lightgrey">Ügyviteli hely</th>
-                                    <th style="background: lightgrey">Jogviszony státusza</th>
-                                    <th style="background: lightgrey">Jogviszony kezdete</th>
-                                    <th style="background: lightgrey">Jogviszony várható befejezése</th>
-                                    <th style="background: lightgrey">Jogviszony jellege</th>
-                                    <th style="background: lightgrey">Vendegtanuló</th>
-                                    <th style="background: lightgrey">Egyéni munkarend</th>
-                                    <th style="background: lightgrey">Ideiglenes óvodai, ideiglenes vendégtanulói jogviszony</th>
-                                    <th style="background: lightgrey">Osztály</th>
-                                    <th style="background: lightgrey">Nyitott szolgáltatások</th>
-                                    <th style="background: lightgrey">Lezárt szolgáltatások</th>
-                                    <th style="background: lightgrey">A BM személyiadat nyilvántartásában beazonosított</th>
-                                    <th style="background: lightgrey">Utolsó személyiadat és lakcímnyilvántartás frissítés időpontja</th>
-                                    <!--<th style="background: lightgrey">Created at</th>
-                                    <th style="background: lightgrey">Updated at</th> -->
-                                    <th style="background: lightgrey">Gondviselő neve</th>
-                                    <th style="background: lightgrey">Gondviselő telefonszáma</th>
-                                    <th style="background: lightgrey">Gondviselő email címe</th>
-                                    <th style="background: lightgrey">Törvényes képviselő neve</th>
-                                    <th style="background: lightgrey">Háziorvos neve</th>
-                                    <th style="background: lightgrey">Háziorvos telefonszáma</th>
-                                    <th style="background: lightgrey">COVID-19 oltással rendelkezik</th>
-                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény</th>
-                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény kezdete</th>
-                                    <th style="background: lightgrey">Gyermekvédelmi kedvezmény vége</th>
-                                    <th style="background: lightgrey">Hátrányos helyzetű</th>
-                                    <th style="background: lightgrey">Hátrányos helyzetű státusz kezdete</th>
-                                    <th style="background: lightgrey">Hátrányos helyzetű státusz vége</th>
-                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű</th>
-                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű státusz kezdete</th>
-                                    <th style="background: lightgrey">Halmozottan hátrányos helyzetű státusz vége</th>
+                            <thead class="thead">
+                            <tr class="text-nowrap" style="border-left: 3px solid lightblue">     
+                                    <th >Id</th>
+                                    <th class="sticky-table-column" style="background: #5599ff;" >Oktatási azonosító</th>
+                                    <th >Viselt név előtag</th>
+                                    <th >Viselt vezetéknév</th>
+                                    <th >Viselt keresztnév</th>
+                                    <th >Viselt név névsorrend</th>
+                                    <th >Születési név előtag</th>
+                                    <th >Szuletési vezetéknév</th>
+                                    <th >Születési keresztnév</th>
+                                    <th >Születési név névsorrend</th>
+                                    <th >Anyja neve előtag</th>
+                                    <th >Anyja neve vezeteknév</th>
+                                    <th >Anyja neve keresztnév</th>
+                                    <th >Anyja neve névsorrend</th>
+                                    <th >Születési dátum</th>
+                                    <th >Születési hely</th>
+                                    <th >Születési ország</th>
+                                    <th >Állampolgárság 1</th>
+                                    <th >Állampolgárság 2</th>
+                                    <th >Neme</th>
+                                    <th >TAJ szám</th>
+                                    <th >TAJ ellenőrzés</th>
+                                    <th >Állandó lakcím irányitószám</th>
+                                    <th >Állandó lakcím település</th>
+                                    <th >Állandó lakcím közteruletnév</th>
+                                    <th >Állandó lakcím közterulet jelleg</th>
+                                    <th >Állandó lakcím házszám</th>
+                                    <th >Állandó lakcím pontositás</th>
+                                    <th >Tartozkodási cím irányítoszám</th>
+                                    <th >Tartozkodási cím település</th>
+                                    <th >Tartozkodási cím közterület neve</th>
+                                    <th >Tartozkodási cím közterület jelleg</th>
+                                    <th >Tartozkodási cím házszám</th>
+                                    <th >Tartozkodási cím pontosítás</th>
+                                    <th >Adat kezelő intézmény OM azonosítója</th>
+                                    <th >Adat kezelő intézmény neve</th>
+                                    <th >Adat kezelő intézmény címe</th>
+                                    <th >Tankötelezettség vége</th>
+                                    <th >Tankötelezettségét teljesítő</th>
+                                    <th >Sajátos nevelési igényű</th>
+                                    <th >Beilleszkedéssel, tanulási, magatartási nehézséggel küzd</th>
+                                    <th >Érvényes diák igazolvány száma</th>
+                                    <th >Közoktatási intézmény neve</th>
+                                    <th >Közoktatási intézmény székhelye</th>
+                                    <th >OM azonosító</th>
+                                    <th >Ügyviteli hely</th>
+                                    <th >Jogviszony státusza</th>
+                                    <th >Jogviszony kezdete</th>
+                                    <th >Jogviszony várható befejezése</th>
+                                    <th >Jogviszony jellege</th>
+                                    <th >Vendegtanuló</th>
+                                    <th >Egyéni munkarend</th>
+                                    <th >Ideiglenes óvodai, ideiglenes vendégtanulói jogviszony</th>
+                                    <th >Osztály</th>
+                                    <th >Nyitott szolgáltatások</th>
+                                    <th >Lezárt szolgáltatások</th>
+                                    <th >A BM személyiadat nyilvántartásában beazonosított</th>
+                                    <th >Utolsó személyiadat és lakcímnyilvántartás frissítés időpontja</th>
+                                    <!--<th >Created at</th>
+                                    <th >Updated at</th> -->
+                                    <th >Gondviselő neve</th>
+                                    <th >Gondviselő telefonszáma</th>
+                                    <th >Gondviselő email címe</th>
+                                    <th >Törvényes képviselő neve</th>
+                                    <th >Háziorvos neve</th>
+                                    <th >Háziorvos telefonszáma</th>
+                                    <th >COVID-19 oltással rendelkezik</th>
+                                    <th >Gyermekvédelmi kedvezmény</th>
+                                    <th >Gyermekvédelmi kedvezmény kezdete</th>
+                                    <th >Gyermekvédelmi kedvezmény vége</th>
+                                    <th >Hátrányos helyzetű</th>
+                                    <th >Hátrányos helyzetű státusz kezdete</th>
+                                    <th >Hátrányos helyzetű státusz vége</th>
+                                    <th >Halmozottan hátrányos helyzetű</th>
+                                    <th >Halmozottan hátrányos helyzetű státusz kezdete</th>
+                                    <th >Halmozottan hátrányos helyzetű státusz vége</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($diakok as $tanulo)
                                     <tr class="text-nowrap" style="border-left: 3px solid lightblue">
-                                            <td>{{$tanulo->id}}</td>
-                                            <td class="sticky-table-column" style="background: lightgrey">{{$tanulo->oktazon}}</td>
+                                            <td style="background-color: lightgrey" >{{$tanulo->id}}</td>
+                                            <td class="sticky-table-column" style="background-color: lightgrey" >{{$tanulo->oktazon}}</td>
                                             <td>{{$tanulo->viselt_nev_elotag}}</td>
                                             <td>{{$tanulo->viselt_nev_vezeteknev1}}</td>
                                             <td>{{$tanulo->viselt_nev_keresztnev2}}</td>

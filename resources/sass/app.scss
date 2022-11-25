@@ -37,7 +37,7 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
 .sticky-table-column {
     /* Background color */
-    background-color: #9ca3af;
+    background-color: #5599ff;
 
     /* Stick to the left */
     left: 0;
@@ -45,4 +45,25 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
     /* Displayed on top of other rows when scrolling */
     
+}
+
+
+.btn-primary {
+    background-color: #002964;
+    border-radius: 15px 50px 30px;
+}
+
+.btn-danger {
+    background-color: #ca2104;
+    border-radius: 15px 50px 30px;
+}
+.thead
+{
+    background-color: #5599ff !important;
+    color: white;
+    border-radius: 30px;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #9ca3af;
+    color: white;
 }
