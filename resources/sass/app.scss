@@ -47,6 +47,17 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
     
 }
 
+.table-responsive
+{
+   
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: #5599ff;
+    color: white;
+    font: italic bold;
+}
 
 .btn-primary {
     background-color: #002964;
@@ -67,3 +78,4 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
     background-color: #9ca3af;
     color: white;
 }
+
