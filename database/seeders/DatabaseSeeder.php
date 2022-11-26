@@ -16,5 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(PublicAreaTypeSeeder::class);
         $this->command->info('Közterületek betöltve!');
+        $this->call(SettlementSeeder::class);
+        $this->command->info('Települések betöltve!');
+        $this->call(CountrySeeder::class);
+        $this->command->info('Országok betöltve!');
     }
 }

@@ -12,7 +12,6 @@ class Country extends Model
 
     protected $fillable = [
         'orszag'
-        
     ];
 
 }

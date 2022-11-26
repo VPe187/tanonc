@@ -20,9 +20,8 @@ class Familydata extends Model
         'haziorvosneve',
         'haziorvostelefon',
         'covidoltas'
-        
-  
     ];
+
     public static function getStudentsfamilydata (){
         $records2 = DB::table('familydata')->select(
         'gondviseloazon',
@@ -35,10 +34,11 @@ class Familydata extends Model
         'covidoltas')->get()->toArray();
         return $records2;
         }
+
     //Primery Key
     public function Masterdata(){
         // táblák összekapcsolása, először idegentábla, utána saját tábla
-        return $this->hasOne('App\Models\Masterdata','oktazon','oktazon'); 
+        return $this->hasOne('App\Models\Masterdata','oktazon','oktazon');
     }
-   
+
 }
